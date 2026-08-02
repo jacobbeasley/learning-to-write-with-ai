@@ -4,6 +4,8 @@
 
 An interactive workbook that teaches fiction writing craft from the ground up—using AI as your personal coach, editor, and creative partner.
 
+![alt text](Gemini_Generated_Image_s3r1los3r1los3r1.png)
+
 ## What Is This Book?
 
 Learning to write well is hard. It always has been. But for the first time in history, writers have access to a patient, tireless coach who can read their work at any hour, give honest feedback, and generate endless practice material tailored to exactly the skill they need to develop.
@@ -75,6 +77,19 @@ README.md            — This file
     write_chapter/
       SKILL.md       — Skill template for drafting new chapters
 ```
+
+## Contributing
+
+This is a living manuscript and contributions are welcome—whether you spot a typo, have a suggestion for an exercise, or want to propose a new chapter topic.
+
+**Ways to contribute:**
+
+- **Bug reports & typos** — Open an issue describing what you found and where.
+- **Exercise suggestions** — Open an issue with the label `exercise-idea`. Describe the craft skill you'd like covered and any AI prompt ideas you have.
+- **Chapter feedback** — If you've worked through a chapter and something didn't click, open an issue. Real reader friction is gold.
+- **Pull requests** — Small fixes (typos, broken links, formatting) are welcome as PRs. For larger changes—new sections, restructured chapters—please open an issue first so we can discuss before you invest the time.
+
+> **Note:** This is a personal project and I maintain final editorial control over the manuscript. I may not accept every suggestion, but I read everything and appreciate the feedback.
 
 ## License
 

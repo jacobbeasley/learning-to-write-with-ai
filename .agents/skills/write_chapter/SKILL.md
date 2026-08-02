@@ -15,6 +15,7 @@ Every chapter must follow this exact 3-part structure:
 
 ### Section 1: Chapter Principles & Examples
 
+- Format the section header as `### 1. Principles of [Chapter Topic]` tailored specifically to the chapter's focus (e.g., `### 1. Principles of Verb Selection`, `### 1. Principles of World-Building Architecture`, `### 1. Principles of Three-Act Structure`).
 - Open with a 1–2 sentence professor-voice hook grounding the concept in real fiction craft.
 - Present 2–4 craft principles.
 - Under each principle, write 2–3 concise sentences explaining the concept.
