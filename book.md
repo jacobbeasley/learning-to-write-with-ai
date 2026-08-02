@@ -2,6 +2,8 @@
 
 Author: Jacob Beasley
 
+![alt text](Gemini_Generated_Image_s3r1los3r1los3r1.png)
+
 ## Introduction: Your AI Writing Partner
 
 #### The Author's "Why"
@@ -35,9 +37,13 @@ AI is a tool, but as with anything worth doing, all good things take work. Learn
 # Part I: Sentence Craft
 Before building a world, a writer must know how to build a sentence.
 
+![Part I Comic: Sentence Craft](images/part1_sentence_craft_comic.png)
+
 ## Chapter 1: The Music of Prose
 
 Welcome to Chapter 1. Writers fixate on plot and character, but prose has a sound—a rhythm the reader's body feels before the mind processes. Before we build worlds, we must learn to hear the music of our sentences.
+
+![Chapter 1 Comic: The Music of Prose](images/chapter1_music_of_prose_comic.png)
 
 ### 1. Principles of Sentence Music
 
