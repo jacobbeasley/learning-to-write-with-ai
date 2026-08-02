@@ -1,13 +1,38 @@
 # Learning to Write Novels with AI: From Sentence to Series
 
+Author: Jacob Beasley
+
 ## Introduction: Your AI Writing Partner
-### Core Concepts
-*   **The Author's "Why":** Establishing your core motivation to fuel you through the inevitable rough patches of drafting.
-*   **The AI as a Collaborative Tool:** How to use artificial intelligence for brainstorming and structural analysis without sacrificing your unique human voice.
-*   **How to Use This Book:** Explaining the interactive workbook approach where every chapter teaches a core principle followed by hands-on exercises.
-*   **The AI Review Loop:** Instructions on how to use AI as your personal editor to review your chapter exercises.
-### Interactive AI Activity
-*   **Goal Setting:** You write a paragraph defining your artistic "Why." The AI analyzes your statement and helps you translate it into a tangible writing schedule and milestone checklist.
+
+#### The Author's "Why"
+
+Learning to write is hard. It always has been. But AI makes learning easier than ever before. I developed this book to teach myself to be a better writer—from sentences to outlining to publication—and discovered that working alongside an AI coach made the process faster, more interactive, and more honest than anything I had tried before.
+
+This book is the result of that journey. I hope you find it as valuable as I have.
+
+#### The AI as a Collaborative Tool
+
+AI does not have your voice. It cannot feel what you feel, remember what you remember, or care about the story only you can tell. But it is a powerful collaboration tool. It can teach you the craft principles that make prose sing, help you develop the voice and style of your novel, and assist you with the mountain of decisions that go into building a book—from organizing your outline to drafting entire scenes when you are stuck.
+
+Think of it as an endlessly patient writing partner: one who never tires, never judges, and always has another exercise ready when you want more practice.
+
+#### How to Use This Book
+
+This book is an interactive workbook. Every chapter follows the same three-part structure: first, you learn 2–4 core craft principles with clear before-and-after examples. Then, you complete a hands-on exercise alongside an AI chatbot. Finally, you paste a ready-made prompt into your AI tool of choice, and it generates a challenge, grades your work on a strict A–F scale, and coaches you through revisions until you earn at least a B.
+
+You do not need to read this book cover to cover. If you are already comfortable with sentence-level craft, skip ahead to dialogue or story structure. Each chapter is self-contained.
+
+#### The AI Review Loop
+
+Throughout this book, you will use AI as your personal editor. The loop is simple: the AI presents a challenge—a flawed passage, a flat character, a broken outline. You write or rewrite it, applying the principles you just learned. The AI grades your work with a letter grade and specific coaching feedback. You revise until you earn a B or higher, then ask the AI to generate a fresh challenge whenever you want more practice.
+
+This loop is the engine of the book. The more times you cycle through it, the faster your skills will develop.
+
+#### A Word Before We Begin
+
+AI is a tool, but as with anything worth doing, all good things take work. Learning to be a good writer takes work. Finding your voice takes work. Writing a good novel will require more than a few prompts—it will require discipline, revision, and the willingness to sit with your own sentences until they are right.
+
+You are going to have to really work at it, and that is OK. That is what this book is for.
 
 # Part I: Sentence Craft
 Before building a world, a writer must know how to build a sentence.
