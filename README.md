@@ -6,6 +6,8 @@ An interactive workbook that teaches fiction writing craft from the ground up—
 
 ![alt text](Gemini_Generated_Image_s3r1los3r1los3r1.png)
 
+[Read Book](book.md)
+
 ## What Is This Book?
 
 Learning to write well is hard. It always has been. But for the first time in history, writers have access to a patient, tireless coach who can read their work at any hour, give honest feedback, and generate endless practice material tailored to exactly the skill they need to develop.
