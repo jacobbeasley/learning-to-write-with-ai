@@ -348,6 +348,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 # Part II: Paragraph Craft
 If sentences are the trees, the paragraph is the forest.
 
+![Part II Comic: Paragraph Craft](images/part2_paragraph_craft_comic.png)
+
 ## Chapter 4: Anchoring with Concrete Specifics
 
 Abstract ideas drift above the page. Stories, by contrast, happen in the physical world—in the smell of a coat, the cold of a floor, the weight of an object in a character's hand. A paragraph earns its emotional charge only when you anchor it in the specific and the sensory.
@@ -653,6 +655,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 
 # Part III: Self-Editing Your Fiction
 The editing phase is where you chip away the excess marble to reveal the final prose.
+
+![Part III Comic: Self-Editing Your Fiction](images/part3_self_editing_comic.png)
 
 ## Chapter 7: Deepening the POV
 
@@ -1059,6 +1063,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ```
 
 # Part IV: The Art of Verbal Action (Mastering Dialogue)
+
+![Part IV Comic: Mastering Dialogue](images/part4_mastering_dialogue_comic.png)
 
 ## Chapter 11: Dialogue as Action
 
@@ -1592,6 +1598,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 # Part V: Outlining and Scaling
 Moving from prose to plotting requires a macro-level mindset.
 
+![Part V Comic: Outlining and Scaling](images/part5_outlining_scaling_comic.png)
+
 ## Chapter 16: The Principles of Outlining
 
 Plotting a full-length novel without an outline is an act of faith that rarely pays off. Outlining is not a cage—it is the safety net that lets you take creative risks freely, because you know the structure will catch you while solving macro-level structural problems before you invest months writing tens of thousands of prose words.
@@ -1822,6 +1830,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 
 # Part VI: The Psychology of Character
 Before characters can speak, the reader needs to know how to build their psychological profiles.
+
+![Part VI Comic: The Psychology of Character](images/part6_psychology_character_comic.png)
 
 ## Chapter 18: The Ghost and the Lie
 
@@ -2133,6 +2143,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 # Part VII: Building Your Story Bible
 A centralized document containing all critical information to ensure consistency in your fictional universe.
 
+![Part VII Comic: Building Your Story Bible](images/part7_story_bible_comic.png)
+
 ## Chapter 21: Core Categories of World-Building
 
 World-building is more than drawing maps or inventing magic systems; it is the art of constructing a living, believable ecosystem. Incoherent world-building occurs when authors treat setting details as isolated trivia rather than interconnected systems. Establishing a Story Bible across five core pillars—Geography, History, Society, Systems & Rules, and Ecology & Science—ensures that every element of your fictional universe logically impacts the others.
@@ -2366,6 +2378,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 
 # Part VIII: Narrative Theories and Structures
 This section explores the most enduring templates of storytelling. Each chapter focuses on a single framework, teaching you when to use it and how to apply it to your own novel.
+
+![Part VIII Comic: Narrative Theories and Structures](images/part8_narrative_theories_comic.png)
 
 ## Chapter 23: The Three-Act Structure
 
@@ -2811,6 +2825,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 
 # Part IX: Mastering AI Collaboration
 If the book's hook is writing with AI, we must teach the reader exactly how to communicate with an entity like me.
+
+![Part IX Comic: Mastering AI Collaboration](images/part9_ai_collaboration_comic.png)
 
 ## Chapter 27: Prompt Engineering for Prose
 
@@ -3263,6 +3279,8 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 
 # Part X: The Final Polish and Publication (Beta Readers and Beyond)
 A brief concluding module on the business and reality of finishing a manuscript would give your readers a complete A-to-Z roadmap.
+
+![Part X Comic: The Final Polish and Publication](images/part10_final_polish_publication_comic.png)
 
 ## Chapter 32: The Feedback Loop
 
