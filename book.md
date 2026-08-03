@@ -147,6 +147,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 
 Verbs are the engine of fiction. While nouns define your story's objects and adjectives color its surfaces, verbs supply the raw forward momentum that pulls readers through the page.
 
+![Chapter 2 Comic: Strong Verbs, Strong Sentences](images/chapter2_strong_verbs_comic.png)
+
 ### 1. Principles of Verb Selection
 
 #### Principle 1: Replace Weak Verbs and Adverbs with Precise Action Verbs
@@ -247,6 +249,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ## Chapter 3: Economy of Language
 
 Every word in a novel must earn its place on the page. Writing with economy is not about stripping your prose of beauty or rhythm; it is about eliminating the dead weight that dulls your reader's attention.
+
+![Chapter 3 Comic: Economy of Language](images/chapter3_economy_language_comic.png)
 
 ### 1. Principles of Concise Prose
 
@@ -354,6 +358,8 @@ If sentences are the trees, the paragraph is the forest.
 
 Abstract ideas drift above the page. Stories, by contrast, happen in the physical world—in the smell of a coat, the cold of a floor, the weight of an object in a character's hand. A paragraph earns its emotional charge only when you anchor it in the specific and the sensory.
 
+![Chapter 4 Comic: Anchoring with Concrete Specifics](images/chapter4_concrete_specifics_comic.png)
+
 ### 1. Principles of Sensory Grounding
 
 #### Principle 1: Ground Abstract Emotions in Visceral Sensory Details
@@ -455,6 +461,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 
 Writing individual strong sentences is only half the battle. A great paragraph does not feel like a list of isolated facts; it flows like a single current—each sentence drawing the next forward.
 
+![Chapter 5 Comic: Making Sentences Flow Together](images/chapter5_sentences_flow_comic.png)
+
 ### 1. Principles of Paragraph Cohesion
 
 #### Principle 1: Honor the Known-to-New Information Contract
@@ -555,6 +563,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ## Chapter 6: Opening Strong, Ending Stronger
 
 A paragraph is not just an arbitrary container for sentences; it is a mini-story with its own dramatic arc. To keep readers turning pages, every paragraph needs a strong opening hook that connects what just happened to what happens next, and a closing line that lingers.
+
+![Chapter 6 Comic: Opening Strong, Ending Stronger](images/chapter6_opening_ending_comic.png)
 
 ### 1. Principles of Paragraph Arcs
 
@@ -662,6 +672,8 @@ The editing phase is where you chip away the excess marble to reveal the final p
 
 Immersive fiction is built on psychological proximity. When you place a camera lens between the reader and your viewpoint character—every filter word that tells the reader "the character perceived this" rather than delivering the perception directly creates a layer of glass between the reader and the scene. Removing these filter words drops the reader directly behind the character's eyes.
 
+![Chapter 7 Comic: Deepening the POV](images/chapter7_deepening_pov_comic.png)
+
 ### 1. Principles of Point-of-View Immersion
 
 #### Principle 1: Eliminate Sensory and Perceptual Filter Words
@@ -762,6 +774,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ## Chapter 8: Dialogue Formatting
 
 Dialogue is the raw voice of your characters. Formatting it properly ensures the reader stays immersed in the conversation without being yanked out by the scaffolding around the words.
+
+![Chapter 8 Comic: Dialogue Formatting](images/chapter8_dialogue_formatting_comic.png)
 
 ### 1. Principles of Dialogue Mechanics
 
@@ -864,6 +878,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 
 Readers are active participants in fiction. They want to piece together a character's motives, emotions, and decisions from the evidence on the page. When an author over-explains a scene—spelling out why a character did something after already showing it—the story stalls and the reader feels lectured at. Crafting powerful prose requires practicing artistic restraint.
 
+![Chapter 9 Comic: Trusting Your Reader](images/chapter9_trusting_reader_comic.png)
+
 ### 1. Principles of Subtextual Restraint
 
 #### Principle 1: Omit Narrative Intrusions that Over-Explain Motivations
@@ -964,6 +980,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ## Chapter 10: Proportion and Pacing
 
 The real estate a moment occupies on the page signals its importance to the reader. If you spend three pages on a character making coffee and two sentences on a car crash, your novel is proportioned backwards. Mastering proportion means summarizing low-stakes transitions quickly while slowing down time to expand moments of high dramatic tension.
+
+![Chapter 10 Comic: Proportion and Pacing](images/chapter10_proportion_pacing_comic.png)
 
 ### 1. Principles of Narrative Pacing
 
@@ -1070,6 +1088,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 
 Dialogue is not real speech; it is the illusion of speech distilled into narrative action. In compelling fiction, characters do not talk to exchange polite information—they speak to accomplish an objective. Every line of spoken dialogue must carry an underlying action verb: to attack, to soothe, to deflect, to interrogate, or to manipulate.
 
+![Chapter 11 Comic: Dialogue as Action](images/chapter11_dialogue_as_action_comic.png)
+
 ### 1. Principles of Tactical Dialogue
 
 #### Principle 1: Assign an Active Tactic (Underlying Verb) to Every Line
@@ -1173,6 +1193,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ## Chapter 12: The Power of Subtext
 
 Great dialogue is iceberg-shaped: 10% is spoken aloud on the surface (the text), while 90% lives unspoken beneath the surface (the subtext). In real life and high-level fiction, characters rarely declare their deepest desires, fears, or grievances outright. Instead, they talk around the truth, using proxies, deflections, and physical objects to express what they cannot say directly.
+
+![Chapter 12 Comic: The Power of Subtext](images/chapter12_power_of_subtext_comic.png)
 
 ### 1. Principles of Dialogue Subtext
 
@@ -1278,6 +1300,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 
 Few things stall a story faster than dialogue used as a vehicle for backstory or world-building. Known in the writing community as the "As-You-Know-Bob" syndrome, this occurs when two characters explain information to each other that both of them already know purely for the reader's benefit. Masterful dialogue delivers essential lore only when driven by immediate conflict or urgent survival needs.
 
+![Chapter 13 Comic: Avoiding the Exposition Trap](images/chapter13_exposition_trap_comic.png)
+
 ### 1. Principles of Exposition Control
 
 #### Principle 1: Eliminate "As-You-Know-Bob" Explanatory Dialogue
@@ -1378,6 +1402,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ## Chapter 14: Scene Beats and Value Shifts
 
 A scene is not merely a container for characters to converse; it is a structural unit of change. For a scene to matter to the reader, the emotional reality of the scene must shift from the beginning to the end. Structuring dialogue around action/reaction beats ensures that every conversation reaches a turning point where a clear value shift occurs—from hope to despair, trust to betrayal, or safety to danger.
+
+![Chapter 14 Comic: Scene Beats and Value Shifts](images/chapter14_scene_value_shifts_comic.png)
 
 ### 1. Principles of Scene Beats
 
@@ -1487,6 +1513,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ## Chapter 15: Character Specificity and Voice
 
 One of the most consistent weaknesses in early manuscripts is what editors call "authorial homogeneity"—when every character speaks with the exact same vocabulary, sentence length, and tone, sounding like variations of the same person—the author, wearing different hats. Crafting distinct character voices requires tailoring each character's diction, syntax, and speech cadence to reflect their unique background, profession, age, and mindset.
+
+![Chapter 15 Comic: Character Specificity and Voice](images/chapter15_character_voice_comic.png)
 
 ### 1. Principles of Character Voice
 
@@ -1603,6 +1631,8 @@ Moving from prose to plotting requires a macro-level mindset.
 ## Chapter 16: The Principles of Outlining
 
 Plotting a full-length novel without an outline is an act of faith that rarely pays off. Outlining is not a cage—it is the safety net that lets you take creative risks freely, because you know the structure will catch you while solving macro-level structural problems before you invest months writing tens of thousands of prose words.
+
+![Chapter 16 Comic: The Principles of Outlining](images/chapter16_principles_of_outlining_comic.png)
 
 ### 1. Principles of Novel Outlining
 
@@ -1726,6 +1756,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ## Chapter 17: Scaling the Idea
 
 Not every story idea fits neatly into a standard 80,000-word standalone novel. Some concepts are tight, hyper-focused character studies best suited for a novella; others are massive multi-generational epics that require a trilogy or ongoing series. Scaling means matching the size of your story to the size of its container—and knowing the difference before you write a single word.
+
+![Chapter 17 Comic: Scaling the Idea](images/chapter17_scaling_the_idea_comic.png)
 
 ### 1. Principles of Story Scaling
 

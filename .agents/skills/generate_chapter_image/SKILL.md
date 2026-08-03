@@ -1,6 +1,6 @@
 ---
 name: generate_chapter_image
-description: Generates a witty, full-color 3-panel comic or illustrative image for a book chapter featuring Professor Jennifer (robot professor) and Jacob (student), loosely themed around silly SFW romance novel tropes with mild comedic tension, saves it to the images/ directory, and embeds it into book.md.
+description: Generates a witty, full-color 3-panel comic or illustrative image for a book chapter featuring Professor Jennifer (robot professor) and Jacob (student), intermixing Sci-Fi, Fantasy, Thriller, and Romance tropes with mild comedic tension, saves it to the images/ directory, and embeds it into book.md.
 ---
 
 # Chapter Image & Comic Generation Skill
@@ -9,16 +9,16 @@ Use this skill when tasked with inventing, generating, and embedding chapter com
 
 ---
 
-## Comic Theme & Tone Guidance: Silly SFW Romance Tropes
+## Comic Theme & Genre Guidance: Intermixing Sci-Fi, Fantasy, Romance, & Thrillers
 
 - **Tone:** Lighthearted, witty, comedic, and strictly **safe-for-work (SFW)**.
-- **Character Dynamic:** All chapter comics should lean loosely into silly, melodramatic **romance novel tropes** featuring a **very mild, PG-rated, humorous tension** between Professor Jennifer (the sharp, analytical robot professor) and Jacob (the earnest 35-year-old student).
-- **Trope Examples to Weave into Writing Lessons:**
-  - Over-dramatic eye contact across a desk while evaluating a manuscript draft.
-  - Accidental hand-touches while pointing out a bad adverb on a paper.
-  - Jennifer diagnosing romantic prose with hyper-precise robotic audio/visual analytics while Jacob blushes.
-  - Melodramatic romance passages used as the sample text being edited (e.g., *"Lord Sterling gazed into her eyes... and snarled at her weak verbs"*).
-  - Playful "strict professor x eager student" or "enemies-to-co-authors" dynamics played purely for comedic effect.
+- **Genre Variety:** Intermix a diverse blend of fiction genres across chapters—including **Science Fiction, High Fantasy, Cyberpunk, Mystery Thriller, and Romance**.
+- **Character Dynamic:** All chapter comics feature Professor Jennifer (the sharp, analytical robot professor) and Jacob (the earnest 35-year-old student) engaging in high-stakes writing lessons across absurd genre scenarios.
+- **Genre Scenario Examples:**
+  - **Fantasy:** Casting magic spells that accidentally turn weak adverbs into fireballs, or taming dragons with proper sentence rhythm.
+  - **Sci-Fi / Cyberpunk:** Hacking starship warp engines with strong action verbs, or calibrating quantum hyperdrives using dialogue subtext.
+  - **Romance:** Over-dramatic eye contact across glowing holograms, accidental hand-touches on laser pens, melodramatic hero dialogues.
+  - **Mystery / Thriller:** Interrogating suspects using deep POV immersion or defusing bombs with tight word economy.
 
 ---
 
@@ -32,25 +32,25 @@ Use this skill when tasked with inventing, generating, and embedding chapter com
 
 ## Step-by-Step Workflow
 
-### Step 1: Pitch Premises to the User
-1. Read the target chapter in `book.md` to identify the core craft principles (e.g., sentence pacing, read-aloud test, strong verbs, show don't tell).
-2. Brainstorm 3 distinct, witty comic concepts that combine the chapter's craft principles with silly SFW romance tropes and mild comedic tension between Jennifer and Jacob.
-3. Present the options clearly to the user with panel-by-panel descriptions, visual gags, and character dialogue. **Do not generate images until the user selects or approves a concept.**
+### Step 1: 2-Round Ideation & Premise Refinement
+1. Read the target chapter in `book.md` to identify the core craft principles.
+2. **Round 1 (Brainstorming):** Draft 2 distinct genre-focused premises (mixing Sci-Fi, Fantasy, Romance, or Thrillers).
+3. **Round 2 (Refinement):** Polish the chosen premise's 3-panel structure, visual punchlines, and character dialogue for maximum comedic effect before generating.
 
 ### Step 2: Craft Image Generation Prompt & Generate
-1. Once the user approves a premise, construct a detailed text prompt for `generate_image`:
+1. Construct a detailed text prompt for `generate_image`:
    - Layout: Full-color horizontal 3-panel comic strip (Left, Middle, Right).
    - Reference Image: Always include `Gemini_Generated_Image_s3r1los3r1los3r1.png` in `ImagePaths` to maintain visual consistency for Professor Jennifer.
-   - Describe each panel's setting, character poses, romantic trope visuals (glowing eyes, dramatic blushes, sound effect text), and exact speech bubble dialogue.
-2. Call `generate_image` with a descriptive `ImageName` (e.g. `chapter1_music_of_prose_comic`).
+   - Describe each panel's genre setting (starship bridge, wizard tower, noir interrogation room, romance ballroom), character poses, sound effects, and exact speech bubble dialogue.
+2. Call `generate_image` with a descriptive `ImageName` (e.g. `chapter9_trusting_reader_comic`).
 
 ### Step 3: Save Image Asset to Repository
 1. Copy the generated artifact image from the brain directory to the repository's local `images/` directory.
-2. Naming convention: `images/chapter[N]_[topic]_comic.png` (e.g., `images/chapter1_music_of_prose_comic.png`).
+2. Naming convention: `images/chapter[N]_[topic]_comic.png` (e.g., `images/chapter9_trusting_reader_comic.png`).
 
 ### Step 4: Embed into `book.md`
-1. Locate the `IMAGE_HERE` placeholder in the target chapter (or place immediately following the chapter's introductory paragraph).
-2. Replace `IMAGE_HERE` with the standard markdown image tag:
+1. Locate the chapter introduction paragraph in `book.md`.
+2. Insert the standard markdown image tag immediately under the intro paragraph:
    ```markdown
    ![Chapter [N] Comic: [Title]](images/chapter[N]_[topic]_comic.png)
    ```

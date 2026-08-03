@@ -1,6 +1,6 @@
 ---
 name: generate_part_image
-description: Generates a witty, full-color 3-panel overarching comic or illustrative image for a major book Part (e.g., Part I: Sentence Craft) encompassing all principles across its chapters, loosely themed around silly SFW romance novel tropes with mild comedic tension between Professor Jennifer and Jacob, saves it to the images/ directory, and embeds it into book.md.
+description: Generates a witty, full-color 3-panel overarching comic or illustrative image for a major book Part (e.g., Part I: Sentence Craft) encompassing all principles across its chapters, intermixing Sci-Fi, Fantasy, Thriller, and Romance tropes with mild comedic tension, saves it to the images/ directory, and embeds it into book.md.
 ---
 
 # Part Image & Comic Generation Skill
@@ -13,21 +13,18 @@ Use this skill when tasked with inventing, generating, and embedding overarching
 
 Unlike a chapter comic which focuses on a single chapter's principles, a **Part Comic** synthesizes the overarching theme and all key craft concepts taught across **all chapters within that Part**.
 
-- **Part I (Sentence Craft):** Synthesizes Sentence Music (Ch 1), Strong Verbs (Ch 2), and Economy of Language (Ch 3).
-- **Part II (Scene & Character):** Synthesizes Dialogue, Subtext, Character Wants/Needs, and Scene Dynamics.
-- **Part III (Story & Structure):** Synthesizes Outlining, Beat Sheets, Pacing, and Series Architecture.
-
 ---
 
-## Comic Theme & Tone Guidance: Silly SFW Romance Tropes
+## Comic Theme & Genre Guidance: Intermixing Sci-Fi, Fantasy, Romance, & Thrillers
 
 - **Tone:** Lighthearted, witty, comedic, and strictly **safe-for-work (SFW)**.
-- **Character Dynamic:** All Part comics should lean loosely into silly, melodramatic **romance novel tropes** featuring a **very mild, PG-rated, humorous tension** between Professor Jennifer (the sharp, analytical robot professor) and Jacob (the earnest 35-year-old student).
-- **Trope Examples to Weave into Part Synthesis:**
-  - Dramatic cover-art-style poses over glowing manuscripts or giant sentence blueprints.
-  - Accidental hand-touches on a single pen while co-authoring a scene.
-  - Jennifer analyzing Jacob's emotional romantic dialogue with cold robotic metrics while Jacob tries to play it cool.
-  - Over-the-top romance genre melodrama used as the ongoing story element being edited across the Part.
+- **Genre Variety:** Intermix a diverse blend of fiction genres across Parts—including **Science Fiction, High Fantasy, Cyberpunk, Mystery Thriller, and Romance**.
+- **Character Dynamic:** All Part comics feature Professor Jennifer (the sharp, analytical robot professor) and Jacob (the earnest 35-year-old student) engaging in epic, multi-genre writing challenges.
+- **Genre Scenario Examples:**
+  - **Fantasy:** Designing a magic system story bible, fighting wordy monsters with legendary swords.
+  - **Sci-Fi / Cyberpunk:** Quantum warp navigation using 3-act beats, cybernetic mind-sync prompt engineering.
+  - **Romance:** Over-dramatic weightlifting or blueprint planning with subtle academic chemistry.
+  - **Mystery / Thriller:** Uncovering plot twists and evidence boards across multi-book series continuity.
 
 ---
 
@@ -41,17 +38,16 @@ Unlike a chapter comic which focuses on a single chapter's principles, a **Part 
 
 ## Step-by-Step Workflow
 
-### Step 1: Analyze the Part & Pitch Premises
+### Step 1: 2-Round Ideation & Premise Refinement
 1. Review the title and all chapters included within the target Part in `book.md`.
-2. Identify 3 distinct overarching craft themes (e.g., for Part I: rhythm, verb engine, wordiness trim).
-3. Brainstorm 3 distinct, witty comic concepts that synthesize all chapters in the Part while blending in silly SFW romance tropes and mild comedic tension between Jennifer and Jacob.
-4. Present the 3 premises clearly to the user with panel-by-panel breakdowns, visual gags, and character dialogue. **Do not generate images until the user selects or approves a premise.**
+2. **Round 1 (Brainstorming):** Draft 2 distinct genre-focused premises (mixing Sci-Fi, Fantasy, Romance, or Thrillers).
+3. **Round 2 (Refinement):** Polish the chosen premise's 3-panel structure, visual punchlines, and character dialogue for maximum comedic effect before generating.
 
 ### Step 2: Craft Image Generation Prompt & Generate
-1. Once the user selects a premise, construct a detailed text prompt for `generate_image`:
+1. Construct a detailed text prompt for `generate_image`:
    - Layout: Full-color horizontal 3-panel comic strip (Left, Middle, Right).
    - Reference Image: Always pass `Gemini_Generated_Image_s3r1los3r1los3r1.png` in `ImagePaths` to maintain visual consistency for Professor Jennifer.
-   - Describe each panel's setting, character poses, romantic trope visuals (dramatic lighting, blushes, sound effect text), and exact speech bubble dialogue.
+   - Describe each panel's genre setting, character poses, sound effects, and exact speech bubble dialogue.
 2. Call `generate_image` with a descriptive `ImageName` (e.g. `part1_sentence_craft_comic`).
 
 ### Step 3: Save Image Asset to Repository
