@@ -2299,6 +2299,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 
 Generating world-building ideas is easy. Keeping them organized and accessible across a 100,000-word draft is where most authors stumble. Without a structured information architecture, authors lose track of character ages, village names, and magical rules, resulting in costly continuity errors. Organizing a Story Bible requires moving from raw brainstorming through five systematic steps to build an evolving, cross-referenced reference document.
 
+![Chapter 22 Comic: The Organization Process](images/chapter22_organization_process_comic.png)
+
 ### 1. Principles of Story Bible Organization
 
 #### Principle 1: Follow the Five-Step Story Bible Organization Workflow
@@ -2425,6 +2427,8 @@ This section explores the most enduring templates of storytelling. Each chapter 
 
 The Three-Act Structure is the backbone of nearly every commercially successful novel, film, and television drama. By dividing a narrative into Setup (Act I), Confrontation (Act II), and Resolution (Act III), this framework creates a natural rhythm of rising tension, dramatic reversals, and satisfying payoff. Mastering the Three-Act Structure requires anchoring your plot around five non-negotiable structural milestones: the Inciting Incident, Plot Point 1, Midpoint Reversal, All Is Lost moment, and Climax.
 
+![Chapter 23 Comic: The Three-Act Structure](images/chapter23_three_act_structure_comic.png)
+
 ### 1. Principles of Three-Act Structure
 
 #### Principle 1: Anchor Plot Architecture Across Five Structural Milestones
@@ -2529,6 +2533,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ## Chapter 24: The Hero's Journey
 
 Pioneered by Joseph Campbell and adapted for writers by Christopher Vogler, the Hero's Journey is a cyclical, cross-cultural mythic structure. Best suited for epic fantasy, sci-fi quests, and transformational adventure fiction, this framework tracks a protagonist as they depart their known world, undergo death-and-rebirth trials in an unfamiliar realm, and return home with a life-changing "Elixir" to heal their community.
+
+![Chapter 24 Comic: The Hero's Journey](images/chapter24_heros_journey_comic.png)
 
 ### 1. Principles of Mythic Structure
 
@@ -2637,6 +2643,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ## Chapter 25: Save the Cat!
 
 Popularized by Blake Snyder and adapted for novelists by Jessica Brody, *Save the Cat!* is a 15-beat structural beat sheet designed for fast-paced commercial fiction. By mapping narrative milestones onto precise percentage targets, this framework ensures narrative momentum never stalls and that the protagonist undergoes a clear, measurable transformation.
+
+![Chapter 25 Comic: Save the Cat!](images/chapter25_save_the_cat_comic.png)
 
 ### 1. Principles of Beat Sheet Pacing
 
