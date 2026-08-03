@@ -1869,6 +1869,8 @@ Before characters can speak, the reader needs to know how to build their psychol
 
 Compelling protagonists are not built from physical descriptions or special powers. They are built from wounds—specific, formative failures that leave a permanent mark on how they see the world. At the heart of every great character arc lies a "Ghost"—a past trauma or defining failure—that instills a fundamental "Lie"—a flawed misbelief about how the world works. Until the protagonist confronts their Ghost and unlearns the Lie, they will continue making self-destructive decisions.
 
+![Chapter 18 Comic: The Ghost and the Lie](images/chapter18_the_ghost_and_the_lie_comic.png)
+
 ### 1. Principles of Character Psychology
 
 #### Principle 1: Anchor the Character's Backstory Wound ("The Ghost")
@@ -1973,6 +1975,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ## Chapter 19: Wants vs. Needs
 
 A character arc lives in the gap between what a protagonist *thinks* they want and what they actually *need*—and the collision of those two forces drives every great climax. The "Want" is the tangible, external goal driving the plot (winning the promotion, capturing the murderer, surviving the voyage). The "Need" is the internal, psychological growth required to overcome their Lie (learning to trust, accepting vulnerability, sacrificing ego). The climax of a great novel occurs when the Want and Need collide, forcing the protagonist to choose between them.
+
+![Chapter 19 Comic: Wants vs. Needs](images/chapter19_wants_vs_needs_comic.png)
 
 ### 1. Principles of Character Motivation
 
@@ -2083,6 +2087,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 
 The weakest element in most first novels is the antagonist. Flat villains who commit evil acts for the sake of being evil feel cartoonish and unthreatening. A great antagonist believes they are the hero of their own story, acting out of a logical (if ruthlessly extreme) philosophy. Furthermore, the best antagonist is constructed as a dark mirror to the protagonist, specifically designed to exploit the protagonist's unique psychological Lie.
 
+![Chapter 20 Comic: Building the Antagonist](images/chapter20_building_antagonist_comic.png)
+
 ### 1. Principles of Antagonist Design
 
 #### Principle 1: Give the Antagonist a Righteous Motivation ("Hero of Their Own Story")
@@ -2180,6 +2186,8 @@ A centralized document containing all critical information to ensure consistency
 ## Chapter 21: Core Categories of World-Building
 
 World-building is more than drawing maps or inventing magic systems; it is the art of constructing a living, believable ecosystem. Incoherent world-building occurs when authors treat setting details as isolated trivia rather than interconnected systems. Establishing a Story Bible across five core pillars—Geography, History, Society, Systems & Rules, and Ecology & Science—ensures that every element of your fictional universe logically impacts the others.
+
+![Chapter 21 Comic: Core Categories of World-Building](images/chapter21_categories_world_building_comic.png)
 
 ### 1. Principles of World-Building Architecture
 
