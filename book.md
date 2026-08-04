@@ -2757,6 +2757,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 
 Developed by Dan Harmon as an 8-step distillation of Campbell's monomyth, the Story Circle is a versatile framework designed for character-driven episodic and serialized fiction. Particularly effective for episodic, serialized fiction, and micro-arcs within chapters, the Story Circle tracks a character as they venture across the boundary between the familiar world (order) and the unfamiliar world (chaos).
 
+![Chapter 26 Comic: The Story Circle](images/chapter26_story_circle_comic.png)
+
 ### 1. Principles of Episodic Structure
 
 #### Principle 1: Master the 8 Steps of the Story Circle
@@ -2880,6 +2882,8 @@ If the book's hook is writing with AI, we must teach the reader exactly how to c
 
 Communicating effectively with an AI model requires treating the AI as an expert assistant rather than a system capable of inferring what you mean from vague instructions. Vague prompts ("Write a cool sci-fi scene") produce generic, cliché-ridden prose. Masterful prompt engineering requires defining clear roles, precise task boundaries, explicit style parameters, and strict negative constraints (what *not* to do) to guide the AI toward high-level literary output.
 
+![Chapter 27 Comic: Prompt Engineering for Prose](images/chapter27_prompt_engineering_comic.png)
+
 ### 1. Principles of Prompt Engineering
 
 #### Principle 1: Construct Constraint-Based System Prompts (C.R.A.F.T. Architecture)
@@ -2986,6 +2990,8 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 
 Writer's block rarely occurs because an author lacks imagination; it happens because the author's internal editor shoots down ideas before they have a chance to develop. When a scene stalls or feels predictable, AI excels as a non-judgmental brainstorming partner. By separating the *Divergent Phase* (generating ten wild, unexpected narrative directions) from the *Convergent Phase* (selecting and polishing the best option), you can break through narrative dead-ends in minutes.
 
+![Chapter 28 Comic: Brainstorming and Unblocking](images/chapter28_brainstorming_unblocking_comic.png)
+
 ### 1. Principles of Divergent Brainstorming
 
 #### Principle 1: Execute a Divergent Ideation Phase Before Editing
@@ -3065,6 +3071,8 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ## Chapter 29: The Story Bible Assistant
 
 As a manuscript grows beyond fifty thousand words, human memory inevitably leaks. Eye colors change between chapters, travel times violate geographic logic, and magic or technology systems violate their own established rules. By ingesting your Story Bible into an AI context window, you transform the AI into a dedicated continuity editor capable of auditing new chapters for lore contradictions and plot holes before you publish.
+
+![Chapter 29 Comic: The Story Bible Assistant](images/chapter29_story_bible_assistant_comic.png)
 
 ### 1. Principles of AI Continuity Auditing
 
@@ -3162,6 +3170,8 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 
 While traditional word processors (like Microsoft Word or Google Docs) are designed for short-form documents rather than sprawling, cross-referenced manuscripts, full-length novel projects thrive in developer-grade text editing environments. Visual Studio Code (VS Code) combined with Markdown formatting and AI pair-assistants (such as Claude Code, Google Antigravity, and GitHub Copilot) provides authors with professional version control, lightning-fast file management, and embedded AI inline editing directly inside the manuscript workspace.
 
+![Chapter 30 Comic: Advanced Workspaces (VS Code & AI)](images/chapter30_advanced_workspaces_comic.png)
+
 ### 1. Principles of Workspace Architecture
 
 #### Principle 1: Structure a Modular Markdown File Architecture
@@ -3254,6 +3264,8 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 
 AI is a powerful co-pilot, but it cannot replace human authorship. Under US Copyright Law and international intellectual property frameworks, pure AI-generated text cannot be copyrighted—meaning that if you rely on an LLM to generate raw manuscript prose without substantial human selection, revision, and arrangement, you risk losing legal ownership of your book. Navigating ethical and legal boundaries requires using AI for structural editing, ideation, and prose polishing while preserving your unique human voice as the primary author.
 
+![Chapter 31 Comic: Ethical and Legal Boundaries](images/chapter31_ethical_legal_boundaries_comic.png)
+
 ### 1. Principles of AI Ethics and Copyright
 
 #### Principle 1: Maintain Copyright Ownership Through Human Creative Expression
@@ -3333,6 +3345,8 @@ A brief concluding module on the business and reality of finishing a manuscript 
 ## Chapter 32: The Feedback Loop
 
 Finishing a draft is only half the battle; true revision begins when real readers react to your prose. Managing beta reader feedback can be overwhelming, especially when readers offer contradictory suggestions about how to fix the same problem. Using AI to synthesize multiple beta reader reports allows you to strip away subjective reader solutions and identify the underlying patterns of agreement regarding pacing, character sympathy, and plot clarity.
+
+![Chapter 32 Comic: The Feedback Loop](images/chapter32_feedback_loop_comic.png)
 
 ### 1. Principles of Feedback Synthesis
 
@@ -3419,6 +3433,8 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 
 Finishing a manuscript brings you to a decision that will shape your entire publishing career: how will your novel reach readers? There is no single "correct" publishing route. The modern landscape offers three distinct avenues—Traditional Publishing, Independent (Self) Publishing, and Hybrid Publishing. Choosing the right path requires evaluating your genre, timeline, technical skills, financial resources, and long-term career goals.
 
+![Chapter 33 Comic: The Publishing Paths](images/chapter33_publishing_paths_comic.png)
+
 ### 1. Principles of Publishing Strategy
 
 #### Principle 1: Compare Trade-offs Between Traditional and Independent Publishing
@@ -3491,6 +3507,8 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 ## Chapter 34: The Mechanics of Self-Publishing
 
 The final phase of your writing journey is transforming your finished manuscript into a professional digital and print product available on storefronts worldwide. Self-publishing is not merely uploading a file. It requires navigating platform ecosystems (Amazon KDP, Barnes & Noble Press, Apple Books, Draft2Digital), mastering technical metadata (ISBNs, BISAC categories, keywords), and crafting compelling retail copy that converts browsers into buyers.
+
+![Chapter 34 Comic: The Mechanics of Self-Publishing](images/chapter34_mechanics_self_publishing_comic.png)
 
 ### 1. Principles of Self-Publishing Execution
 
