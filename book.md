@@ -4,6 +4,8 @@ Author: Jacob Beasley
 
 ![alt text](images/Gemini_Generated_Image_s3r1los3r1los3r1.png)
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Introduction: Your AI Writing Partner
 
 #### The Author's "Why"
@@ -34,16 +36,22 @@ This feedback loop is the engine of the book. The more cycles you complete, the 
 
 AI is a tool, but as with anything worth doing, all good things take work. Learning to be a good writer takes work. Finding your voice takes work. Writing a good novel will require more than a few prompts—it requires discipline, revision, and the willingness to sit with a sentence until it is right. This book will push you. That is what this book is for.
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 # Part I: Sentence Craft
 Before building a world, a writer must know how to build a sentence.
 
 ![Part I Comic: Sentence Craft](images/part1_sentence_craft_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ## Chapter 1: The Music of Prose
 
 Welcome to Chapter 1. Writers fixate on plot and character, but prose has a sound—a rhythm the reader's body feels before the mind processes. Before we build worlds, we must learn to hear the music of our sentences.
 
 ![Chapter 1 Comic: The Music of Prose](images/chapter1_music_of_prose_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Sentence Music
 
@@ -143,11 +151,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ```
 
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 2: Strong Verbs, Strong Sentences
 
 Verbs are the engine of fiction. While nouns define your story's objects and adjectives color its surfaces, verbs supply the raw forward momentum that pulls readers through the page.
 
 ![Chapter 2 Comic: Strong Verbs, Strong Sentences](images/chapter2_strong_verbs_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Verb Selection
 
@@ -246,11 +258,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 3: Economy of Language
 
 Every word in a novel must earn its place on the page. Writing with economy is not about stripping your prose of beauty or rhythm; it is about eliminating the dead weight that dulls your reader's attention.
 
 ![Chapter 3 Comic: Economy of Language](images/chapter3_economy_language_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Concise Prose
 
@@ -349,16 +365,22 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 # Part II: Paragraph Craft
 If sentences are the trees, the paragraph is the forest.
 
 ![Part II Comic: Paragraph Craft](images/part2_paragraph_craft_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ## Chapter 4: Anchoring with Concrete Specifics
 
 Abstract ideas drift above the page. Stories, by contrast, happen in the physical world—in the smell of a coat, the cold of a floor, the weight of an object in a character's hand. A paragraph earns its emotional charge only when you anchor it in the specific and the sensory.
 
 ![Chapter 4 Comic: Anchoring with Concrete Specifics](images/chapter4_concrete_specifics_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Sensory Grounding
 
@@ -457,11 +479,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 5: Making Sentences Flow Together
 
 Writing individual strong sentences is only half the battle. A great paragraph does not feel like a list of isolated facts; it flows like a single current—each sentence drawing the next forward.
 
 ![Chapter 5 Comic: Making Sentences Flow Together](images/chapter5_sentences_flow_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Paragraph Cohesion
 
@@ -560,11 +586,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 6: Opening Strong, Ending Stronger
 
 A paragraph is not just an arbitrary container for sentences; it is a mini-story with its own dramatic arc. To keep readers turning pages, every paragraph needs a strong opening hook that connects what just happened to what happens next, and a closing line that lingers.
 
 ![Chapter 6 Comic: Opening Strong, Ending Stronger](images/chapter6_opening_ending_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Paragraph Arcs
 
@@ -663,16 +693,22 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 # Part III: Self-Editing Your Fiction
 The editing phase is where you chip away the excess marble to reveal the final prose.
 
 ![Part III Comic: Self-Editing Your Fiction](images/part3_self_editing_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ## Chapter 7: Deepening the POV
 
 Immersive fiction is built on psychological proximity. When you place a camera lens between the reader and your viewpoint character—every filter word that tells the reader "the character perceived this" rather than delivering the perception directly creates a layer of glass between the reader and the scene. Removing these filter words drops the reader directly behind the character's eyes.
 
 ![Chapter 7 Comic: Deepening the POV](images/chapter7_deepening_pov_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Point-of-View Immersion
 
@@ -771,11 +807,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 8: Dialogue Formatting
 
 Dialogue is the raw voice of your characters. Formatting it properly ensures the reader stays immersed in the conversation without being yanked out by the scaffolding around the words.
 
 ![Chapter 8 Comic: Dialogue Formatting](images/chapter8_dialogue_formatting_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Dialogue Mechanics
 
@@ -874,11 +914,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 9: Trusting Your Reader
 
 Readers are active participants in fiction. They want to piece together a character's motives, emotions, and decisions from the evidence on the page. When an author over-explains a scene—spelling out why a character did something after already showing it—the story stalls and the reader feels lectured at. Crafting powerful prose requires practicing artistic restraint.
 
 ![Chapter 9 Comic: Trusting Your Reader](images/chapter9_trusting_reader_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Subtextual Restraint
 
@@ -977,11 +1021,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 10: Proportion and Pacing
 
 The real estate a moment occupies on the page signals its importance to the reader. If you spend three pages on a character making coffee and two sentences on a car crash, your novel is proportioned backwards. Mastering proportion means summarizing low-stakes transitions quickly while slowing down time to expand moments of high dramatic tension.
 
 ![Chapter 10 Comic: Proportion and Pacing](images/chapter10_proportion_pacing_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Narrative Pacing
 
@@ -1080,15 +1128,21 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 # Part IV: The Art of Verbal Action (Mastering Dialogue)
 
 ![Part IV Comic: Mastering Dialogue](images/part4_mastering_dialogue_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ## Chapter 11: Dialogue as Action
 
 Dialogue is not real speech; it is the illusion of speech distilled into narrative action. In compelling fiction, characters do not talk to exchange polite information—they speak to accomplish an objective. Every line of spoken dialogue must carry an underlying action verb: to attack, to soothe, to deflect, to interrogate, or to manipulate.
 
 ![Chapter 11 Comic: Dialogue as Action](images/chapter11_dialogue_as_action_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Tactical Dialogue
 
@@ -1190,11 +1244,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 12: The Power of Subtext
 
 Great dialogue is iceberg-shaped: 10% is spoken aloud on the surface (the text), while 90% lives unspoken beneath the surface (the subtext). In real life and high-level fiction, characters rarely declare their deepest desires, fears, or grievances outright. Instead, they talk around the truth, using proxies, deflections, and physical objects to express what they cannot say directly.
 
 ![Chapter 12 Comic: The Power of Subtext](images/chapter12_power_of_subtext_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Dialogue Subtext
 
@@ -1296,11 +1354,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 13: Avoiding the Exposition Trap
 
 Few things stall a story faster than dialogue used as a vehicle for backstory or world-building. Known in the writing community as the "As-You-Know-Bob" syndrome, this occurs when two characters explain information to each other that both of them already know purely for the reader's benefit. Masterful dialogue delivers essential lore only when driven by immediate conflict or urgent survival needs.
 
 ![Chapter 13 Comic: Avoiding the Exposition Trap](images/chapter13_exposition_trap_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Exposition Control
 
@@ -1399,11 +1461,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 14: Scene Beats and Value Shifts
 
 A scene is not merely a container for characters to converse; it is a structural unit of change. For a scene to matter to the reader, the emotional reality of the scene must shift from the beginning to the end. Structuring dialogue around action/reaction beats ensures that every conversation reaches a turning point where a clear value shift occurs—from hope to despair, trust to betrayal, or safety to danger.
 
 ![Chapter 14 Comic: Scene Beats and Value Shifts](images/chapter14_scene_value_shifts_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Scene Beats
 
@@ -1510,11 +1576,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another beat sheet" whenever I want to practice again with a new paragraph.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 15: Character Specificity and Voice
 
 One of the most consistent weaknesses in early manuscripts is what editors call "authorial homogeneity"—when every character speaks with the exact same vocabulary, sentence length, and tone, sounding like variations of the same person—the author, wearing different hats. Crafting distinct character voices requires tailoring each character's diction, syntax, and speech cadence to reflect their unique background, profession, age, and mindset.
 
 ![Chapter 15 Comic: Character Specificity and Voice](images/chapter15_character_voice_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Character Voice
 
@@ -1623,16 +1693,22 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another scenario" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 # Part V: Outlining and Scaling
 Moving from prose to plotting requires a macro-level mindset.
 
 ![Part V Comic: Outlining and Scaling](images/part5_outlining_scaling_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ## Chapter 16: The Principles of Outlining
 
 Plotting a full-length novel without an outline is an act of faith that rarely pays off. Outlining is not a cage—it is the safety net that lets you take creative risks freely, because you know the structure will catch you while solving macro-level structural problems before you invest months writing tens of thousands of prose words.
 
 ![Chapter 16 Comic: The Principles of Outlining](images/chapter16_principles_of_outlining_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Novel Outlining
 
@@ -1753,11 +1829,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another outline" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 17: Scaling the Idea
 
 Not every story idea fits neatly into a standard 80,000-word standalone novel. Some concepts are tight, hyper-focused character studies best suited for a novella; others are massive multi-generational epics that require a trilogy or ongoing series. Scaling means matching the size of your story to the size of its container—and knowing the difference before you write a single word.
 
 ![Chapter 17 Comic: Scaling the Idea](images/chapter17_scaling_the_idea_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Story Scaling
 
@@ -1860,16 +1940,22 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another premise" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 # Part VI: The Psychology of Character
 Before characters can speak, the reader needs to know how to build their psychological profiles.
 
 ![Part VI Comic: The Psychology of Character](images/part6_psychology_character_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ## Chapter 18: The Ghost and the Lie
 
 Compelling protagonists are not built from physical descriptions or special powers. They are built from wounds—specific, formative failures that leave a permanent mark on how they see the world. At the heart of every great character arc lies a "Ghost"—a past trauma or defining failure—that instills a fundamental "Lie"—a flawed misbelief about how the world works. Until the protagonist confronts their Ghost and unlearns the Lie, they will continue making self-destructive decisions.
 
 ![Chapter 18 Comic: The Ghost and the Lie](images/chapter18_the_ghost_and_the_lie_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Character Psychology
 
@@ -1972,11 +2058,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another character" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 19: Wants vs. Needs
 
 A character arc lives in the gap between what a protagonist *thinks* they want and what they actually *need*—and the collision of those two forces drives every great climax. The "Want" is the tangible, external goal driving the plot (winning the promotion, capturing the murderer, surviving the voyage). The "Need" is the internal, psychological growth required to overcome their Lie (learning to trust, accepting vulnerability, sacrificing ego). The climax of a great novel occurs when the Want and Need collide, forcing the protagonist to choose between them.
 
 ![Chapter 19 Comic: Wants vs. Needs](images/chapter19_wants_vs_needs_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Character Motivation
 
@@ -2083,11 +2173,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another scenario" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 20: Building the Antagonist
 
 The weakest element in most first novels is the antagonist. Flat villains who commit evil acts for the sake of being evil feel cartoonish and unthreatening. A great antagonist believes they are the hero of their own story, acting out of a logical (if ruthlessly extreme) philosophy. Furthermore, the best antagonist is constructed as a dark mirror to the protagonist, specifically designed to exploit the protagonist's unique psychological Lie.
 
 ![Chapter 20 Comic: Building the Antagonist](images/chapter20_building_antagonist_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Antagonist Design
 
@@ -2178,16 +2272,22 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another pairing" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 # Part VII: Building Your Story Bible
 A centralized document containing all critical information to ensure consistency in your fictional universe.
 
 ![Part VII Comic: Building Your Story Bible](images/part7_story_bible_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ## Chapter 21: Core Categories of World-Building
 
 World-building is more than drawing maps or inventing magic systems; it is the art of constructing a living, believable ecosystem. Incoherent world-building occurs when authors treat setting details as isolated trivia rather than interconnected systems. Establishing a Story Bible across five core pillars—Geography, History, Society, Systems & Rules, and Ecology & Science—ensures that every element of your fictional universe logically impacts the others.
 
 ![Chapter 21 Comic: Core Categories of World-Building](images/chapter21_categories_world_building_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of World-Building Architecture
 
@@ -2295,11 +2395,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another setting" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 22: The Organization Process
 
 Generating world-building ideas is easy. Keeping them organized and accessible across a 100,000-word draft is where most authors stumble. Without a structured information architecture, authors lose track of character ages, village names, and magical rules, resulting in costly continuity errors. Organizing a Story Bible requires moving from raw brainstorming through five systematic steps to build an evolving, cross-referenced reference document.
 
 ![Chapter 22 Comic: The Organization Process](images/chapter22_organization_process_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Story Bible Organization
 
@@ -2418,16 +2522,22 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another note dump" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 # Part VIII: Narrative Theories and Structures
 This section explores the most enduring templates of storytelling. Each chapter focuses on a single framework, teaching you when to use it and how to apply it to your own novel.
 
 ![Part VIII Comic: Narrative Theories and Structures](images/part8_narrative_theories_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ## Chapter 23: The Three-Act Structure
 
 The Three-Act Structure is the backbone of nearly every commercially successful novel, film, and television drama. By dividing a narrative into Setup (Act I), Confrontation (Act II), and Resolution (Act III), this framework creates a natural rhythm of rising tension, dramatic reversals, and satisfying payoff. Mastering the Three-Act Structure requires anchoring your plot around five non-negotiable structural milestones: the Inciting Incident, Plot Point 1, Midpoint Reversal, All Is Lost moment, and Climax.
 
 ![Chapter 23 Comic: The Three-Act Structure](images/chapter23_three_act_structure_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Three-Act Structure
 
@@ -2530,11 +2640,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another premise" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 24: The Hero's Journey
 
 Pioneered by Joseph Campbell and adapted for writers by Christopher Vogler, the Hero's Journey is a cyclical, cross-cultural mythic structure. Best suited for epic fantasy, sci-fi quests, and transformational adventure fiction, this framework tracks a protagonist as they depart their known world, undergo death-and-rebirth trials in an unfamiliar realm, and return home with a life-changing "Elixir" to heal their community.
 
 ![Chapter 24 Comic: The Hero's Journey](images/chapter24_heros_journey_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Mythic Structure
 
@@ -2640,11 +2754,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another quest" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 25: Save the Cat!
 
 Popularized by Blake Snyder and adapted for novelists by Jessica Brody, *Save the Cat!* is a 15-beat structural beat sheet designed for fast-paced commercial fiction. By mapping narrative milestones onto precise percentage targets, this framework ensures narrative momentum never stalls and that the protagonist undergoes a clear, measurable transformation.
 
 ![Chapter 25 Comic: Save the Cat!](images/chapter25_save_the_cat_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Beat Sheet Pacing
 
@@ -2753,11 +2871,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another premise" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 26: The Story Circle
 
 Developed by Dan Harmon as an 8-step distillation of Campbell's monomyth, the Story Circle is a versatile framework designed for character-driven episodic and serialized fiction. Particularly effective for episodic, serialized fiction, and micro-arcs within chapters, the Story Circle tracks a character as they venture across the boundary between the familiar world (order) and the unfamiliar world (chaos).
 
 ![Chapter 26 Comic: The Story Circle](images/chapter26_story_circle_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Episodic Structure
 
@@ -2873,16 +2995,22 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another episode" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 # Part IX: Mastering AI Collaboration
 If the book's hook is writing with AI, we must teach the reader exactly how to communicate with an entity like me.
 
 ![Part IX Comic: Mastering AI Collaboration](images/part9_ai_collaboration_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ## Chapter 27: Prompt Engineering for Prose
 
 Communicating effectively with an AI model requires treating the AI as an expert assistant rather than a system capable of inferring what you mean from vague instructions. Vague prompts ("Write a cool sci-fi scene") produce generic, cliché-ridden prose. Masterful prompt engineering requires defining clear roles, precise task boundaries, explicit style parameters, and strict negative constraints (what *not* to do) to guide the AI toward high-level literary output.
 
 ![Chapter 27 Comic: Prompt Engineering for Prose](images/chapter27_prompt_engineering_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Prompt Engineering
 
@@ -2986,11 +3114,15 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another evaluation" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 28: Brainstorming and Unblocking
 
 Writer's block rarely occurs because an author lacks imagination; it happens because the author's internal editor shoots down ideas before they have a chance to develop. When a scene stalls or feels predictable, AI excels as a non-judgmental brainstorming partner. By separating the *Divergent Phase* (generating ten wild, unexpected narrative directions) from the *Convergent Phase* (selecting and polishing the best option), you can break through narrative dead-ends in minutes.
 
 ![Chapter 28 Comic: Brainstorming and Unblocking](images/chapter28_brainstorming_unblocking_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Divergent Brainstorming
 
@@ -3068,11 +3200,15 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another stuck scene" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 29: The Story Bible Assistant
 
 As a manuscript grows beyond fifty thousand words, human memory inevitably leaks. Eye colors change between chapters, travel times violate geographic logic, and magic or technology systems violate their own established rules. By ingesting your Story Bible into an AI context window, you transform the AI into a dedicated continuity editor capable of auditing new chapters for lore contradictions and plot holes before you publish.
 
 ![Chapter 29 Comic: The Story Bible Assistant](images/chapter29_story_bible_assistant_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of AI Continuity Auditing
 
@@ -3166,11 +3302,15 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another audit challenge" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 30: Advanced Workspaces (VS Code & AI)
 
 While traditional word processors (like Microsoft Word or Google Docs) are designed for short-form documents rather than sprawling, cross-referenced manuscripts, full-length novel projects thrive in developer-grade text editing environments. Visual Studio Code (VS Code) combined with Markdown formatting and AI pair-assistants (such as Claude Code, Google Antigravity, and GitHub Copilot) provides authors with professional version control, lightning-fast file management, and embedded AI inline editing directly inside the manuscript workspace.
 
 ![Chapter 30 Comic: Advanced Workspaces (VS Code & AI)](images/chapter30_advanced_workspaces_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Workspace Architecture
 
@@ -3260,11 +3400,15 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another setup challenge" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 31: Ethical and Legal Boundaries
 
 AI is a powerful co-pilot, but it cannot replace human authorship. Under US Copyright Law and international intellectual property frameworks, pure AI-generated text cannot be copyrighted—meaning that if you rely on an LLM to generate raw manuscript prose without substantial human selection, revision, and arrangement, you risk losing legal ownership of your book. Navigating ethical and legal boundaries requires using AI for structural editing, ideation, and prose polishing while preserving your unique human voice as the primary author.
 
 ![Chapter 31 Comic: Ethical and Legal Boundaries](images/chapter31_ethical_legal_boundaries_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of AI Ethics and Copyright
 
@@ -3337,16 +3481,22 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another scenario" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 # Part X: The Final Polish and Publication (Beta Readers and Beyond)
 A brief concluding module on the business and reality of finishing a manuscript would give your readers a complete A-to-Z roadmap.
 
 ![Part X Comic: The Final Polish and Publication](images/part10_final_polish_publication_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ## Chapter 32: The Feedback Loop
 
 Finishing a draft is only half the battle; true revision begins when real readers react to your prose. Managing beta reader feedback can be overwhelming, especially when readers offer contradictory suggestions about how to fix the same problem. Using AI to synthesize multiple beta reader reports allows you to strip away subjective reader solutions and identify the underlying patterns of agreement regarding pacing, character sympathy, and plot clarity.
 
 ![Chapter 32 Comic: The Feedback Loop](images/chapter32_feedback_loop_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Feedback Synthesis
 
@@ -3429,11 +3579,15 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another critique set" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 33: The Publishing Paths
 
 Finishing a manuscript brings you to a decision that will shape your entire publishing career: how will your novel reach readers? There is no single "correct" publishing route. The modern landscape offers three distinct avenues—Traditional Publishing, Independent (Self) Publishing, and Hybrid Publishing. Choosing the right path requires evaluating your genre, timeline, technical skills, financial resources, and long-term career goals.
 
 ![Chapter 33 Comic: The Publishing Paths](images/chapter33_publishing_paths_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Publishing Strategy
 
@@ -3504,11 +3658,15 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another author profile" whenever I want to practice again with a new exercise.
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 34: The Mechanics of Self-Publishing
 
 The final phase of your writing journey is transforming your finished manuscript into a professional digital and print product available on storefronts worldwide. Self-publishing is not merely uploading a file. It requires navigating platform ecosystems (Amazon KDP, Barnes & Noble Press, Apple Books, Draft2Digital), mastering technical metadata (ISBNs, BISAC categories, keywords), and crafting compelling retail copy that converts browsers into buyers.
 
 ![Chapter 34 Comic: The Mechanics of Self-Publishing](images/chapter34_mechanics_self_publishing_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### 1. Principles of Self-Publishing Execution
 
@@ -3589,11 +3747,15 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I have officially completed the final exercise in the book!
 ```
 
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Chapter 35: Conclusion - The Writer's Journey Ahead
 
 Congratulations on reaching the finish line! You have journeyed from single sentences and character arcs all the way through full story structures, editing workflows, and self-publishing mechanics. But in creative writing—especially when partnering with evolving AI tools—the end of a manuscript is never truly the end. In fact, full disclosure: the author hasn't even finished writing this book at the time of its writing! Creation is an ongoing, living loop, and your voyage as an AI-empowered author is just beginning.
 
 ![Chapter 35 Comic: The Writer's Journey Ahead](images/chapter35_conclusion_comic.png)
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ### Principles of Continuous Growth
 
@@ -3606,3 +3768,6 @@ Perfectionism is the enemy of publication. Accepting that your draft—and indee
 #### Principle 3: Maintain Authorial Sovereignty in AI Partnerships
 AI is an incredible prose engine, research assistant, and structural sounding board, but the beating heart of your story remains uniquely yours. Never delegate your core artistic choices, emotional truth, or final editorial judgment to an algorithm. You are the author; the AI is your force multiplier.
 
+### Closing Words
+
+Anything that matters requires work. Writing a book is no exception. AI makes the work easier, but it is not a replacement for your own creativity. Enjoy the process. 
