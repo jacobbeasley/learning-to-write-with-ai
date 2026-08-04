@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://c1titlescreen01"]
+[gd_scene format=3 uid="uid://dqtd6vif2ddbk"]
 
-[ext_resource type="Script" path="res://src/ui/title_screen/title_screen.gd" id="1_ts"]
-[ext_resource type="PackedScene" path="res://src/ui/settings/settings_panel.tscn" id="2_sp"]
+[ext_resource type="Script" uid="uid://ds8me6ja6lgg2" path="res://src/ui/title_screen/title_screen.gd" id="1_ts"]
+[ext_resource type="PackedScene" uid="uid://smpqgl0q0etk" path="res://src/ui/settings/settings_panel.tscn" id="2_sp"]
 
-[node name="TitleScreen" type="Control"]
+[node name="TitleScreen" type="Control" unique_id=1501661046]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,80 +12,102 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ts")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="BackgroundTexture" type="TextureRect" parent="." unique_id=380995532]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.101961, 0.101961, 0.180392, 1)
+expand_mode = 1
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=166504023]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 64
+theme_override_constants/margin_bottom = 48
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1979597554]
 layout_mode = 2
-theme_override_constants/separation = 24
+
+[node name="LeftSpacer" type="Control" parent="MarginContainer/HBoxContainer" unique_id=1489413792]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.55
+
+[node name="RightMenuBox" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1652741341]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.45
+theme_override_constants/separation = 20
 alignment = 1
 
-[node name="HeaderBox" type="VBoxContainer" parent="CenterContainer/VBoxContainer"]
+[node name="HeaderBox" type="VBoxContainer" parent="MarginContainer/HBoxContainer/RightMenuBox" unique_id=856537942]
 layout_mode = 2
 alignment = 1
 
-[node name="TitleLabel" type="Label" parent="CenterContainer/VBoxContainer/HeaderBox"]
+[node name="TitleLabel" type="Label" parent="MarginContainer/HBoxContainer/RightMenuBox/HeaderBox" unique_id=657529607]
+visible = false
 layout_mode = 2
-theme_override_colors/font_color = Color(0.831373, 0.647059, 0.454902, 1)
-theme_override_font_sizes/font_size = 48
+theme_override_colors/font_color = Color(0.909804, 0.658824, 0.286275, 1)
+theme_override_font_sizes/font_size = 42
 text = "PROSE QUEST"
 horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="SubtitleLabel" type="Label" parent="CenterContainer/VBoxContainer/HeaderBox"]
+[node name="SubtitleLabel" type="Label" parent="MarginContainer/HBoxContainer/RightMenuBox/HeaderBox" unique_id=1031908161]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.909804, 0.862745, 0.784314, 1)
-theme_override_font_sizes/font_size = 18
-text = "Learning to Write Novels with AI: From Sentence to Series"
+theme_override_font_sizes/font_size = 14
+text = "Learning to Write Novels with AI:
+From Sentence to Series"
 horizontal_alignment = 1
-vertical_alignment = 1
+autowrap_mode = 2
 
-[node name="HSeparator" type="HSeparator" parent="CenterContainer/VBoxContainer"]
-custom_minimum_size = Vector2(400, 20)
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/HBoxContainer/RightMenuBox" unique_id=292838322]
+visible = false
+custom_minimum_size = Vector2(300, 16)
 layout_mode = 2
 
-[node name="ButtonBox" type="VBoxContainer" parent="CenterContainer/VBoxContainer"]
-custom_minimum_size = Vector2(280, 0)
+[node name="MenuTopSpacer" type="Control" parent="MarginContainer/HBoxContainer/RightMenuBox"]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+
+[node name="ButtonBox" type="VBoxContainer" parent="MarginContainer/HBoxContainer/RightMenuBox" unique_id=604872144]
+custom_minimum_size = Vector2(260, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 12
 
-[node name="StartButton" type="Button" parent="CenterContainer/VBoxContainer/ButtonBox"]
+[node name="StartButton" type="Button" parent="MarginContainer/HBoxContainer/RightMenuBox/ButtonBox" unique_id=443003364]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 48)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
-text = "START QUEST"
+text = "START QUEST ▶"
 
-[node name="SettingsButton" type="Button" parent="CenterContainer/VBoxContainer/ButtonBox"]
+[node name="SettingsButton" type="Button" parent="MarginContainer/HBoxContainer/RightMenuBox/ButtonBox" unique_id=269251371]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 theme_override_font_sizes/font_size = 16
 text = "SETTINGS"
 
-[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer/ButtonBox"]
+[node name="QuitButton" type="Button" parent="MarginContainer/HBoxContainer/RightMenuBox/ButtonBox" unique_id=965784433]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 theme_override_font_sizes/font_size = 16
 text = "QUIT"
 
-[node name="SettingsPanel" parent="." instance=ExtResource("2_sp")]
+[node name="SettingsPanel" parent="." unique_id=880323737 instance=ExtResource("2_sp")]
 unique_name_in_owner = true
 visible = false
 layout_mode = 1
