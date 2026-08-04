@@ -4,9 +4,11 @@
 
 An interactive workbook that teaches fiction writing craft from the ground up—using AI as your personal coach, editor, and creative partner.
 
-![alt text](Gemini_Generated_Image_s3r1los3r1los3r1.png)
+![Book Cover: Learning to Write Novels with AI](cover.png)
 
-[Read Book](book.md)
+![Book Cover: Learning to Write Novels with AI](images/Gemini_Generated_Image_s3r1los3r1los3r1.png)
+
+[Read Book](book.md) [Read Book](book.html) [Download DOCX](book.docx) [Download EPUB](book.epub)
 
 ## What Is This Book?
 
@@ -72,6 +74,8 @@ All three work. Pick whichever you prefer. Free tiers are sufficient for every e
 
 ```
 book.md              — The full book manuscript
+book.docx            — Exported Microsoft Word manuscript
+book.html            — Exported HTML web page
 README.md            — This file
 .agents/
   AGENTS.md          — Persona and structural rules for AI-assisted drafting
@@ -79,6 +83,33 @@ README.md            — This file
     write_chapter/
       SKILL.md       — Skill template for drafting new chapters
 ```
+
+## Exporting the Manuscript
+
+You can convert the Markdown manuscript ([book.md](book.md)) into E-Book (`.epub`), MS Word (`.docx`), or standalone HTML (`.html`) formats using **Pandoc**.
+
+### Prerequisites
+If Pandoc is not installed, install it via Windows Package Manager:
+```powershell
+winget install --id JohnMacFarlane.Pandoc -e
+```
+
+### Conversion Commands
+
+- **Convert to E-Book (`.epub`):**
+  ```powershell
+  pandoc book.md -o book.epub --metadata title="Learning to Write Novels with AI: From Sentence to Series" --metadata author="Jacob Beasley" --epub-cover-image=images/cover.png
+  ```
+
+- **Convert to MS Word (`.docx`):**
+  ```powershell
+  pandoc book.md -o book.docx
+  ```
+
+- **Convert to Standalone HTML (`.html`):**
+  ```powershell
+  pandoc book.md -o book.html --standalone
+  ```
 
 ## Contributing
 

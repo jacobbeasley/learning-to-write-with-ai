@@ -2,9 +2,14 @@
 
 Author: Jacob Beasley
 
-![alt text](images/Gemini_Generated_Image_s3r1los3r1los3r1.png)
+![Book Cover: Learning to Write Novels with AI](images/Gemini_Generated_Image_s3r1los3r1los3r1.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Introduction: Your AI Writing Partner
 
@@ -36,14 +41,24 @@ This feedback loop is the engine of the book. The more cycles you complete, the 
 
 AI is a tool, but as with anything worth doing, all good things take work. Learning to be a good writer takes work. Finding your voice takes work. Writing a good novel will require more than a few prompts—it requires discipline, revision, and the willingness to sit with a sentence until it is right. This book will push you. That is what this book is for.
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 # Part I: Sentence Craft
 Before building a world, a writer must know how to build a sentence.
 
 ![Part I Comic: Sentence Craft](images/part1_sentence_craft_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 1: The Music of Prose
 
@@ -51,7 +66,12 @@ Welcome to Chapter 1. Writers fixate on plot and character, but prose has a soun
 
 ![Chapter 1 Comic: The Music of Prose](images/chapter1_music_of_prose_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Sentence Music
 
@@ -109,7 +129,6 @@ Your ear catches problems your eye skips over entirely. Awkward consonant cluste
 **Corrected (Natural Breath Breaks):**
 > He sprinted across the cracked asphalt, sirens wailing behind him. The helicopter's spotlight swept the ground in wide, tightening arcs. The chain-link fence was close. He ran harder.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -123,7 +142,6 @@ Your ear catches problems your eye skips over entirely. Awkward consonant cluste
 5. Work with your AI coach to refine the prose until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another paragraph"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -151,7 +169,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 ```
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 2: Strong Verbs, Strong Sentences
 
@@ -159,7 +182,12 @@ Verbs are the engine of fiction. While nouns define your story's objects and adj
 
 ![Chapter 2 Comic: Strong Verbs, Strong Sentences](images/chapter2_strong_verbs_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Verb Selection
 
@@ -217,7 +245,6 @@ Relying on state-of-being verbs—such as *is*, *was*, *were*, *been*, and *bein
 **Corrected (Active Motion):**
 > Elena sat at her desk and stared at the unread letter resting before her.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -231,7 +258,6 @@ Relying on state-of-being verbs—such as *is*, *was*, *were*, *been*, and *bein
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another paragraph"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -258,7 +284,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 3: Economy of Language
 
@@ -266,7 +297,12 @@ Every word in a novel must earn its place on the page. Writing with economy is n
 
 ![Chapter 3 Comic: Economy of Language](images/chapter3_economy_language_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Concise Prose
 
@@ -324,7 +360,6 @@ Crutch words (such as *very*, *really*, *somewhat*, *just*, *actually*, *began t
 **Corrected (Direct Action):**
 > Sarah hesitated to open the heavy envelope.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -338,7 +373,6 @@ Crutch words (such as *very*, *really*, *somewhat*, *just*, *actually*, *began t
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another paragraph"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -365,14 +399,24 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 # Part II: Paragraph Craft
 If sentences are the trees, the paragraph is the forest.
 
 ![Part II Comic: Paragraph Craft](images/part2_paragraph_craft_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 4: Anchoring with Concrete Specifics
 
@@ -380,7 +424,12 @@ Abstract ideas drift above the page. Stories, by contrast, happen in the physica
 
 ![Chapter 4 Comic: Anchoring with Concrete Specifics](images/chapter4_concrete_specifics_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Sensory Grounding
 
@@ -438,7 +487,6 @@ Generic nouns (such as *vehicle*, *food*, *weapon*, or *building*) invite vague 
 **Corrected (Concrete Specifics):**
 > She carried a sweating glass of gin and tonic onto the patio, staring down at the trampled hydrangeas.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -452,7 +500,6 @@ Generic nouns (such as *vehicle*, *food*, *weapon*, or *building*) invite vague 
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another paragraph"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -479,7 +526,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 5: Making Sentences Flow Together
 
@@ -487,7 +539,12 @@ Writing individual strong sentences is only half the battle. A great paragraph d
 
 ![Chapter 5 Comic: Making Sentences Flow Together](images/chapter5_sentences_flow_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Paragraph Cohesion
 
@@ -545,7 +602,6 @@ Without explicit spatial cues or logical connectors, sentences jar against one a
 **Corrected (Clear Temporal Markers):**
 > Elena submitted the audit report at noon. By one o'clock, her manager had called an emergency meeting, sending a wave of panic across the floor.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -559,7 +615,6 @@ Without explicit spatial cues or logical connectors, sentences jar against one a
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another paragraph"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -586,7 +641,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 6: Opening Strong, Ending Stronger
 
@@ -594,7 +654,12 @@ A paragraph is not just an arbitrary container for sentences; it is a mini-story
 
 ![Chapter 6 Comic: Opening Strong, Ending Stronger](images/chapter6_opening_ending_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Paragraph Arcs
 
@@ -652,7 +717,6 @@ The final sentence of a paragraph lingers longest in the reader's mind. Ending o
 **Corrected (Resonant Ringing Sentence):**
 > Kael killed the feed, leaving the room illuminated only by the burning skyline outside his window.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -666,7 +730,6 @@ The final sentence of a paragraph lingers longest in the reader's mind. Ending o
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another paragraph"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -693,14 +756,24 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 # Part III: Self-Editing Your Fiction
 The editing phase is where you chip away the excess marble to reveal the final prose.
 
 ![Part III Comic: Self-Editing Your Fiction](images/part3_self_editing_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 7: Deepening the POV
 
@@ -708,7 +781,12 @@ Immersive fiction is built on psychological proximity. When you place a camera l
 
 ![Chapter 7 Comic: Deepening the POV](images/chapter7_deepening_pov_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Point-of-View Immersion
 
@@ -766,7 +844,6 @@ Beginning writers often report a character's thoughts from a distance, as if sum
 **Corrected (Deep POV Fusion):**
 > The estate's iron gates loomed three stories overhead, casting long shadows across the carriage. She adjusted her gloves, her hands trembling inside the lace.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -780,7 +857,6 @@ Beginning writers often report a character's thoughts from a distance, as if sum
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another paragraph"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -807,7 +883,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 8: Dialogue Formatting
 
@@ -815,7 +896,12 @@ Dialogue is the raw voice of your characters. Formatting it properly ensures the
 
 ![Chapter 8 Comic: Dialogue Formatting](images/chapter8_dialogue_formatting_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Dialogue Mechanics
 
@@ -833,7 +919,7 @@ Beginning writers often fear repeating "said" or "asked," resorting to elaborate
 ##### Example 2: Romantic Confrontation
 
 **Original (Elaborate Dialogue Tags):**
-> "You never listen to a word I say," Sarah hissed angrily. "That is completely untrue!" Julian ejaculated passionately.
+> "You never listen to a word I say," Sarah hissed angrily. "That is completely untrue!" Julian bellowed passionately.
 
 **Corrected (Invisible Dialogue Tags):**
 > "You never listen to a word I say," Sarah said. "That is completely untrue," Julian said.
@@ -873,7 +959,6 @@ Action beats—short physical descriptions embedded within or alongside a charac
 **Corrected (Action Beats as Speaker Identifiers):**
 > Dr. Aris tapped his fountain pen against the open manuscript. "Your thesis ignores the primary sources." Professor Lee leaned back, lacing his fingers behind his head. "The primary sources are corrupted."
 
----
 
 ### 2. Interactive AI Activity
 
@@ -887,7 +972,6 @@ Action beats—short physical descriptions embedded within or alongside a charac
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another paragraph"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -914,7 +998,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 9: Trusting Your Reader
 
@@ -922,7 +1011,12 @@ Readers are active participants in fiction. They want to piece together a charac
 
 ![Chapter 9 Comic: Trusting Your Reader](images/chapter9_trusting_reader_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Subtextual Restraint
 
@@ -980,7 +1074,6 @@ When a character experiences an intense emotional shift, inexperienced writers t
 **Corrected (Subtextual Restraint):**
 > Clara set the ring back inside its velvet box and closed the lid with a quiet snap.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -994,7 +1087,6 @@ When a character experiences an intense emotional shift, inexperienced writers t
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another paragraph"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -1021,7 +1113,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 10: Proportion and Pacing
 
@@ -1029,7 +1126,12 @@ The real estate a moment occupies on the page signals its importance to the read
 
 ![Chapter 10 Comic: Proportion and Pacing](images/chapter10_proportion_pacing_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Narrative Pacing
 
@@ -1087,7 +1189,6 @@ Fear distorts time. Ten seconds of genuine terror stretches into a subjective et
 **Corrected (Stretched Subjective Time):**
 > Engine two died with a metallic shudder that vibrated through Thorne’s teeth. The horizon tilted forty degrees left. He gripped the control yoke with both hands, his knuckles turning white as he wrestled the aircraft back toward the centerline.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -1101,7 +1202,6 @@ Fear distorts time. Ten seconds of genuine terror stretches into a subjective et
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another paragraph"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -1128,13 +1228,23 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 # Part IV: The Art of Verbal Action (Mastering Dialogue)
 
 ![Part IV Comic: Mastering Dialogue](images/part4_mastering_dialogue_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 11: Dialogue as Action
 
@@ -1142,7 +1252,12 @@ Dialogue is not real speech; it is the illusion of speech distilled into narrati
 
 ![Chapter 11 Comic: Dialogue as Action](images/chapter11_dialogue_as_action_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Tactical Dialogue
 
@@ -1203,7 +1318,6 @@ In real life, human interactions begin with greetings, weather observations, and
 **Corrected (In Media Res Action):**
 > "Sub-light engines are at fifty percent capacity, Captain. If we hit the wormhole now, the core will rupture."
 
----
 
 ### 2. Interactive AI Activity
 
@@ -1217,7 +1331,6 @@ In real life, human interactions begin with greetings, weather observations, and
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another paragraph"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -1244,7 +1357,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 12: The Power of Subtext
 
@@ -1252,7 +1370,12 @@ Great dialogue is iceberg-shaped: 10% is spoken aloud on the surface (the text),
 
 ![Chapter 12 Comic: The Power of Subtext](images/chapter12_power_of_subtext_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Dialogue Subtext
 
@@ -1313,7 +1436,6 @@ Subtext relies heavily on the physical environment. How a character interacts wi
 **Corrected (Environmental Prop Mirroring):**
 > Clara reached for the salt shaker, her fingers brushing Julian's hand for a fraction of a second before she pulled back and dusted the tablecloth.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -1327,7 +1449,6 @@ Subtext relies heavily on the physical environment. How a character interacts wi
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another paragraph"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -1354,7 +1475,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 13: Avoiding the Exposition Trap
 
@@ -1362,7 +1488,12 @@ Few things stall a story faster than dialogue used as a vehicle for backstory or
 
 ![Chapter 13 Comic: Avoiding the Exposition Trap](images/chapter13_exposition_trap_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Exposition Control
 
@@ -1420,7 +1551,6 @@ Instead of pausing a scene to explain a historical rule or technical detail, emb
 **Corrected (Weaponized Conflict Delivery):**
 > "Swipe your keycard when I swipe mine! We have two seconds to sync the biometrics before the ice-wall fries both our decks!"
 
----
 
 ### 2. Interactive AI Activity
 
@@ -1434,7 +1564,6 @@ Instead of pausing a scene to explain a historical rule or technical detail, emb
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another paragraph"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -1461,7 +1590,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another paragraph" whenever I want to practice again with a new paragraph.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 14: Scene Beats and Value Shifts
 
@@ -1469,7 +1603,12 @@ A scene is not merely a container for characters to converse; it is a structural
 
 ![Chapter 14 Comic: Scene Beats and Value Shifts](images/chapter14_scene_value_shifts_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Scene Beats
 
@@ -1535,7 +1674,6 @@ Every scene must begin with an initial emotional charge (e.g., + Hopeful) and en
 > Captain Thorne spat blood onto the general's boots, refusing to speak. (- Defiant)
 > The general turned on the live monitor feed, showing Thorne's daughter sitting in the waiting room outside. (- Defeated) Thorne's shoulders slumped. "Give me the keypad."
 
----
 
 ### 2. Interactive AI Activity
 
@@ -1549,7 +1687,6 @@ Every scene must begin with an initial emotional charge (e.g., + Hopeful) and en
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another beat sheet"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -1576,7 +1713,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another beat sheet" whenever I want to practice again with a new paragraph.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 15: Character Specificity and Voice
 
@@ -1584,7 +1726,12 @@ One of the most consistent weaknesses in early manuscripts is what editors call 
 
 ![Chapter 15 Comic: Character Specificity and Voice](images/chapter15_character_voice_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Character Voice
 
@@ -1654,7 +1801,6 @@ Voice is not just what characters say, but the tempo at which they say it. Some 
 > **Pilot:** "Shields red! Hull breach in sector four! What do I do?!"
 > **AI:** "Re-routing auxiliary power. Vector optimal. Execute burn."
 
----
 
 ### 2. Interactive AI Activity
 
@@ -1668,7 +1814,6 @@ Voice is not just what characters say, but the tempo at which they say it. Some 
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another scenario"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -1693,14 +1838,24 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another scenario" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 # Part V: Outlining and Scaling
 Moving from prose to plotting requires a macro-level mindset.
 
 ![Part V Comic: Outlining and Scaling](images/part5_outlining_scaling_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 16: The Principles of Outlining
 
@@ -1708,7 +1863,12 @@ Plotting a full-length novel without an outline is an act of faith that rarely p
 
 ![Chapter 16 Comic: The Principles of Outlining](images/chapter16_principles_of_outlining_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Novel Outlining
 
@@ -1787,7 +1947,6 @@ Every weak outline suffers from one of three common structural flaws: a "sagging
 > Act II: Clara uncovers the heirloom in an ancient vault.
 > Act III: Clara uses the heirloom as leverage to trap her brother's loan shark in a sting operation, clearing his debt before selling the piece to fund their fresh start in Paris.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -1801,7 +1960,6 @@ Every weak outline suffers from one of three common structural flaws: a "sagging
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another outline"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -1829,7 +1987,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another outline" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 17: Scaling the Idea
 
@@ -1837,7 +2000,12 @@ Not every story idea fits neatly into a standard 80,000-word standalone novel. S
 
 ![Chapter 17 Comic: Scaling the Idea](images/chapter17_scaling_the_idea_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Story Scaling
 
@@ -1901,7 +2069,6 @@ If you are writing series fiction, every individual installment must deliver a s
 > **Book One Arc (Self-Contained):** Detective Hayes identifies and captures the rogue vampire who murdered the mayor, solving the immediate case.
 > **Series Thread (Overarching):** The captured vampire reveals that he was hired by the City Council president, setting up the political conspiracy for Book Two.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -1915,7 +2082,6 @@ If you are writing series fiction, every individual installment must deliver a s
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another premise"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -1940,14 +2106,24 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another premise" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 # Part VI: The Psychology of Character
 Before characters can speak, the reader needs to know how to build their psychological profiles.
 
 ![Part VI Comic: The Psychology of Character](images/part6_psychology_character_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 18: The Ghost and the Lie
 
@@ -1955,7 +2131,12 @@ Compelling protagonists are not built from physical descriptions or special powe
 
 ![Chapter 18 Comic: The Ghost and the Lie](images/chapter18_the_ghost_and_the_lie_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Character Psychology
 
@@ -2019,7 +2200,6 @@ The Lie is the false philosophy the protagonist adopts to avoid being hurt by th
 > **The Lie:** "Emotional intimacy is a trap; true safety lies in absolute financial and social independence."
 > **Flawed Decision:** Clara rejects a genuine suitor's proposal and secretly buys shares in a smuggling syndicate, risking imprisonment to secure her own wealth.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -2033,7 +2213,6 @@ The Lie is the false philosophy the protagonist adopts to avoid being hurt by th
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another character"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -2058,7 +2237,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another character" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 19: Wants vs. Needs
 
@@ -2066,7 +2250,12 @@ A character arc lives in the gap between what a protagonist *thinks* they want a
 
 ![Chapter 19 Comic: Wants vs. Needs](images/chapter19_wants_vs_needs_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Character Motivation
 
@@ -2133,7 +2322,6 @@ The Need is the psychological truth the protagonist resists acknowledging. The r
 > **Inner Need:** Unlearn his cynical detachment and protect innocent lives, even when there is no financial profit.
 > **The Climax Collision:** Kael must choose between handing the bounty over to the cartel (fulfilling his Want) or helping the target escape to protect a refugee colony (fulfilling his Need).
 
----
 
 ### 2. Interactive AI Activity
 
@@ -2147,7 +2335,6 @@ The Need is the psychological truth the protagonist resists acknowledging. The r
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another scenario"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -2173,7 +2360,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another scenario" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 20: Building the Antagonist
 
@@ -2181,7 +2373,12 @@ The weakest element in most first novels is the antagonist. Flat villains who co
 
 ![Chapter 20 Comic: Building the Antagonist](images/chapter20_building_antagonist_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Antagonist Design
 
@@ -2233,7 +2430,6 @@ The antagonist should embody the extreme, unredeemed version of the protagonist'
 > **Original (Generic Antagonist):** A terrifying ghost living in the basement.
 > **Corrected (Dark Mirror Antagonist):** An immortal aristocrat who sacrifices one servant every decade to maintain the estate's magical warmth and protection from the outer wilderness.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -2247,7 +2443,6 @@ The antagonist should embody the extreme, unredeemed version of the protagonist'
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another pairing"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -2272,14 +2467,24 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another pairing" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 # Part VII: Building Your Story Bible
 A centralized document containing all critical information to ensure consistency in your fictional universe.
 
 ![Part VII Comic: Building Your Story Bible](images/part7_story_bible_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 21: Core Categories of World-Building
 
@@ -2287,7 +2492,12 @@ World-building is more than drawing maps or inventing magic systems; it is the a
 
 ![Chapter 21 Comic: Core Categories of World-Building](images/chapter21_categories_world_building_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of World-Building Architecture
 
@@ -2356,7 +2566,6 @@ World-building feels alive when a shift in one pillar cascades logically through
 **Corrected (Interconnected Chain):**
 > Because the island's iron-bark pine trees are resistant to shipworms (**Ecology**), naval shipyards produce indestructible war galleys (**Systems**). This timber dominance allowed the islanders to win the Thirty Years' Blockade (**History**), making sea-captains the highest-ranking aristocrats in parliament (**Society**).
 
----
 
 ### 2. Interactive AI Activity
 
@@ -2370,7 +2579,6 @@ World-building feels alive when a shift in one pillar cascades logically through
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another setting"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -2395,7 +2603,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another setting" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 22: The Organization Process
 
@@ -2403,7 +2616,12 @@ Generating world-building ideas is easy. Keeping them organized and accessible a
 
 ![Chapter 22 Comic: The Organization Process](images/chapter22_organization_process_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Story Bible Organization
 
@@ -2483,7 +2701,6 @@ A Story Bible must function like a private Wikipedia for your manuscript. Use st
 > - **Habitat Origin:** [Northern Forest](file://story_bible/geography/northern_forest.md) (`#geography/forest`)
 > - **Material Properties:** Impervious to conventional combustion; harvesting requires [Enchanted Adzes](file://story_bible/tools/enchanted_adze.md) (`#item/tool`).
 
----
 
 ### 2. Interactive AI Activity
 
@@ -2497,7 +2714,6 @@ A Story Bible must function like a private Wikipedia for your manuscript. Use st
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another note dump"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -2522,14 +2738,24 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another note dump" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 # Part VIII: Narrative Theories and Structures
 This section explores the most enduring templates of storytelling. Each chapter focuses on a single framework, teaching you when to use it and how to apply it to your own novel.
 
 ![Part VIII Comic: Narrative Theories and Structures](images/part8_narrative_theories_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 23: The Three-Act Structure
 
@@ -2537,7 +2763,12 @@ The Three-Act Structure is the backbone of nearly every commercially successful 
 
 ![Chapter 23 Comic: The Three-Act Structure](images/chapter23_three_act_structure_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Three-Act Structure
 
@@ -2601,7 +2832,6 @@ A common structural failure occurs when Act I drags on for half the book, or Act
 > **Act II (Pages 51–150 / 50%):** Rising conflict, Midpoint Reversal at Page 100, All Is Lost at Page 150.
 > **Act III (Pages 151–200 / 25%):** Climax at Page 175, new equilibrium resolved by Page 200.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -2615,7 +2845,6 @@ A common structural failure occurs when Act I drags on for half the book, or Act
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another premise"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -2640,7 +2869,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another premise" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 24: The Hero's Journey
 
@@ -2648,7 +2882,12 @@ Pioneered by Joseph Campbell and adapted for writers by Christopher Vogler, the 
 
 ![Chapter 24 Comic: The Hero's Journey](images/chapter24_heros_journey_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Mythic Structure
 
@@ -2715,7 +2954,6 @@ The true test of a Hero's Journey is not surviving the Ordeal alone; it is retur
 **Corrected (Elixir Community Healing):**
 > The monk brought the ancient medical scrolls back to his monastery, translating the herbal recipes to eradicate the plague ravaging the peasantry.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -2729,7 +2967,6 @@ The true test of a Hero's Journey is not surviving the Ordeal alone; it is retur
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another quest"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -2754,7 +2991,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another quest" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 25: Save the Cat!
 
@@ -2762,7 +3004,12 @@ Popularized by Blake Snyder and adapted for novelists by Jessica Brody, *Save th
 
 ![Chapter 25 Comic: Save the Cat!](images/chapter25_save_the_cat_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Beat Sheet Pacing
 
@@ -2832,7 +3079,6 @@ The Opening Image and Final Image must act as bookends that prove character tran
 **Final Image:**
 > Hayes pins a fresh precinct badge onto his suit jacket, smiling as he shakes hands with his new rookie partner.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -2846,7 +3092,6 @@ The Opening Image and Final Image must act as bookends that prove character tran
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another premise"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -2871,7 +3116,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another premise" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 26: The Story Circle
 
@@ -2879,7 +3129,12 @@ Developed by Dan Harmon as an 8-step distillation of Campbell's monomyth, the St
 
 ![Chapter 26 Comic: The Story Circle](images/chapter26_story_circle_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Episodic Structure
 
@@ -2956,7 +3211,6 @@ The top half of the circle (Steps 1, 2, 7, 8) represents the character's familia
 > **Top Half (Order Restored — Transformed Consciousness):**
 > Step 8 (Change): Opening her own independent art studio in her hometown.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -2970,7 +3224,6 @@ The top half of the circle (Steps 1, 2, 7, 8) represents the character's familia
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another episode"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -2995,14 +3248,24 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another episode" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 # Part IX: Mastering AI Collaboration
 If the book's hook is writing with AI, we must teach the reader exactly how to communicate with an entity like me.
 
 ![Part IX Comic: Mastering AI Collaboration](images/part9_ai_collaboration_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 27: Prompt Engineering for Prose
 
@@ -3010,7 +3273,12 @@ Communicating effectively with an AI model requires treating the AI as an expert
 
 ![Chapter 27 Comic: Prompt Engineering for Prose](images/chapter27_prompt_engineering_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Prompt Engineering
 
@@ -3074,7 +3342,6 @@ No first-pass AI output should be treated as final prose. Use iterative conversa
 **Turn 3 Steering Prompt:**
 > "Now replace the generic noun 'vehicle' with an '82 rusty Ford pickup truck'."
 
----
 
 ### 2. Interactive AI Activity
 
@@ -3089,7 +3356,6 @@ No first-pass AI output should be treated as final prose. Use iterative conversa
 6. Work with your AI coach to refine your prompt engineering until you earn a grade of **B** or higher.
 7. Want more practice? Reply to the AI with *"Generate another evaluation"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -3114,7 +3380,12 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another evaluation" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 28: Brainstorming and Unblocking
 
@@ -3122,7 +3393,12 @@ Writer's block rarely occurs because an author lacks imagination; it happens bec
 
 ![Chapter 28 Comic: Brainstorming and Unblocking](images/chapter28_brainstorming_unblocking_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Divergent Brainstorming
 
@@ -3159,7 +3435,6 @@ Your first idea is almost always a cliché. The second idea is usually a reactio
 - **Option 2 (Reaction):** Guards capture her immediately. *(Rejected: Halts plot momentum)*
 - **Option 3 (Third Option — High-Stakes Complication):** The door opens automatically from the inside, revealing an AI drone that greets her by her childhood name. *(Selected: Multiplies narrative questions)*
 
----
 
 ### 2. Interactive AI Activity
 
@@ -3173,7 +3448,6 @@ Your first idea is almost always a cliché. The second idea is usually a reactio
 5. Work with your AI coach to refine your work until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another stuck scene"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -3200,7 +3474,12 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another stuck scene" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 29: The Story Bible Assistant
 
@@ -3208,7 +3487,12 @@ As a manuscript grows beyond fifty thousand words, human memory inevitably leaks
 
 ![Chapter 29 Comic: The Story Bible Assistant](images/chapter29_story_bible_assistant_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of AI Continuity Auditing
 
@@ -3263,7 +3547,6 @@ Vance raised both hands to grab the ladder rungs overhead. When the assassin lun
 > **Violation 1 (Amputation):** Vance raised "both hands" to grab a ladder, contradicting his left-arm amputation.
 > **Violation 2 (Weapon Inventory):** Vance drew a "Glock" from a "left shoulder holster," violating his profile specification of a nickel-plated .45 revolver in a right-hip holster.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -3277,7 +3560,6 @@ Vance raised both hands to grab the ladder rungs overhead. When the assassin lun
 5. Work with your AI coach to refine your audit prompt until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another audit challenge"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -3302,7 +3584,12 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another audit challenge" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 30: Advanced Workspaces (VS Code & AI)
 
@@ -3310,7 +3597,12 @@ While traditional word processors (like Microsoft Word or Google Docs) are desig
 
 ![Chapter 30 Comic: Advanced Workspaces (VS Code & AI)](images/chapter30_advanced_workspaces_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Workspace Architecture
 
@@ -3361,7 +3653,6 @@ git add manuscript/chapter_05.md
 git commit -m "Draft Chapter 5: Replaced monologue with active dialogue duel"
 ```
 
----
 
 ### 2. Interactive AI Activity
 
@@ -3375,7 +3666,6 @@ git commit -m "Draft Chapter 5: Replaced monologue with active dialogue duel"
 5. Work with your AI coach to refine your workspace setup until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another setup challenge"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -3400,7 +3690,12 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another setup challenge" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 31: Ethical and Legal Boundaries
 
@@ -3408,7 +3703,12 @@ AI is a powerful co-pilot, but it cannot replace human authorship. Under US Copy
 
 ![Chapter 31 Comic: Ethical and Legal Boundaries](images/chapter31_ethical_legal_boundaries_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of AI Ethics and Copyright
 
@@ -3442,7 +3742,6 @@ Relying entirely on AI to write prose introduces two significant risks: accident
 **Corrected (Authentic Human Voice):**
 > *Ozone bit the back of Vance's throat. He wiped his palms on his jeans, counting the seconds between siren blares.*
 
----
 
 ### 2. Interactive AI Activity
 
@@ -3456,7 +3755,6 @@ Relying entirely on AI to write prose introduces two significant risks: accident
 5. Work with your AI coach to refine your analysis until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another scenario"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -3481,14 +3779,24 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another scenario" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 # Part X: The Final Polish and Publication (Beta Readers and Beyond)
 A brief concluding module on the business and reality of finishing a manuscript would give your readers a complete A-to-Z roadmap.
 
 ![Part X Comic: The Final Polish and Publication](images/part10_final_polish_publication_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 32: The Feedback Loop
 
@@ -3496,7 +3804,12 @@ Finishing a draft is only half the battle; true revision begins when real reader
 
 ![Chapter 32 Comic: The Feedback Loop](images/chapter32_feedback_loop_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Feedback Synthesis
 
@@ -3540,7 +3853,6 @@ Diagnostic Root Cause: "As-You-Know-Bob" magic system exposition dump.
 Actionable Revision Plan: Remove the passive monk monologue in Chapter 3; deliver the magic rules through an active combat threat in Chapter 4.
 ```
 
----
 
 ### 2. Interactive AI Activity
 
@@ -3554,7 +3866,6 @@ Actionable Revision Plan: Remove the passive monk monologue in Chapter 3; delive
 5. Work with your AI coach to refine your revision plan until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another critique set"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -3579,7 +3890,12 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another critique set" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 33: The Publishing Paths
 
@@ -3587,7 +3903,12 @@ Finishing a manuscript brings you to a decision that will shape your entire publ
 
 ![Chapter 33 Comic: The Publishing Paths](images/chapter33_publishing_paths_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Publishing Strategy
 
@@ -3619,7 +3940,6 @@ Genre dynamics play a massive role in publishing success. Fast-moving, high-volu
 **Profile:** Worked 5 years on a single exquisite literary novel; target audience shops at independent bookstores; desires prestige and award eligibility.
 > **Optimal Route:** Traditional Publishing. Querying literary agents offers access to major house imprints, trade reviews (Kirkus, Publishers Weekly), and physical bookstore placement.
 
----
 
 ### 2. Interactive AI Activity
 
@@ -3633,7 +3953,6 @@ Genre dynamics play a massive role in publishing success. Fast-moving, high-volu
 5. Work with your AI coach to refine your analysis until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another author profile"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -3658,7 +3977,12 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I can reply with "Generate another author profile" whenever I want to practice again with a new exercise.
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 34: The Mechanics of Self-Publishing
 
@@ -3666,7 +3990,12 @@ The final phase of your writing journey is transforming your finished manuscript
 
 ![Chapter 34 Comic: The Mechanics of Self-Publishing](images/chapter34_mechanics_self_publishing_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### 1. Principles of Self-Publishing Execution
 
@@ -3708,7 +4037,6 @@ A book blurb is not a plot synopsis; it is a high-stakes sales pitch designed to
 > **[THE CLIFFHANGER QUESTION]**
 > *How far would you go to expose the truth when the man holding the gun used to be your brother?*
 
----
 
 ### 2. Interactive AI Activity
 
@@ -3722,7 +4050,6 @@ A book blurb is not a plot synopsis; it is a high-stakes sales pitch designed to
 5. Work with your AI coach to refine your retail copy until you earn a grade of **B** or higher.
 6. Want more practice? Reply to the AI with *"Generate another premise"* to take on a fresh challenge.
 
----
 
 ### 3. Sample Prompt
 
@@ -3747,7 +4074,12 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 - If my grade is a B or higher, congratulate me and let me know I have officially completed the final exercise in the book!
 ```
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ## Chapter 35: Conclusion - The Writer's Journey Ahead
 
@@ -3755,7 +4087,12 @@ Congratulations on reaching the finish line! You have journeyed from single sent
 
 ![Chapter 35 Comic: The Writer's Journey Ahead](images/chapter35_conclusion_comic.png)
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+```{=html}
 <div style="page-break-after: always; break-after: page;"></div>
+```
 
 ### Principles of Continuous Growth
 
