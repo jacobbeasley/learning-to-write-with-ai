@@ -8,7 +8,7 @@ An interactive workbook that teaches fiction writing craft from the ground up—
 
 ![Book Cover: Learning to Write Novels with AI](images/Gemini_Generated_Image_s3r1los3r1los3r1.png)
 
-[Read Book](book.md) [Read Book](book.html) [Download DOCX](book.docx) [Download EPUB](book.epub)
+[Read Book MarkDown](book.md) [Read Book HTML](book.html) [Download DOCX](book.docx) [Download EPUB](book.epub)
 
 ## What Is This Book?
 
