@@ -38,6 +38,7 @@ theme_override_constants/separation = 20
 
 [node name="HeaderBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = 16
 
 [node name="BackButton" type="Button" parent="MarginContainer/VBoxContainer/HeaderBox"]
 unique_name_in_owner = true
@@ -52,7 +53,7 @@ size_flags_horizontal = 3
 theme_override_colors/font_color = Color(0.831373, 0.647059, 0.454902, 1)
 theme_override_font_sizes/font_size = 24
 text = "PART TITLE"
-horizontal_alignment = 1
+horizontal_alignment = 0
 
 [node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2

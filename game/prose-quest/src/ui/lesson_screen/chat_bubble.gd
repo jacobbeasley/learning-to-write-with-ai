@@ -41,3 +41,7 @@ func setup(sender: String, text: String) -> void:
 		panel.add_theme_stylebox_override("panel", style)
 		
 	message_label.text = text
+
+func append_chunk(chunk_text: String) -> void:
+	if message_label:
+		message_label.text += chunk_text

@@ -62,6 +62,15 @@ func get_chapters_for_part(part_id: String) -> Array:
 			list.append(chapters_map[cid])
 	return list
 
+func get_next_chapter_id(current_chap_id: String) -> String:
+	var chapters = book_data.get("chapters", [])
+	for i in range(chapters.size()):
+		if chapters[i].get("id", "") == current_chap_id:
+			if i + 1 < chapters.size():
+				return chapters[i + 1].get("id", "")
+			break
+	return ""
+
 func change_scene(scene_path: String) -> void:
 	get_tree().change_scene_to_file(scene_path)
 	scene_changed.emit(scene_path)
