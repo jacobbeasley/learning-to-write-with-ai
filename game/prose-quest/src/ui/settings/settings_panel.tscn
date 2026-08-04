@@ -1,0 +1,162 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2settingspanel01"]
+
+[ext_resource type="Script" path="res://src/ui/settings/settings_panel.gd" id="1_sp"]
+
+[node name="SettingsPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sp")
+
+[node name="DimOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.7)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer"]
+custom_minimum_size = Vector2(600, 520)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Title" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.831373, 0.647059, 0.454902, 1)
+theme_override_font_sizes/font_size = 24
+text = "AI PROVIDER SETTINGS"
+horizontal_alignment = 1
+
+[node name="PresetBox" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="PresetLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/PresetBox"]
+layout_mode = 2
+text = "Provider Presets:"
+
+[node name="PresetOptionButton" type="OptionButton" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/PresetBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+
+[node name="UrlBox" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="UrlLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/UrlBox"]
+layout_mode = 2
+text = "API Endpoint URL:"
+
+[node name="UrlInput" type="LineEdit" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/UrlBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+text = "http://127.0.0.1:1234/v1/chat/completions"
+
+[node name="KeyBox" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="KeyLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/KeyBox"]
+layout_mode = 2
+text = "API Key (Optional for local LM Studio / Ollama):"
+
+[node name="ApiKeyInput" type="LineEdit" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/KeyBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+placeholder_text = "Enter API Key (e.g. sk-...)"
+secret = true
+
+[node name="TestBox" type="HBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="TestButton" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/TestBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 36)
+layout_mode = 2
+text = "Test Connection"
+
+[node name="StatusLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/TestBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ModelBox" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="ModelLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ModelBox"]
+layout_mode = 2
+text = "Model Selection:"
+
+[node name="ModelRow" type="HBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ModelBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="ModelInput" type="LineEdit" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ModelBox/ModelRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "local-model"
+placeholder_text = "Select model or type custom ID..."
+
+[node name="ModelOptionButton" type="OptionButton" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ModelBox/ModelRow"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(220, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+fit_to_longest_item = false
+clip_text = true
+
+[node name="Spacer" type="Control" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ButtonBox" type="HBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 2
+
+[node name="CloseButton" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 36)
+layout_mode = 2
+text = "Cancel"
+
+[node name="SaveButton" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 36)
+layout_mode = 2
+text = "Save Settings"

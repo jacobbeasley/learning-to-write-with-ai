@@ -1,0 +1,91 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1titlescreen01"]
+
+[ext_resource type="Script" path="res://src/ui/title_screen/title_screen.gd" id="1_ts"]
+[ext_resource type="PackedScene" path="res://src/ui/settings/settings_panel.tscn" id="2_sp"]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ts")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.101961, 0.101961, 0.180392, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="HeaderBox" type="VBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="CenterContainer/VBoxContainer/HeaderBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.831373, 0.647059, 0.454902, 1)
+theme_override_font_sizes/font_size = 48
+text = "PROSE QUEST"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubtitleLabel" type="Label" parent="CenterContainer/VBoxContainer/HeaderBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.909804, 0.862745, 0.784314, 1)
+theme_override_font_sizes/font_size = 18
+text = "Learning to Write Novels with AI: From Sentence to Series"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(400, 20)
+layout_mode = 2
+
+[node name="ButtonBox" type="VBoxContainer" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 12
+
+[node name="StartButton" type="Button" parent="CenterContainer/VBoxContainer/ButtonBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "START QUEST"
+
+[node name="SettingsButton" type="Button" parent="CenterContainer/VBoxContainer/ButtonBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "SETTINGS"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer/ButtonBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "QUIT"
+
+[node name="SettingsPanel" parent="." instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1

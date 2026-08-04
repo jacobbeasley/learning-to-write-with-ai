@@ -1,0 +1,277 @@
+[gd_scene load_steps=5 format=3 uid="uid://c9lessonscreen01"]
+
+[ext_resource type="Script" path="res://src/ui/lesson_screen/lesson_screen.gd" id="1_ls"]
+[ext_resource type="PackedScene" path="res://src/ui/components/grade_badge.tscn" id="2_gb"]
+[ext_resource type="PackedScene" path="res://src/ui/grade_popup/grade_popup.tscn" id="3_gp"]
+[ext_resource type="PackedScene" path="res://src/ui/settings/settings_panel.tscn" id="4_sp"]
+
+[node name="LessonScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ls")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.101961, 0.101961, 0.180392, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopBar" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/TopBar"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TopBar/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="BackButton" type="Button" parent="VBoxContainer/TopBar/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 36)
+layout_mode = 2
+text = "< Chapters"
+
+[node name="ChapterTitleLabel" type="Label" parent="VBoxContainer/TopBar/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.831373, 0.647059, 0.454902, 1)
+theme_override_font_sizes/font_size = 20
+text = "CHAPTER TITLE"
+
+[node name="GradeBadge" parent="VBoxContainer/TopBar/MarginContainer/HBoxContainer" instance=ExtResource("2_gb")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+split_offset = 640
+
+[node name="MaterialsPanel" type="PanelContainer" parent="VBoxContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HSplitContainer/MaterialsPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HSplitContainer/MaterialsPanel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="MaterialsHeader" type="Label" parent="VBoxContainer/HSplitContainer/MaterialsPanel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.831373, 0.647059, 0.454902, 1)
+theme_override_font_sizes/font_size = 18
+text = "LESSON CRAFT PRINCIPLES"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/HSplitContainer/MaterialsPanel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HSplitContainer/MaterialsPanel/MarginContainer/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+
+[node name="MaterialsText" type="RichTextLabel" parent="VBoxContainer/HSplitContainer/MaterialsPanel/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/default_color = Color(0.909804, 0.862745, 0.784314, 1)
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/HSplitContainer/MaterialsPanel/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ActivityHeader" type="Label" parent="VBoxContainer/HSplitContainer/MaterialsPanel/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.909804, 0.658824, 0.286275, 1)
+theme_override_font_sizes/font_size = 16
+text = "INTERACTIVE AI ACTIVITY"
+
+[node name="ActivityText" type="RichTextLabel" parent="VBoxContainer/HSplitContainer/MaterialsPanel/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/default_color = Color(0.909804, 0.862745, 0.784314, 1)
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 2
+
+[node name="ChatPanel" type="PanelContainer" parent="VBoxContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HSplitContainer/ChatPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HSplitContainer/ChatPanel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="ChatHeader" type="Label" parent="VBoxContainer/HSplitContainer/ChatPanel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.831373, 0.647059, 0.454902, 1)
+theme_override_font_sizes/font_size = 18
+text = "AI COACH SESSION"
+
+[node name="ChatScroll" type="ScrollContainer" parent="VBoxContainer/HSplitContainer/ChatPanel/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ChatContainer" type="VBoxContainer" parent="VBoxContainer/HSplitContainer/ChatPanel/MarginContainer/VBoxContainer/ChatScroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="ThinkingLabel" type="Label" parent="VBoxContainer/HSplitContainer/ChatPanel/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.909804, 0.658824, 0.286275, 1)
+theme_override_font_sizes/font_size = 13
+text = "Prof. Jennifer is thinking..."
+
+[node name="InputBox" type="HBoxContainer" parent="VBoxContainer/HSplitContainer/ChatPanel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HSplitContainer/ChatPanel/MarginContainer/VBoxContainer/InputBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MessageInput" type="TextEdit" parent="VBoxContainer/HSplitContainer/ChatPanel/MarginContainer/VBoxContainer/InputBox/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+placeholder_text = "Type your rewrite submission here... (Press Ctrl+Enter to send)"
+
+[node name="HintLabel" type="Label" parent="VBoxContainer/HSplitContainer/ChatPanel/MarginContainer/VBoxContainer/InputBox/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.5, 0.6, 1)
+theme_override_font_sizes/font_size = 11
+text = "Shortcut: Ctrl + Enter to Send"
+
+[node name="SendButton" type="Button" parent="VBoxContainer/HSplitContainer/ChatPanel/MarginContainer/VBoxContainer/InputBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(90, 64)
+layout_mode = 2
+text = "Send"
+
+[node name="ErrorDialog" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="ErrorDialog"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.8)
+
+[node name="CenterContainer" type="CenterContainer" parent="ErrorDialog"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="ErrorDialog/CenterContainer"]
+custom_minimum_size = Vector2(460, 240)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ErrorDialog/CenterContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ErrorDialog/CenterContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="ErrorTitle" type="Label" parent="ErrorDialog/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.913725, 0.270588, 0.376471, 1)
+theme_override_font_sizes/font_size = 20
+text = "AI SERVER OFFLINE"
+horizontal_alignment = 1
+
+[node name="ErrorLabel" type="Label" parent="ErrorDialog/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "Could not connect to LM Studio at 127.0.0.1:1234."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonBox" type="HBoxContainer" parent="ErrorDialog/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="CloseErrorButton" type="Button" parent="ErrorDialog/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 36)
+layout_mode = 2
+text = "Dismiss"
+
+[node name="SettingsButtonDialog" type="Button" parent="ErrorDialog/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(140, 36)
+layout_mode = 2
+text = "Open Settings"
+
+[node name="GradePopup" parent="." instance=ExtResource("3_gp")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+
+[node name="SettingsPanel" parent="." instance=ExtResource("4_sp")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1

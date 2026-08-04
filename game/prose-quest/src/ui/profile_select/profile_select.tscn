@@ -1,0 +1,335 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3profileselect01"]
+
+[ext_resource type="Script" path="res://src/ui/profile_select/profile_select.gd" id="1_ps"]
+
+[node name="ProfileSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ps")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.101961, 0.101961, 0.180392, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 64
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="HeaderBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="MarginContainer/VBoxContainer/HeaderBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 36)
+layout_mode = 2
+text = "< Back"
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer/HeaderBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.831373, 0.647059, 0.454902, 1)
+theme_override_font_sizes/font_size = 28
+text = "SELECT PROFILE"
+horizontal_alignment = 1
+
+[node name="CreateButton" type="Button" parent="MarginContainer/VBoxContainer/HeaderBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(140, 36)
+layout_mode = 2
+text = "+ New Profile"
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ProfileListContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="CreatePopup" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="CreatePopup"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.75)
+
+[node name="CenterContainer" type="CenterContainer" parent="CreatePopup"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CreatePopup/CenterContainer"]
+custom_minimum_size = Vector2(440, 280)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CreatePopup/CenterContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="PopupTitle" type="Label" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.831373, 0.647059, 0.454902, 1)
+theme_override_font_sizes/font_size = 22
+text = "CREATE NEW PROFILE"
+horizontal_alignment = 1
+
+[node name="NameBox" type="VBoxContainer" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/NameBox"]
+layout_mode = 2
+text = "Writer Name:"
+
+[node name="NameInput" type="LineEdit" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/NameBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+placeholder_text = "Enter your name..."
+
+[node name="AvatarBox" type="VBoxContainer" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="AvatarLabel" type="Label" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarBox"]
+layout_mode = 2
+text = "Select Avatar:"
+
+[node name="AvatarGrid" type="GridContainer" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarBox"]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 4
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+
+[node name="ButtonBox" type="HBoxContainer" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 2
+
+[node name="CancelCreateButton" type="Button" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 36)
+layout_mode = 2
+text = "Cancel"
+
+[node name="ConfirmCreateButton" type="Button" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 36)
+layout_mode = 2
+text = "Create Profile"
+
+[node name="EditPopup" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="EditPopup"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.75)
+
+[node name="CenterContainer" type="CenterContainer" parent="EditPopup"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="EditPopup/CenterContainer"]
+custom_minimum_size = Vector2(440, 280)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="EditPopup/CenterContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="PopupTitle" type="Label" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.831373, 0.647059, 0.454902, 1)
+theme_override_font_sizes/font_size = 22
+text = "EDIT PROFILE"
+horizontal_alignment = 1
+
+[node name="NameBox" type="VBoxContainer" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/NameBox"]
+layout_mode = 2
+text = "Writer Name:"
+
+[node name="EditNameInput" type="LineEdit" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/NameBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+placeholder_text = "Enter your name..."
+
+[node name="AvatarBox" type="VBoxContainer" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="AvatarLabel" type="Label" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarBox"]
+layout_mode = 2
+text = "Select Avatar:"
+
+[node name="EditAvatarGrid" type="GridContainer" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarBox"]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 4
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+
+[node name="ButtonBox" type="HBoxContainer" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 2
+
+[node name="CancelEditButton" type="Button" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 36)
+layout_mode = 2
+text = "Cancel"
+
+[node name="ConfirmEditButton" type="Button" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 36)
+layout_mode = 2
+text = "Save Changes"
+
+[node name="DeletePopup" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="DeletePopup"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.75)
+
+[node name="CenterContainer" type="CenterContainer" parent="DeletePopup"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="DeletePopup/CenterContainer"]
+custom_minimum_size = Vector2(440, 220)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="DeletePopup/CenterContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DeletePopup/CenterContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="DeleteTitle" type="Label" parent="DeletePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.913725, 0.270588, 0.376471, 1)
+theme_override_font_sizes/font_size = 22
+text = "DELETE PROFILE?"
+horizontal_alignment = 1
+
+[node name="DeleteMsgLabel" type="Label" parent="DeletePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "Are you sure you want to delete this profile? All saved progress will be lost."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonBox" type="HBoxContainer" parent="DeletePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="CancelDeleteButton" type="Button" parent="DeletePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 36)
+layout_mode = 2
+text = "Cancel"
+
+[node name="ConfirmDeleteButton" type="Button" parent="DeletePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(130, 36)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.913725, 0.270588, 0.376471, 1)
+text = "Delete Profile"

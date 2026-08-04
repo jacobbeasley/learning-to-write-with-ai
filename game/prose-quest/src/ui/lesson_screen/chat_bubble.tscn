@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7chatbubble01"]
+
+[ext_resource type="Script" path="res://src/ui/lesson_screen/chat_bubble.gd" id="1_cb"]
+
+[node name="ChatBubble" type="MarginContainer"]
+custom_minimum_size = Vector2(300, 0)
+offset_right = 500.0
+offset_bottom = 80.0
+size_flags_horizontal = 3
+script = ExtResource("1_cb")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="SenderLabel" type="Label" parent="PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.32549, 0.843137, 0.411765, 1)
+theme_override_font_sizes/font_size = 12
+text = "Sender"
+
+[node name="MessageLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 2
