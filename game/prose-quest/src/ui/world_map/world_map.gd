@@ -34,6 +34,7 @@ func _populate_parts() -> void:
 
 func _create_part_card(part: Dictionary) -> PanelContainer:
 	var panel = PanelContainer.new()
+	var pid = part.get("id", "")
 	
 	var margin = MarginContainer.new()
 	margin.add_theme_constant_override("margin_left", 20)
@@ -46,32 +47,45 @@ func _create_part_card(part: Dictionary) -> PanelContainer:
 	hbox.add_theme_constant_override("separation", 20)
 	margin.add_child(hbox)
 	
-	# Part Badge
-	var badge = PanelContainer.new()
-	badge.custom_minimum_size = Vector2(56, 56)
-	var badge_style = StyleBoxFlat.new()
-	badge_style.bg_color = Color("#d4a574")
-	badge_style.set_corner_radius_all(8)
-	badge.add_theme_stylebox_override("panel", badge_style)
+	# Clickable Part Badge Icon
+	var badge_btn = Button.new()
+	badge_btn.custom_minimum_size = Vector2(60, 60)
+	badge_btn.text = "PART\n" + str(part.get("number", 1))
+	badge_btn.add_theme_font_size_override("font_size", 13)
+	badge_btn.add_theme_color_override("font_color", Color("#1a1a2e"))
+	badge_btn.add_theme_color_override("font_hover_color", Color("#1a1a2e"))
 	
-	var b_lbl = Label.new()
-	b_lbl.text = "PART\n" + str(part.get("number", 1))
-	b_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	b_lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-	b_lbl.add_theme_font_size_override("font_size", 14)
-	b_lbl.add_theme_color_override("font_color", Color("#1a1a2e"))
-	badge.add_child(b_lbl)
-	hbox.add_child(badge)
+	var badge_normal = StyleBoxFlat.new()
+	badge_normal.bg_color = Color("#d4a574")
+	badge_normal.set_corner_radius_all(8)
+	badge_btn.add_theme_stylebox_override("normal", badge_normal)
 	
-	# Info
+	var badge_hover = StyleBoxFlat.new()
+	badge_hover.bg_color = Color("#e8a849")
+	badge_hover.set_corner_radius_all(8)
+	badge_btn.add_theme_stylebox_override("hover", badge_hover)
+	
+	badge_btn.pressed.connect(func():
+		GameManager.show_part_comic(pid)
+	)
+	hbox.add_child(badge_btn)
+	
+	# Info Box
 	var vbox = VBoxContainer.new()
 	vbox.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	
-	var title_lbl = Label.new()
-	title_lbl.text = part.get("title", "")
-	title_lbl.add_theme_font_size_override("font_size", 20)
-	title_lbl.add_theme_color_override("font_color", Color("#d4a574"))
-	vbox.add_child(title_lbl)
+	# Clickable Part Title
+	var title_btn = Button.new()
+	title_btn.text = part.get("title", "")
+	title_btn.flat = true
+	title_btn.alignment = HORIZONTAL_ALIGNMENT_LEFT
+	title_btn.add_theme_font_size_override("font_size", 20)
+	title_btn.add_theme_color_override("font_color", Color("#d4a574"))
+	title_btn.add_theme_color_override("font_hover_color", Color("#e8a849"))
+	title_btn.pressed.connect(func():
+		GameManager.show_part_comic(pid)
+	)
+	vbox.add_child(title_btn)
 	
 	var desc_lbl = Label.new()
 	desc_lbl.text = part.get("description", "")
@@ -103,7 +117,6 @@ func _create_part_card(part: Dictionary) -> PanelContainer:
 	enter_btn.custom_minimum_size = Vector2(130, 44)
 	enter_btn.text = "Enter Part →"
 	enter_btn.size_flags_vertical = Control.SIZE_SHRINK_CENTER
-	var pid = part.get("id", "")
 	enter_btn.pressed.connect(func():
 		GameManager.show_part_comic(pid)
 	)

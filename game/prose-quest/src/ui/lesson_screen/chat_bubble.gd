@@ -5,10 +5,15 @@ extends MarginContainer
 @onready var message_label: RichTextLabel = %MessageLabel
 
 func setup(sender: String, text: String) -> void:
+	size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	
 	if sender == "user":
 		sender_label.text = SaveManager.current_profile.get("name", "You")
 		sender_label.add_theme_color_override("font_color", Color("#53d769"))
-		size_flags_horizontal = Control.SIZE_SHRINK_END
+		
+		# Indent on the left so user bubbles align right & span full width minus margin
+		add_theme_constant_override("margin_left", 48)
+		add_theme_constant_override("margin_right", 0)
 		
 		var style = StyleBoxFlat.new()
 		style.bg_color = Color("#1e3a2b")
@@ -21,7 +26,10 @@ func setup(sender: String, text: String) -> void:
 	else:
 		sender_label.text = "Prof. Jennifer (AI Coach)"
 		sender_label.add_theme_color_override("font_color", Color("#4a90e2"))
-		size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
+		
+		# Indent on the right so AI bubbles align left & span full width minus margin
+		add_theme_constant_override("margin_left", 0)
+		add_theme_constant_override("margin_right", 48)
 		
 		var style = StyleBoxFlat.new()
 		style.bg_color = Color("#16213e")

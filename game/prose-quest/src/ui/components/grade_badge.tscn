@@ -13,6 +13,6 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer"]
 layout_mode = 2
-text = "A"
+text = "I"
 horizontal_alignment = 1
 vertical_alignment = 1

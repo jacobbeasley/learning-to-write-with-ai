@@ -7,6 +7,14 @@ extends Control
 func _ready() -> void:
 	continue_button.pressed.connect(_on_continue_pressed)
 	
+	# Make clicking on the comic image trigger 'Continue'
+	comic_rect.mouse_filter = Control.MOUSE_FILTER_STOP
+	comic_rect.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+	comic_rect.gui_input.connect(func(event: InputEvent):
+		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+			_on_continue_pressed()
+	)
+	
 	title_label.text = GameManager.comic_title
 	
 	var path = GameManager.comic_image_path
