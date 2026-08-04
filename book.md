@@ -1522,10 +1522,10 @@ When characters recite shared history or established rules out loud ("As you kno
 > "As we both know, Brother Thomas, the Order of the Silver Flame bans all blood magic under penalty of execution by burning," the monk said.
 
 **Corrected (Natural Contextual Integration):**
-> Brother Thomas pulled the crimson-stained parchment into his sleeve. "If the High Inquisitor sees that blood sigil, Thomas, we burn before sunset."
+> Brother Thomas pulled the crimson-stained parchment into his sleeve. Brother Aldric seized his wrist. "If the High Inquisitor sees that blood sigil, Thomas, we burn before sunset."
 
 #### Principle 2: Deliver Exposition Through Conflict and Urgent Need
-Instead of pausing a scene to explain a historical rule or technical detail, embed the information inside a argument, a desperate plea, or a tactical choice. When information is weaponized by one character against another, the exposition feels like action rather than a footnote.
+Instead of pausing a scene to explain a historical rule or technical detail, embed the information inside an argument, a desperate plea, or a tactical choice. When information is weaponized by one character against another, the exposition feels like action rather than a footnote.
 
 ##### Example 1: Historical Political Drama
 
@@ -2273,7 +2273,7 @@ The Want must be concrete, observable, and specific. If a protagonist's outer go
 ##### Example 2: Culinary Drama
 
 **Original (Vague Outer Goal):**
-> **Protagonist:** Chef Chef Maria wants her restaurant to do well.
+> **Protagonist:** Chef Maria wants her restaurant to do well.
 
 **Corrected (Tangible External Want):**
 > **Outer Want:** Chef Maria wants to earn a Michelin star during tonight's anonymous critic inspection.
@@ -2813,7 +2813,7 @@ A Three-Act novel is defined by five key structural pillars:
 > **Inciting Incident:** Kael uncovers an Imperial distress beacon buried in his farm's water condenser.
 > **Plot Point 1:** Imperial troops destroy Kael's homestead, forcing him to flee the planet with a mercenary pilot.
 > **Midpoint Reversal:** Infiltrating the dreadnought, Kael discovers that the Imperial commander is his presumed-dead mentor.
-> **All Is Lost:** The mentor captures Kael's ship and executes his mentor, leaving Kael adrift in an escape pod.
+> **All Is Lost:** The commander captures Kael's ship and executes the mercenary pilot, leaving Kael adrift in an escape pod.
 > **Climax:** Kael rallies the rebel fleet, flying his fighter into the dreadnought's exhaust trench to detonate the reactor.
 
 #### Principle 2: Enforce Proper Page Proportion Across Acts (25 / 50 / 25)
@@ -3125,7 +3125,7 @@ Assign my rewrite a letter grade (A, B, C, D, or F) with clear coaching feedback
 
 ## Chapter 26: The Story Circle
 
-Developed by Dan Harmon as an 8-step distillation of Campbell's monomyth, the Story Circle is a versatile framework designed for character-driven episodic and serialized fiction. Particularly effective for episodic, serialized fiction, and micro-arcs within chapters, the Story Circle tracks a character as they venture across the boundary between the familiar world (order) and the unfamiliar world (chaos).
+Developed by Dan Harmon as an 8-step distillation of Campbell's monomyth, the Story Circle is a versatile framework designed for character-driven episodic and serialized fiction. Particularly effective for micro-arcs within chapters, the Story Circle tracks a character as they venture across the boundary between the familiar world (order) and the unfamiliar world (chaos).
 
 ![Chapter 26 Comic: The Story Circle](images/chapter26_story_circle_comic.png)
 
@@ -4083,7 +4083,7 @@ Assign my submission a letter grade (A, B, C, D, or F) with clear coaching feedb
 
 ## Chapter 35: Conclusion - The Writer's Journey Ahead
 
-Congratulations on reaching the finish line! You have journeyed from single sentences and character arcs all the way through full story structures, editing workflows, and self-publishing mechanics. But in creative writing—especially when partnering with evolving AI tools—the end of a manuscript is never truly the end. In fact, full disclosure: the author hasn't even finished writing this book at the time of its writing! Creation is an ongoing, living loop, and your voyage as an AI-empowered author is just beginning.
+Congratulations on reaching the finish line! You have journeyed from single sentences and character arcs all the way through full story structures, editing workflows, and self-publishing mechanics. But in creative writing—especially when partnering with evolving AI tools—the end of a manuscript is never truly the end. In fact, this very book was revised and refined alongside its AI companion in real time, proving that creation is an ongoing, living loop, and your voyage as an AI-empowered author is just beginning.
 
 ![Chapter 35 Comic: The Writer's Journey Ahead](images/chapter35_conclusion_comic.png)
 
