@@ -85,10 +85,21 @@ text = "Feedback summary..."
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="ContinueButton" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(160, 44)
+[node name="ButtonRow" type="HBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 16
-text = "Continue Quest"
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="TryAgainButton" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "Try Again (Esc)"
+
+[node name="ContinueQuestButton" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(180, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "Continue Quest (Enter)"

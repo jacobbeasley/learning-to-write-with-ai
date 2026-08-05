@@ -64,6 +64,12 @@ func _ready() -> void:
 			print("ERROR: All texture load methods failed for: ", path)
 			title_label.text += "\n[Image File Missing: " + path + "]"
 
+func _input(event: InputEvent) -> void:
+	if event is InputEventKey and event.pressed:
+		if event.keycode == KEY_ENTER or event.keycode == KEY_KP_ENTER or event.keycode == KEY_SPACE:
+			accept_event()
+			_on_continue_pressed()
+
 func _on_continue_pressed() -> void:
 	match GameManager.comic_next_action:
 		"chapter_list":

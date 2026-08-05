@@ -68,3 +68,6 @@ When working on the **Prose Quest** game (`game/prose-quest/`), enforce these Go
 
 11. **Streaming OpenAI SSE Tool Call Delta Aggregation:**
     - OpenAI / OpenRouter / LM Studio SSE streams send tool call arguments incrementally across partial deltas without repeating `name`. Accumulate `stream_tool_name` and `stream_tool_args` across all incoming stream deltas before executing `JSON.parse_string()`, rather than parsing per chunk.
+
+12. **Safe Input Consumption in Control Nodes (`accept_event()`):**
+    - Call `accept_event()` BEFORE executing scene changes or button callbacks in `_input(event)`. If a callback triggers a scene change (e.g. `GameManager.show_chapter_comic()`), calling `get_viewport().set_input_as_handled()` AFTER the callback will crash with `Cannot call method 'set_input_as_handled' on a null value` because the Control node has already been unparented from the viewport.

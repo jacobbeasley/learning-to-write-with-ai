@@ -41,7 +41,17 @@ func _ready() -> void:
 	AIManager.grade_detected.connect(_on_ai_grade_detected)
 	AIManager.request_failed.connect(_on_ai_error)
 	
+	grade_popup.try_again_pressed.connect(_on_grade_popup_try_again)
+	grade_popup.continue_quest_pressed.connect(_on_grade_popup_continue)
+	
 	_load_chapter()
+
+func _on_grade_popup_try_again() -> void:
+	message_input.grab_focus()
+	_scroll_to_bottom()
+
+func _on_grade_popup_continue() -> void:
+	_on_next_chapter_pressed()
 
 func _style_send_button() -> void:
 	send_button.add_theme_font_size_override("font_size", 16)

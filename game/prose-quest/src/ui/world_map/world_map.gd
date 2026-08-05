@@ -33,11 +33,6 @@ func _populate_parts() -> void:
 		var part = parts[i]
 		var card = _create_part_card(part)
 		parts_container.add_child(card)
-		
-		# Add a road/path connector between parts (except after the last part)
-		if i < total_parts - 1:
-			var road = _create_road_connector()
-			parts_container.add_child(road)
 
 func _create_road_connector() -> CenterContainer:
 	var center = CenterContainer.new()
