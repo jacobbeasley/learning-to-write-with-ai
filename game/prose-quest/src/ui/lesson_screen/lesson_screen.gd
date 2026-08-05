@@ -242,3 +242,12 @@ func _on_open_settings() -> void:
 
 func _on_back_pressed() -> void:
 	GameManager.change_scene(GameManager.CHAPTER_LIST)
+
+func _exit_tree() -> void:
+	var ai = get_node_or_null("/root/AIManager")
+	if ai and ai.has_method("cancel_active_request"):
+		ai.cancel_active_request()
+		
+	var am = get_node_or_null("/root/AudioManager")
+	if am and am.has_method("stop_typing_loop"):
+		am.stop_typing_loop()

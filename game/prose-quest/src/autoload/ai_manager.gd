@@ -17,9 +17,14 @@ var is_streaming: bool = false
 var stream_buffer: String = ""
 var stream_full_text: String = ""
 var stream_tool_name: String = ""
+const MAX_SESSION_TURNS = 40
+const MAX_CHAT_HISTORY_SIZE = 24
+
 var stream_tool_args: String = ""
 var grade_emitted_for_request: bool = false
 var chat_history: Array = []
+var session_request_count: int = 0
+var last_request_time_msec: int = 0
 
 func _ready() -> void:
 	http_request = HTTPRequest.new()
@@ -27,6 +32,9 @@ func _ready() -> void:
 	http_request.request_completed.connect(_on_request_completed)
 
 func reset_chat_session(system_prompt: String = "") -> void:
+	cancel_active_request()
+	session_request_count = 0
+	last_request_time_msec = 0
 	chat_history.clear()
 	if system_prompt != "":
 		var tool_directive = "\n\n[SYSTEM DIRECTIVE: Whenever you evaluate, grade, or re-grade the user's fiction writing exercise submission, you MUST execute the tool call function 'gradeActivity' with the letter grade (A, B, C, D, or F) and a concise feedback summary. You must also provide your full coaching critique and recommendations in your message.]"
@@ -34,6 +42,37 @@ func reset_chat_session(system_prompt: String = "") -> void:
 			"role": "system",
 			"content": system_prompt + tool_directive
 		})
+
+func cancel_active_request() -> void:
+	if is_streaming and active_client != null:
+		active_client.close()
+		active_client = null
+		
+	if http_request != null:
+		http_request.cancel_request()
+		
+	is_streaming = false
+	is_busy = false
+	stream_buffer = ""
+	stream_full_text = ""
+	stream_tool_name = ""
+	stream_tool_args = ""
+	print("[AIManager] Active AI request cancelled and reset.")
+
+func _trim_chat_history() -> void:
+	if chat_history.size() > MAX_CHAT_HISTORY_SIZE:
+		var has_system = not chat_history.is_empty() and chat_history[0].get("role") == "system"
+		var system_msg = chat_history[0] if has_system else null
+		
+		var keep_count = MAX_CHAT_HISTORY_SIZE - (1 if has_system else 0)
+		var slice_start = chat_history.size() - keep_count
+		var trimmed: Array = []
+		if has_system:
+			trimmed.append(system_msg)
+		for i in range(slice_start, chat_history.size()):
+			trimmed.append(chat_history[i])
+		chat_history = trimmed
+		print("[AIManager] Chat history sliding window trimmed to ", chat_history.size(), " messages.")
 
 func _get_tool_schema() -> Dictionary:
 	return {
@@ -101,11 +140,25 @@ func send_message(user_text: String) -> void:
 		request_failed.emit("AI is currently generating a response. Please wait.")
 		return
 		
+	var now = Time.get_ticks_msec()
+	if last_request_time_msec > 0 and (now - last_request_time_msec) < 500:
+		print("[AIManager] Suppressed rapid duplicate request loop.")
+		return
+	last_request_time_msec = now
+
+	if session_request_count >= MAX_SESSION_TURNS:
+		request_failed.emit("Session turn limit reached (max 40 turns per lesson). Restart the lesson to begin a new session.")
+		return
+
+	session_request_count += 1
+		
 	if user_text != "":
 		chat_history.append({
 			"role": "user",
 			"content": user_text
 		})
+		
+	_trim_chat_history()
 		
 	is_busy = true
 	grade_emitted_for_request = false

@@ -72,6 +72,14 @@ func get_next_chapter_id(current_chap_id: String) -> String:
 	return ""
 
 func change_scene(scene_path: String) -> void:
+	var ai = get_node_or_null("/root/AIManager")
+	if ai and ai.has_method("cancel_active_request"):
+		ai.cancel_active_request()
+		
+	var am = get_node_or_null("/root/AudioManager")
+	if am and am.has_method("stop_typing_loop"):
+		am.stop_typing_loop()
+		
 	get_tree().change_scene_to_file(scene_path)
 	scene_changed.emit(scene_path)
 
