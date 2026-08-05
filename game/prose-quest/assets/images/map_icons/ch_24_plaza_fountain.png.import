@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75s1y8plmb2s"
-path="res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"
+uid="uid://by15unvofwdy5"
+path="res://.godot/imported/ch_24_plaza_fountain.png-30d76b577c78c6b30403fafbc8047407.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_01_kindling.png"
-dest_files=["res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"]
+source_file="res://assets/images/map_icons/ch_24_plaza_fountain.png"
+dest_files=["res://.godot/imported/ch_24_plaza_fountain.png-30d76b577c78c6b30403fafbc8047407.ctex"]
 
 [params]
 

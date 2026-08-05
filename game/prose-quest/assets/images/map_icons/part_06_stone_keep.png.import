@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75s1y8plmb2s"
-path="res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"
+uid="uid://brefttt6oncdr"
+path="res://.godot/imported/part_06_stone_keep.png-77104f2b7dc8823dea53e97b92f864d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_01_kindling.png"
-dest_files=["res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"]
+source_file="res://assets/images/map_icons/part_06_stone_keep.png"
+dest_files=["res://.godot/imported/part_06_stone_keep.png-77104f2b7dc8823dea53e97b92f864d9.ctex"]
 
 [params]
 

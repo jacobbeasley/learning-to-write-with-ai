@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75s1y8plmb2s"
-path="res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"
+uid="uid://dq1w588ed0gmy"
+path="res://.godot/imported/part_08_walled_city.png-071be8cb1aa9f27567b61754174a43d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_01_kindling.png"
-dest_files=["res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"]
+source_file="res://assets/images/map_icons/part_08_walled_city.png"
+dest_files=["res://.godot/imported/part_08_walled_city.png-071be8cb1aa9f27567b61754174a43d6.ctex"]
 
 [params]
 

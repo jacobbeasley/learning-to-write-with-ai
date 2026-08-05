@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75s1y8plmb2s"
-path="res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"
+uid="uid://b1hrv3lwnon8e"
+path="res://.godot/imported/ch_11_tavern_tankard.png-4d3a35bd72e854376a1c1dacec304ad0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_01_kindling.png"
-dest_files=["res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"]
+source_file="res://assets/images/map_icons/ch_11_tavern_tankard.png"
+dest_files=["res://.godot/imported/ch_11_tavern_tankard.png-4d3a35bd72e854376a1c1dacec304ad0.ctex"]
 
 [params]
 

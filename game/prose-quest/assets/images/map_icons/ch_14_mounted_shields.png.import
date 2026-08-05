@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75s1y8plmb2s"
-path="res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"
+uid="uid://cfoogyakh0n04"
+path="res://.godot/imported/ch_14_mounted_shields.png-29e6ffc888356e90c3e73aeb6acdaddb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_01_kindling.png"
-dest_files=["res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"]
+source_file="res://assets/images/map_icons/ch_14_mounted_shields.png"
+dest_files=["res://.godot/imported/ch_14_mounted_shields.png-29e6ffc888356e90c3e73aeb6acdaddb.ctex"]
 
 [params]
 

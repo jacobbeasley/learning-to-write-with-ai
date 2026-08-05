@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75s1y8plmb2s"
-path="res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"
+uid="uid://dk0lotpot4s2f"
+path="res://.godot/imported/part_10_imperial_metropolis.png-dddf60cbb07fd5de5de9f473974a7309.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_01_kindling.png"
-dest_files=["res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"]
+source_file="res://assets/images/map_icons/part_10_imperial_metropolis.png"
+dest_files=["res://.godot/imported/part_10_imperial_metropolis.png-dddf60cbb07fd5de5de9f473974a7309.ctex"]
 
 [params]
 

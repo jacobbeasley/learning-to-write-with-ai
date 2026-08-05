@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75s1y8plmb2s"
-path="res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"
+uid="uid://xm1igjo41sx2"
+path="res://.godot/imported/ch_12_merchant_scale.png-4973884ea4d3abb70a5a8545ba920dcc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_01_kindling.png"
-dest_files=["res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"]
+source_file="res://assets/images/map_icons/ch_12_merchant_scale.png"
+dest_files=["res://.godot/imported/ch_12_merchant_scale.png-4973884ea4d3abb70a5a8545ba920dcc.ctex"]
 
 [params]
 

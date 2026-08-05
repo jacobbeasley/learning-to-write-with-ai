@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75s1y8plmb2s"
-path="res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"
+uid="uid://ctwy5n3h5hug7"
+path="res://.godot/imported/ch_21_leather_codex.png-690c0abb774fee2086c8f99f2d4fd677.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_01_kindling.png"
-dest_files=["res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"]
+source_file="res://assets/images/map_icons/ch_21_leather_codex.png"
+dest_files=["res://.godot/imported/ch_21_leather_codex.png-690c0abb774fee2086c8f99f2d4fd677.ctex"]
 
 [params]
 

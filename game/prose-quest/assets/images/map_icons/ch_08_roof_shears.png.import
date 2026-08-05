@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75s1y8plmb2s"
-path="res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"
+uid="uid://cm4tmg7aipslq"
+path="res://.godot/imported/ch_08_roof_shears.png-aafa5a6b04fd81f22cd4e640437b276f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_01_kindling.png"
-dest_files=["res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"]
+source_file="res://assets/images/map_icons/ch_08_roof_shears.png"
+dest_files=["res://.godot/imported/ch_08_roof_shears.png-aafa5a6b04fd81f22cd4e640437b276f.ctex"]
 
 [params]
 

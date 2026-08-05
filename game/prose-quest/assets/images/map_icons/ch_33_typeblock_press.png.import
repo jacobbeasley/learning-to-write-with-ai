@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75s1y8plmb2s"
-path="res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"
+uid="uid://bi3n2fcrt04l0"
+path="res://.godot/imported/ch_33_typeblock_press.png-a6d678b7b9cff6bd5df4cc892218c72f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_01_kindling.png"
-dest_files=["res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"]
+source_file="res://assets/images/map_icons/ch_33_typeblock_press.png"
+dest_files=["res://.godot/imported/ch_33_typeblock_press.png-a6d678b7b9cff6bd5df4cc892218c72f.ctex"]
 
 [params]
 

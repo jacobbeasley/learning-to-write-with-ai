@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75s1y8plmb2s"
-path="res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"
+uid="uid://baauep2tjlmna"
+path="res://.godot/imported/ch_04_timber_axe.png-fb2d296794dd73ef78b46597336ac7fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_01_kindling.png"
-dest_files=["res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"]
+source_file="res://assets/images/map_icons/ch_04_timber_axe.png"
+dest_files=["res://.godot/imported/ch_04_timber_axe.png-fb2d296794dd73ef78b46597336ac7fe.ctex"]
 
 [params]
 

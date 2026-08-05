@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75s1y8plmb2s"
-path="res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"
+uid="uid://cl342missbxuh"
+path="res://.godot/imported/ch_23_city_archway.png-5a2bac6de20b4148cc64f7a87f4becf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_01_kindling.png"
-dest_files=["res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"]
+source_file="res://assets/images/map_icons/ch_23_city_archway.png"
+dest_files=["res://.godot/imported/ch_23_city_archway.png-5a2bac6de20b4148cc64f7a87f4becf2.ctex"]
 
 [params]
 

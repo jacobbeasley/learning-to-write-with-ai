@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75s1y8plmb2s"
-path="res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"
+uid="uid://cy87kwcd62ayi"
+path="res://.godot/imported/ch_32_royal_seal.png-e1c180cf7f2657ee59a253a21fd315c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_01_kindling.png"
-dest_files=["res://.godot/imported/ch_01_kindling.png-3971f9b421a60ff24ea14f685c9b1e95.ctex"]
+source_file="res://assets/images/map_icons/ch_32_royal_seal.png"
+dest_files=["res://.godot/imported/ch_32_royal_seal.png-e1c180cf7f2657ee59a253a21fd315c3.ctex"]
 
 [params]
 
