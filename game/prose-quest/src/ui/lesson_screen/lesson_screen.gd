@@ -112,6 +112,7 @@ func _on_send_pressed() -> void:
 	if text == "" or AIManager.is_busy:
 		return
 		
+	AudioManager.play_submit()
 	_add_chat_bubble("user", text)
 	message_input.text = ""
 	_set_thinking(true)
@@ -149,11 +150,13 @@ func _on_chunk_received(chunk_text: String) -> void:
 func _on_stream_completed(_full_text: String) -> void:
 	_set_thinking(false)
 	current_ai_bubble = null
+	AudioManager.play_ai_response()
 
 func _on_ai_response(text: String) -> void:
 	_set_thinking(false)
 	if current_ai_bubble == null and text != "":
 		_add_chat_bubble("assistant", text)
+		AudioManager.play_ai_response()
 
 func _on_ai_grade_detected(grade: String, summary: String) -> void:
 	_set_thinking(false)

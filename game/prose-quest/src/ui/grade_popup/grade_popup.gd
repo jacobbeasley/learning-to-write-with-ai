@@ -12,6 +12,7 @@ func _ready() -> void:
 	continue_button.pressed.connect(_on_continue_pressed)
 
 func show_grade_result(grade: String, summary: String, grade_result: Dictionary) -> void:
+	AudioManager.play_grade(grade)
 	grade_label.text = grade
 	grade_label.add_theme_color_override("font_color", GradeUtils.get_grade_color(grade))
 	
