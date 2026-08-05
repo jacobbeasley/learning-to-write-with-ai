@@ -27,10 +27,59 @@ func _populate_parts() -> void:
 		child.queue_free()
 		
 	var parts = GameManager.get_all_parts()
+	var total_parts = parts.size()
 	
-	for part in parts:
+	for i in range(total_parts):
+		var part = parts[i]
 		var card = _create_part_card(part)
 		parts_container.add_child(card)
+		
+		# Add a road/path connector between parts (except after the last part)
+		if i < total_parts - 1:
+			var road = _create_road_connector()
+			parts_container.add_child(road)
+
+func _create_road_connector() -> CenterContainer:
+	var center = CenterContainer.new()
+	center.custom_minimum_size = Vector2(0, 20)
+	
+	var road_lbl = Label.new()
+	road_lbl.text = "║   🗺️   ║"
+	road_lbl.add_theme_font_size_override("font_size", 12)
+	road_lbl.add_theme_color_override("font_color", Color("#d4a574"))
+	road_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	center.add_child(road_lbl)
+	
+	return center
+
+func _load_texture(path: String) -> Texture2D:
+	if path == "":
+		return null
+		
+	# 1. Standard load() if Godot imported it
+	if ResourceLoader.exists(path):
+		var res = load(path)
+		if res is Texture2D:
+			return res
+		elif res is Image:
+			return ImageTexture.create_from_image(res)
+			
+	# 2. Raw disk file buffer fallback
+	var global_path = ProjectSettings.globalize_path(path)
+	var f = FileAccess.open(global_path, FileAccess.READ)
+	if f == null:
+		f = FileAccess.open(path, FileAccess.READ)
+		
+	if f != null:
+		var bytes = f.get_buffer(f.get_length())
+		f.close()
+		if bytes.size() > 0:
+			var img = Image.new()
+			var err = img.load_png_from_buffer(bytes)
+			if err == OK and not img.is_empty():
+				return ImageTexture.create_from_image(img)
+				
+	return null
 
 func _create_part_card(part: Dictionary) -> PanelContainer:
 	var panel = PanelContainer.new()
@@ -47,28 +96,60 @@ func _create_part_card(part: Dictionary) -> PanelContainer:
 	hbox.add_theme_constant_override("separation", 20)
 	margin.add_child(hbox)
 	
-	# Clickable Part Badge Icon
-	var badge_btn = Button.new()
-	badge_btn.custom_minimum_size = Vector2(60, 60)
-	badge_btn.text = "PART\n" + str(part.get("number", 1))
-	badge_btn.add_theme_font_size_override("font_size", 13)
-	badge_btn.add_theme_color_override("font_color", Color("#1a1a2e"))
-	badge_btn.add_theme_color_override("font_hover_color", Color("#1a1a2e"))
+	# 8-Bit Square Graphic Icon Container
+	var icon_path = part.get("map_icon", "")
+	var tex = _load_texture(icon_path)
 	
-	var badge_normal = StyleBoxFlat.new()
-	badge_normal.bg_color = Color("#d4a574")
-	badge_normal.set_corner_radius_all(8)
-	badge_btn.add_theme_stylebox_override("normal", badge_normal)
-	
-	var badge_hover = StyleBoxFlat.new()
-	badge_hover.bg_color = Color("#e8a849")
-	badge_hover.set_corner_radius_all(8)
-	badge_btn.add_theme_stylebox_override("hover", badge_hover)
-	
-	badge_btn.pressed.connect(func():
-		GameManager.show_part_comic(pid)
-	)
-	hbox.add_child(badge_btn)
+	if tex != null:
+		var icon_rect = TextureRect.new()
+		icon_rect.custom_minimum_size = Vector2(72, 72)
+		icon_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		icon_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		icon_rect.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		icon_rect.pivot_offset = Vector2(36, 36)
+		icon_rect.texture = tex
+		
+		# Make icon interactive
+		icon_rect.mouse_filter = Control.MOUSE_FILTER_STOP
+		icon_rect.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+		icon_rect.gui_input.connect(func(event: InputEvent):
+			if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+				GameManager.show_part_comic(pid)
+		)
+		
+		# Hover micro-animation (8-bit bounce scale)
+		icon_rect.mouse_entered.connect(func():
+			var tween = create_tween()
+			tween.tween_property(icon_rect, "scale", Vector2(1.12, 1.12), 0.1).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+		)
+		icon_rect.mouse_exited.connect(func():
+			var tween = create_tween()
+			tween.tween_property(icon_rect, "scale", Vector2(1.0, 1.0), 0.1)
+		)
+		hbox.add_child(icon_rect)
+	else:
+		# Fallback 8-bit text badge if image asset isn't loaded
+		var badge_btn = Button.new()
+		badge_btn.custom_minimum_size = Vector2(72, 72)
+		badge_btn.text = "PART\n" + str(part.get("number", 1))
+		badge_btn.add_theme_font_size_override("font_size", 13)
+		badge_btn.add_theme_color_override("font_color", Color("#1a1a2e"))
+		badge_btn.add_theme_color_override("font_hover_color", Color("#1a1a2e"))
+		
+		var badge_normal = StyleBoxFlat.new()
+		badge_normal.bg_color = Color("#d4a574")
+		badge_normal.set_corner_radius_all(8)
+		badge_btn.add_theme_stylebox_override("normal", badge_normal)
+		
+		var badge_hover = StyleBoxFlat.new()
+		badge_hover.bg_color = Color("#e8a849")
+		badge_hover.set_corner_radius_all(8)
+		badge_btn.add_theme_stylebox_override("hover", badge_hover)
+		
+		badge_btn.pressed.connect(func():
+			GameManager.show_part_comic(pid)
+		)
+		hbox.add_child(badge_btn)
 	
 	# Info Box
 	var vbox = VBoxContainer.new()
@@ -76,7 +157,7 @@ func _create_part_card(part: Dictionary) -> PanelContainer:
 	
 	# Clickable Part Title
 	var title_btn = Button.new()
-	title_btn.text = part.get("title", "")
+	title_btn.text = "PART " + str(part.get("number", 1)) + ": " + part.get("title", "").to_upper()
 	title_btn.flat = true
 	title_btn.alignment = HORIZONTAL_ALIGNMENT_LEFT
 	title_btn.add_theme_font_size_override("font_size", 20)
