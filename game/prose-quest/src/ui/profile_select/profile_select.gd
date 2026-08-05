@@ -49,13 +49,6 @@ const AVATAR_PATHS = [
 	"res://assets/images/avatars/avatar_16_dwarven_runesmith.png"
 ]
 
-const AVATAR_COLORS = [
-	Color("#d4a574"), Color("#53d769"), Color("#e8a849"), Color("#e94560"),
-	Color("#4a90e2"), Color("#9013fe"), Color("#bd10e0"), Color("#50e3c2"),
-	Color("#e67e22"), Color("#1abc9c"), Color("#3498db"), Color("#9b59b6"),
-	Color("#34495e"), Color("#f1c40f"), Color("#e74c3c"), Color("#7f8c8d")
-]
-
 func _ready() -> void:
 	create_button.pressed.connect(_on_open_create)
 	confirm_create_button.pressed.connect(_on_confirm_create)
@@ -74,22 +67,9 @@ func _ready() -> void:
 	_refresh_profiles()
 
 func _get_avatar_texture(idx: int) -> Texture2D:
-	idx = posmod(idx, AVATAR_PATHS.size())
-	var path = AVATAR_PATHS[idx]
-	
-	# 1. Try standard load() first
+	var path = AVATAR_PATHS[posmod(idx, AVATAR_PATHS.size())]
 	if ResourceLoader.exists(path):
-		var res = load(path)
-		if res is Texture2D:
-			return res
-			
-	# 2. Try Image.load_from_file with globalized OS path
-	var global_path = ProjectSettings.globalize_path(path)
-	if FileAccess.file_exists(path):
-		var img = Image.load_from_file(global_path)
-		if img and not img.is_empty():
-			return ImageTexture.create_from_image(img)
-			
+		return load(path) as Texture2D
 	return null
 
 func _create_avatar_button(idx: int, size: Vector2) -> Button:
@@ -97,23 +77,14 @@ func _create_avatar_button(idx: int, size: Vector2) -> Button:
 	btn.custom_minimum_size = size
 	btn.clip_contents = true
 	
-	var tex = _get_avatar_texture(idx)
-	if tex:
-		var tex_rect = TextureRect.new()
-		tex_rect.texture = tex
-		tex_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		tex_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		tex_rect.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-		tex_rect.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-		tex_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		btn.add_child(tex_rect)
-	else:
-		btn.text = "A" + str(idx + 1)
-		var style = StyleBoxFlat.new()
-		style.bg_color = AVATAR_COLORS[idx % AVATAR_COLORS.size()]
-		style.set_corner_radius_all(6)
-		btn.add_theme_stylebox_override("normal", style)
-		
+	var tex_rect = TextureRect.new()
+	tex_rect.texture = _get_avatar_texture(idx)
+	tex_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	tex_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	tex_rect.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	tex_rect.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	tex_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	btn.add_child(tex_rect)
 	return btn
 
 func _setup_avatar_grid() -> void:
@@ -149,24 +120,8 @@ func _setup_edit_avatar_grid() -> void:
 	_update_avatar_preview(edit_avatar_preview, editing_avatar_id)
 
 func _update_avatar_preview(preview: TextureRect, idx: int) -> void:
-	if not preview:
-		return
-	# Ensure a dark background is always visible on the preview panel
-	if not preview.has_theme_stylebox_override("panel"):
-		var bg = StyleBoxFlat.new()
-		bg.bg_color = Color(0.08, 0.08, 0.15, 1.0)
-		bg.set_corner_radius_all(8)
-		bg.border_width_left = 2
-		bg.border_width_right = 2
-		bg.border_width_top = 2
-		bg.border_width_bottom = 2
-		bg.border_color = Color(0.831373, 0.647059, 0.454902, 0.5)
-		preview.add_theme_stylebox_override("panel", bg)
-	var tex = _get_avatar_texture(idx)
-	if tex:
-		preview.texture = tex
-	else:
-		preview.texture = null
+	if preview:
+		preview.texture = _get_avatar_texture(idx)
 
 func _update_grid_selection(grid: GridContainer, active_idx: int) -> void:
 	var children = grid.get_children()

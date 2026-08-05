@@ -6,23 +6,23 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 AVATAR_DESCRIPTIONS = {
     # Female Avatars (8)
-    "avatar_01_novice_scribe.png": "a stylish and attractive slender female novice scribe with blonde hair tied in a high ponytail with a pink ribbon, wearing soft pink lipstick and makeup, fitted linen tunic, holding a feather quill and leather scroll bag",
+    "avatar_01_novice_scribe.png": "a stylish and attractive slender female novice scribe with blonde hair tied in a high ponytail with a pink ribbon, wearing soft pink lipstick and makeup, fitted linen tunic with pleated skirt, holding a feather quill and leather scroll bag",
     "avatar_02_cyberpunk_hacker.png": "a glamorous and athletic female cyber-runner with twin high pigtails, wearing a cropped leather jacket with glowing neon trim and a cybernetic arm interface",
-    "avatar_03_wandering_bard.png": "a graceful and attractive female musician with an elegant braided updo under a feathered cap, wearing a fitted traveling cloak and carrying a wooden lute",
-    "avatar_04_clockwork_engineer.png": "a fit and muscular female engineer with a high messy bun updo, wearing a fitted leather corseted apron and brass goggles on her forehead, holding a spanner wrench",
-    "avatar_05_high_elf_archivist.png": "an elegant and sleek high elf female with a high ponytail adorned with silver hair rings, wearing fitted silk robes and holding an ancient glowing scroll",
-    "avatar_06_desert_cartographer.png": "an attractive and slender female cartographer with a stylish braided updo and silk headscarf, wearing fitted adventurer garb, leather map case, and compass",
-    "avatar_07_alchemist_researcher.png": "an alluring and athletic female alchemist with high pigtails featuring purple highlights, wearing a dark fitted leather coat with brass straps, holding a bubbling flask",
-    "avatar_08_shadow_scriptor.png": "a sleek and striking female assassin with long dark hair in a dramatic high ponytail, no hood, wearing fitted black leather armor with silver buckles, a thin decorative eye mask across her face, holding a quill dagger at her side",
+    "avatar_03_wandering_bard.png": "a graceful and attractive well endowed female musician with an elegant ornate braided updo, wearing a fitted traveling cloak and carrying a wooden lute",
+    "avatar_04_clockwork_engineer.png": "a fit and muscular female engineer with a high large messy bun updo, wearing a fitted leather corseted apron and brass goggles on her forehead, holding a spanner wrench",
+    "avatar_05_high_elf_archivist.png": "an elegant and sleek yet thicke high elf female with a perky high ponytail adorned with silver hair rings, wearing fitted silk robes and holding an ancient glowing scroll",
+    "avatar_06_desert_cartographer.png": "an attractive and slender thicke cartographer with a stylish large braided updo and silk headscarf, wearing fitted adventurer garb, leather map case, and compass",
+    "avatar_07_alchemist_researcher.png": "an alluring and athletic yet well endowed female alchemist with perky high pigtails featuring purple highlights, wearing a dark fitted leather coat with brass straps, holding a bubbling flask",
+    "avatar_08_shadow_scriptor.png": "a sleek and striking female assassin with long dark hair in a dramatic large high ponytail, no hood, wearing fitted black leather armor with silver buckles, a thin decorative eye mask across her face, holding a quill dagger at her side",
 
     # Male Avatars (8)
-    "avatar_09_arcane_scholar.png": "a slender and boyish young male scholar with long flowing silver hair tied in a high ponytail, wearing glowing spectacles and open collar scholar robes",
-    "avatar_10_royal_historian.png": "a dignified noble male with shoulder-length wavy dark hair, wearing rich velvet robes with gold embroidery, holding a brass inkhorn",
+    "avatar_09_arcane_scholar.png": "a slender and boyish young male scholar with long flowing silver hair tied in a large high ponytail, wearing glowing spectacles and open collar tight scholar robes",
+    "avatar_10_royal_historian.png": "a dignified noble male with shoulder-length wavy dark hair with streaks of grey, wearing rich velvet robes with gold embroidery, holding a brass inkhorn",
     "avatar_11_dragon_archivist.png": "a broad-shouldered muscular male warrior with a long braided dark mane down his back, wearing dragon-scale chest armor and holding a dragon codex",
-    "avatar_12_imperial_laureate.png": "a slender and boyish male poet with long blonde hair tied in a sleek high ponytail, wearing a golden laurel wreath and draped golden mantle",
-    "avatar_13_sea_captain_chronicler.png": "a weathered sailor male with long chest-length dark hair with beads, wearing a tricorn hat and eyepatch, holding a ship logbook",
-    "avatar_14_paladin_scriptor.png": "a broad knight male build with a neat short crop haircut, wearing polished plate armor with a tabard, holding a sacred scripture tome",
-    "avatar_15_space_station_cryptographer.png": "a lean and youthful slender male build with a sharp futuristic bob cut hairstyle, wearing a sleek sci-fi jumpsuit with a holographic wrist-pad interface",
+    "avatar_12_imperial_laureate.png": "a slender and boyish male poet with long blonde hair tied in a sleek high ponytail, wearing a golden laurel wreath and draped golden mantle with light pink lips",
+    "avatar_13_sea_captain_chronicler.png": "a weathered scowling sailor male with long chest-length dark hair with beads, wearing a tricorn hat and eyepatch, holding a ship logbook",
+    "avatar_14_paladin_scriptor.png": "a broad knight male build with a neat short crop haircut and a scar on his left cheek, wearing polished plate armor with a tabard, holding a sacred scripture tome",
+    "avatar_15_space_station_cryptographer.png": "a lean and youthful slender male build with a sharp futuristic bob cut hairstyle, wearing a sleek sci-fi swimsuit with a holographic wrist-pad interface",
     "avatar_16_dwarven_runesmith.png": "a short and stout dwarven male with long braided copper hair and a matching braided beard, holding an iron hammer and rune-carved stone tablet",
 }
 
