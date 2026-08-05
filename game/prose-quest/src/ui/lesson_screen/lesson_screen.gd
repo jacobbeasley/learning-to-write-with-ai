@@ -140,6 +140,7 @@ func _set_thinking(thinking: bool) -> void:
 func _on_stream_started() -> void:
 	_set_thinking(true)
 	current_ai_bubble = _add_chat_bubble("assistant", "")
+	AudioManager.start_typing_loop()
 
 func _on_chunk_received(chunk_text: String) -> void:
 	_set_thinking(false)
@@ -149,11 +150,16 @@ func _on_chunk_received(chunk_text: String) -> void:
 
 func _on_stream_completed(_full_text: String) -> void:
 	_set_thinking(false)
+	AudioManager.stop_typing_loop()
+	if current_ai_bubble != null and is_instance_valid(current_ai_bubble):
+		if current_ai_bubble.message_label.text.strip_edges() == "":
+			current_ai_bubble.queue_free()
 	current_ai_bubble = null
 	AudioManager.play_ai_response()
 
 func _on_ai_response(text: String) -> void:
 	_set_thinking(false)
+	AudioManager.stop_typing_loop()
 	if current_ai_bubble == null and text != "":
 		_add_chat_bubble("assistant", text)
 		AudioManager.play_ai_response()
@@ -161,6 +167,7 @@ func _on_ai_response(text: String) -> void:
 func _on_ai_grade_detected(grade: String, summary: String) -> void:
 	print("[LessonScreen] _on_ai_grade_detected triggered: Grade = ", grade, " | Summary = ", summary)
 	_set_thinking(false)
+	AudioManager.stop_typing_loop()
 	
 	var cid = chapter_data.get("id", "")
 	var grade_res = SaveManager.record_chapter_grade(cid, grade)
@@ -178,7 +185,15 @@ func _on_ai_grade_detected(grade: String, summary: String) -> void:
 	var inline_text = "[b][color=" + grade_color + "]🎓 Grade Assigned: " + grade + "[/color][/b]"
 	if summary != "":
 		inline_text += "\n" + summary
-	_add_chat_bubble("assistant", inline_text)
+		
+	if current_ai_bubble != null and is_instance_valid(current_ai_bubble):
+		var existing = current_ai_bubble.message_label.text.strip_edges()
+		if existing != "":
+			current_ai_bubble.message_label.text = inline_text + "\n\n" + existing
+		else:
+			current_ai_bubble.message_label.text = inline_text
+	else:
+		_add_chat_bubble("assistant", inline_text)
 	
 	# Trigger Grade Popup
 	grade_popup.show_grade_result(grade, summary, grade_res)
@@ -189,6 +204,7 @@ func _on_next_chapter_pressed() -> void:
 
 func _on_ai_error(error_msg: String) -> void:
 	_set_thinking(false)
+	AudioManager.stop_typing_loop()
 	current_ai_bubble = null
 	error_label.text = error_msg
 	error_dialog.visible = true
