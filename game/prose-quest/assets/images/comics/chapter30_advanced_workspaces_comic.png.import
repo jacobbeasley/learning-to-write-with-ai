@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtqox5r0c0gcg"
-valid=false
+uid="uid://b7lvjjr2nn8xs"
+path="res://.godot/imported/chapter30_advanced_workspaces_comic.png-ca444d9c22052d659e0d30cf1922dd31.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter30_advanced_workspaces_comic.png"
+dest_files=["res://.godot/imported/chapter30_advanced_workspaces_comic.png-ca444d9c22052d659e0d30cf1922dd31.ctex"]
 
 [params]
 

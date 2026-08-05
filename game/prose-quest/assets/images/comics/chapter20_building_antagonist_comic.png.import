@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctvs1b01bidyp"
-valid=false
+uid="uid://143nyc0rqf6a"
+path="res://.godot/imported/chapter20_building_antagonist_comic.png-56101829754d264bda065bbba9e6547c.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter20_building_antagonist_comic.png"
+dest_files=["res://.godot/imported/chapter20_building_antagonist_comic.png-56101829754d264bda065bbba9e6547c.ctex"]
 
 [params]
 

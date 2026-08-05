@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brsdisox6tt7j"
-valid=false
+uid="uid://d2y6sknswi8ga"
+path="res://.godot/imported/chapter27_prompt_engineering_comic.png-fc4c6d3ebfb7b9e89ff5066042102f53.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter27_prompt_engineering_comic.png"
+dest_files=["res://.godot/imported/chapter27_prompt_engineering_comic.png-fc4c6d3ebfb7b9e89ff5066042102f53.ctex"]
 
 [params]
 

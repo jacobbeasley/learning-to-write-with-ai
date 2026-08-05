@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://so51mr5g6sto"
-valid=false
+uid="uid://dk21obbamqyc1"
+path="res://.godot/imported/chapter33_publishing_paths_comic.png-6efe719ece712e57d953840d2bd28053.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter33_publishing_paths_comic.png"
+dest_files=["res://.godot/imported/chapter33_publishing_paths_comic.png-6efe719ece712e57d953840d2bd28053.ctex"]
 
 [params]
 

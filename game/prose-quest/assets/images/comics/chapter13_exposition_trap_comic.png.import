@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3mg20jjmn1qy"
-valid=false
+uid="uid://cwwb4b4dlut5l"
+path="res://.godot/imported/chapter13_exposition_trap_comic.png-a87412775af4444eaeb22f065c370152.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter13_exposition_trap_comic.png"
+dest_files=["res://.godot/imported/chapter13_exposition_trap_comic.png-a87412775af4444eaeb22f065c370152.ctex"]
 
 [params]
 

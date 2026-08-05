@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf2qn4y3yktoy"
-valid=false
+uid="uid://cxp7lp2qvuv0h"
+path="res://.godot/imported/part4_mastering_dialogue_comic.png-02e6f1093dc095d424b9197eb739978b.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/part4_mastering_dialogue_comic.png"
+dest_files=["res://.godot/imported/part4_mastering_dialogue_comic.png-02e6f1093dc095d424b9197eb739978b.ctex"]
 
 [params]
 

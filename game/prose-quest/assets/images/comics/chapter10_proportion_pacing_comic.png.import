@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8osf8uqekvvx"
-valid=false
+uid="uid://dneuh6y5mqcb8"
+path="res://.godot/imported/chapter10_proportion_pacing_comic.png-400148bd8ddb1d90ddce55f5652a4ba9.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter10_proportion_pacing_comic.png"
+dest_files=["res://.godot/imported/chapter10_proportion_pacing_comic.png-400148bd8ddb1d90ddce55f5652a4ba9.ctex"]
 
 [params]
 

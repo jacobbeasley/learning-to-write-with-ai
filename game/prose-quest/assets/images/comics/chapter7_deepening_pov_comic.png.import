@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dc7ge0vvvu55e"
-valid=false
+uid="uid://bfvjkt1osv14f"
+path="res://.godot/imported/chapter7_deepening_pov_comic.png-4c5a75032404c084134dcb0658b0d24e.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter7_deepening_pov_comic.png"
+dest_files=["res://.godot/imported/chapter7_deepening_pov_comic.png-4c5a75032404c084134dcb0658b0d24e.ctex"]
 
 [params]
 

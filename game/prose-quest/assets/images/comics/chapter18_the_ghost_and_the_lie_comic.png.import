@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b47aj8wbswf8p"
-valid=false
+uid="uid://cvjknywea3scb"
+path="res://.godot/imported/chapter18_the_ghost_and_the_lie_comic.png-dae39b72bfb67acb1edbdc4280ea0641.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter18_the_ghost_and_the_lie_comic.png"
+dest_files=["res://.godot/imported/chapter18_the_ghost_and_the_lie_comic.png-dae39b72bfb67acb1edbdc4280ea0641.ctex"]
 
 [params]
 

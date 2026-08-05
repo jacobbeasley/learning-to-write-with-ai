@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pk21247q1qv8"
-valid=false
+uid="uid://cvdt5xl5v1scr"
+path="res://.godot/imported/chapter8_dialogue_formatting_comic.png-5183252ac1fe541c8d58e9e42ac36c69.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter8_dialogue_formatting_comic.png"
+dest_files=["res://.godot/imported/chapter8_dialogue_formatting_comic.png-5183252ac1fe541c8d58e9e42ac36c69.ctex"]
 
 [params]
 

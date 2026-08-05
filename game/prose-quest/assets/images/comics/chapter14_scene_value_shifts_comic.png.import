@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdub7ajydln75"
-valid=false
+uid="uid://c5iem3h6yvuis"
+path="res://.godot/imported/chapter14_scene_value_shifts_comic.png-9a47845572f24e59c9355eb360266236.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter14_scene_value_shifts_comic.png"
+dest_files=["res://.godot/imported/chapter14_scene_value_shifts_comic.png-9a47845572f24e59c9355eb360266236.ctex"]
 
 [params]
 

@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwddybnbya6it"
-valid=false
+uid="uid://tlljp8kijuwc"
+path="res://.godot/imported/part5_outlining_scaling_comic.png-2444cc2e442c7af55bbbcbce8e45cc02.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/part5_outlining_scaling_comic.png"
+dest_files=["res://.godot/imported/part5_outlining_scaling_comic.png-2444cc2e442c7af55bbbcbce8e45cc02.ctex"]
 
 [params]
 

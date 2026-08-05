@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbm2w3barss5p"
-valid=false
+uid="uid://bjduwws723uxm"
+path="res://.godot/imported/chapter15_character_voice_comic.png-ba83d4f37823321f66588f8ff860f8ba.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter15_character_voice_comic.png"
+dest_files=["res://.godot/imported/chapter15_character_voice_comic.png-ba83d4f37823321f66588f8ff860f8ba.ctex"]
 
 [params]
 

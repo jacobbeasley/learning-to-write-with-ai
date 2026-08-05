@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc26c1vxakllw"
-valid=false
+uid="uid://ce87p7hgjm8uw"
+path="res://.godot/imported/chapter21_categories_world_building_comic.png-bcaac6dbfbde33ced563c0f0c7514b55.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter21_categories_world_building_comic.png"
+dest_files=["res://.godot/imported/chapter21_categories_world_building_comic.png-bcaac6dbfbde33ced563c0f0c7514b55.ctex"]
 
 [params]
 

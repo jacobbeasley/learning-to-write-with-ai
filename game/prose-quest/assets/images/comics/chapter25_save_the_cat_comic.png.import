@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3bnnjqdefoy3"
-valid=false
+uid="uid://d0hufgreaocx3"
+path="res://.godot/imported/chapter25_save_the_cat_comic.png-80f5be0d4ee84fa3dc71d1c2d620c15f.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter25_save_the_cat_comic.png"
+dest_files=["res://.godot/imported/chapter25_save_the_cat_comic.png-80f5be0d4ee84fa3dc71d1c2d620c15f.ctex"]
 
 [params]
 

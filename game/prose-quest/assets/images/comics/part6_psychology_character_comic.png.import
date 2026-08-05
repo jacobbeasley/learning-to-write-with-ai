@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjglfrai3smup"
-valid=false
+uid="uid://otna5ns6wjgo"
+path="res://.godot/imported/part6_psychology_character_comic.png-26728932431d53b683ba706243c72dec.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/part6_psychology_character_comic.png"
+dest_files=["res://.godot/imported/part6_psychology_character_comic.png-26728932431d53b683ba706243c72dec.ctex"]
 
 [params]
 

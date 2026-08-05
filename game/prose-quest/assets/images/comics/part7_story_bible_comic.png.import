@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6tc8ilkptaku"
-valid=false
+uid="uid://csli5fd6vf42h"
+path="res://.godot/imported/part7_story_bible_comic.png-89ab9d5983be6b25927e7aa94ac83d6e.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/part7_story_bible_comic.png"
+dest_files=["res://.godot/imported/part7_story_bible_comic.png-89ab9d5983be6b25927e7aa94ac83d6e.ctex"]
 
 [params]
 

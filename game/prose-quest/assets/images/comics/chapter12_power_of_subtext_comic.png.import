@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnint0lfveqj"
-valid=false
+uid="uid://cc3gxqwdrp76"
+path="res://.godot/imported/chapter12_power_of_subtext_comic.png-8a396db594ab1aa26196148dbfa018a9.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter12_power_of_subtext_comic.png"
+dest_files=["res://.godot/imported/chapter12_power_of_subtext_comic.png-8a396db594ab1aa26196148dbfa018a9.ctex"]
 
 [params]
 

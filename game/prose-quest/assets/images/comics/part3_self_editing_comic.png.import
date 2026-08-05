@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwa1k586wjyyt"
-valid=false
+uid="uid://7u4hxjhs55ry"
+path="res://.godot/imported/part3_self_editing_comic.png-635f2cff34e903826fb02cd0f5603354.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/part3_self_editing_comic.png"
+dest_files=["res://.godot/imported/part3_self_editing_comic.png-635f2cff34e903826fb02cd0f5603354.ctex"]
 
 [params]
 

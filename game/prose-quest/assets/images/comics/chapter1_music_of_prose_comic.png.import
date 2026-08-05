@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3tl2i55p7m8t"
-valid=false
+uid="uid://dnbvgb2gm5ykw"
+path="res://.godot/imported/chapter1_music_of_prose_comic.png-e2ccacbaec3326a9e2c67f316276cdb4.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter1_music_of_prose_comic.png"
+dest_files=["res://.godot/imported/chapter1_music_of_prose_comic.png-e2ccacbaec3326a9e2c67f316276cdb4.ctex"]
 
 [params]
 

@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://devexmik8pbw6"
-valid=false
+uid="uid://bx7sok6iw63la"
+path="res://.godot/imported/chapter26_story_circle_comic.png-a69aaadb91cc30d3163792c4939d402e.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter26_story_circle_comic.png"
+dest_files=["res://.godot/imported/chapter26_story_circle_comic.png-a69aaadb91cc30d3163792c4939d402e.ctex"]
 
 [params]
 

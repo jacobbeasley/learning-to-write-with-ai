@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://busaoi4rvlng5"
-valid=false
+uid="uid://dawi87tl2ahfq"
+path="res://.godot/imported/chapter6_opening_ending_comic.png-fbf2ff98eb6a5aa1d752ce3ecf842e98.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter6_opening_ending_comic.png"
+dest_files=["res://.godot/imported/chapter6_opening_ending_comic.png-fbf2ff98eb6a5aa1d752ce3ecf842e98.ctex"]
 
 [params]
 

@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ly4a3tyd0g86"
-valid=false
+uid="uid://brlwlgk1hx80s"
+path="res://.godot/imported/part9_ai_collaboration_comic.png-05b43f712c699c651549bd66be79e454.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/part9_ai_collaboration_comic.png"
+dest_files=["res://.godot/imported/part9_ai_collaboration_comic.png-05b43f712c699c651549bd66be79e454.ctex"]
 
 [params]
 

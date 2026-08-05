@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1oa3g7yuyp1i"
-valid=false
+uid="uid://dggra7fd3pktm"
+path="res://.godot/imported/chapter3_economy_language_comic.png-7bec5c8fcf907275f46b8f20598527c7.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter3_economy_language_comic.png"
+dest_files=["res://.godot/imported/chapter3_economy_language_comic.png-7bec5c8fcf907275f46b8f20598527c7.ctex"]
 
 [params]
 

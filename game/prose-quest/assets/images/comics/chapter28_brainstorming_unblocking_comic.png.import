@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sxf5y8u8ed21"
-valid=false
+uid="uid://bxj8nda5nxr1o"
+path="res://.godot/imported/chapter28_brainstorming_unblocking_comic.png-2e566854d4a6b35c5703416edcdea16f.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter28_brainstorming_unblocking_comic.png"
+dest_files=["res://.godot/imported/chapter28_brainstorming_unblocking_comic.png-2e566854d4a6b35c5703416edcdea16f.ctex"]
 
 [params]
 

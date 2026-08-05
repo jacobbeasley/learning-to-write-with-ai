@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctarqxx1q3daj"
-valid=false
+uid="uid://cvcftlw8tckak"
+path="res://.godot/imported/part10_final_polish_publication_comic.png-30b8bc2dfb33f0ea9e3c59d10fc91dc6.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/part10_final_polish_publication_comic.png"
+dest_files=["res://.godot/imported/part10_final_polish_publication_comic.png-30b8bc2dfb33f0ea9e3c59d10fc91dc6.ctex"]
 
 [params]
 

@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2bqc32uxf366"
-valid=false
+uid="uid://be1jv6klendj"
+path="res://.godot/imported/chapter9_trusting_reader_comic.png-1221651b062db239d10e00fc3f686354.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter9_trusting_reader_comic.png"
+dest_files=["res://.godot/imported/chapter9_trusting_reader_comic.png-1221651b062db239d10e00fc3f686354.ctex"]
 
 [params]
 

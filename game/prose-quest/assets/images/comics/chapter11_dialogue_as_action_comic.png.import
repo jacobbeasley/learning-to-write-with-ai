@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://deed4eoyxmyfm"
-valid=false
+uid="uid://e8tryv5vcvt2"
+path="res://.godot/imported/chapter11_dialogue_as_action_comic.png-b8a0f9bd24d457472a1cce623e34f8e5.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter11_dialogue_as_action_comic.png"
+dest_files=["res://.godot/imported/chapter11_dialogue_as_action_comic.png-b8a0f9bd24d457472a1cce623e34f8e5.ctex"]
 
 [params]
 

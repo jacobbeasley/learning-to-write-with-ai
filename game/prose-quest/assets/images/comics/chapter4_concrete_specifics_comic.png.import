@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cruc4kip1irin"
-valid=false
+uid="uid://8t4t2wyb2t3x"
+path="res://.godot/imported/chapter4_concrete_specifics_comic.png-0c8f818032bba4c1379d4e7964a92dee.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter4_concrete_specifics_comic.png"
+dest_files=["res://.godot/imported/chapter4_concrete_specifics_comic.png-0c8f818032bba4c1379d4e7964a92dee.ctex"]
 
 [params]
 

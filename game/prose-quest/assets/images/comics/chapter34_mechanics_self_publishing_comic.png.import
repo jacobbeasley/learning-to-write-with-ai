@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cia1kcprxsk4f"
-valid=false
+uid="uid://bxhai6712mnmv"
+path="res://.godot/imported/chapter34_mechanics_self_publishing_comic.png-813963878e547692c21ba8459eb6ca69.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter34_mechanics_self_publishing_comic.png"
+dest_files=["res://.godot/imported/chapter34_mechanics_self_publishing_comic.png-813963878e547692c21ba8459eb6ca69.ctex"]
 
 [params]
 

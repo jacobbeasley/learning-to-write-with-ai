@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqmaibuj814a"
-valid=false
+uid="uid://d1gscvbhmy666"
+path="res://.godot/imported/part8_narrative_theories_comic.png-bf76d41dc0fe5b7b9c8715f80674e635.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/part8_narrative_theories_comic.png"
+dest_files=["res://.godot/imported/part8_narrative_theories_comic.png-bf76d41dc0fe5b7b9c8715f80674e635.ctex"]
 
 [params]
 

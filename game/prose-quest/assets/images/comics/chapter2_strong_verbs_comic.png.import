@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ngcqoej6cm6"
-valid=false
+uid="uid://drtl2t3ujddh8"
+path="res://.godot/imported/chapter2_strong_verbs_comic.png-7e28fbab3f9d5678dab126c2a8a1056a.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter2_strong_verbs_comic.png"
+dest_files=["res://.godot/imported/chapter2_strong_verbs_comic.png-7e28fbab3f9d5678dab126c2a8a1056a.ctex"]
 
 [params]
 

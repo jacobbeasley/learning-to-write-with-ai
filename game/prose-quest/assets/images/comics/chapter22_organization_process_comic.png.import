@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7nm61upvxa2p"
-valid=false
+uid="uid://cnsxxw06e32cy"
+path="res://.godot/imported/chapter22_organization_process_comic.png-4860dd9f779b7e789994da856d07c88b.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter22_organization_process_comic.png"
+dest_files=["res://.godot/imported/chapter22_organization_process_comic.png-4860dd9f779b7e789994da856d07c88b.ctex"]
 
 [params]
 

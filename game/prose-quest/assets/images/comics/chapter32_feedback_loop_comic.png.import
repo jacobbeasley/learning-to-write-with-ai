@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh8l8dlsc0ecr"
-valid=false
+uid="uid://dijovi57qjfgh"
+path="res://.godot/imported/chapter32_feedback_loop_comic.png-1f79dfe1ac591dc327647c2ad5f27659.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter32_feedback_loop_comic.png"
+dest_files=["res://.godot/imported/chapter32_feedback_loop_comic.png-1f79dfe1ac591dc327647c2ad5f27659.ctex"]
 
 [params]
 

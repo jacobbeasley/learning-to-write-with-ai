@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4357e04e3fmo"
-valid=false
+uid="uid://coqp2aaigu8fa"
+path="res://.godot/imported/chapter24_heros_journey_comic.png-017bd5e6c7e223de193c90a37f9e25cc.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter24_heros_journey_comic.png"
+dest_files=["res://.godot/imported/chapter24_heros_journey_comic.png-017bd5e6c7e223de193c90a37f9e25cc.ctex"]
 
 [params]
 

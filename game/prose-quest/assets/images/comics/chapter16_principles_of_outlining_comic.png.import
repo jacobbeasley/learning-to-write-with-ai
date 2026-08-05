@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hysfxnnpclw7"
-valid=false
+uid="uid://dcqjyuwnqiepl"
+path="res://.godot/imported/chapter16_principles_of_outlining_comic.png-8ad7dc3c62812a097551bc8e0dcf343e.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter16_principles_of_outlining_comic.png"
+dest_files=["res://.godot/imported/chapter16_principles_of_outlining_comic.png-8ad7dc3c62812a097551bc8e0dcf343e.ctex"]
 
 [params]
 

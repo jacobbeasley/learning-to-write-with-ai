@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://80ktobmlctna"
-valid=false
+uid="uid://bmv6nedikfwxd"
+path="res://.godot/imported/chapter31_ethical_legal_boundaries_comic.png-6a8decc60247bffa3075f989e3d1c724.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter31_ethical_legal_boundaries_comic.png"
+dest_files=["res://.godot/imported/chapter31_ethical_legal_boundaries_comic.png-6a8decc60247bffa3075f989e3d1c724.ctex"]
 
 [params]
 
