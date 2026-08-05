@@ -159,6 +159,7 @@ func _on_ai_response(text: String) -> void:
 		AudioManager.play_ai_response()
 
 func _on_ai_grade_detected(grade: String, summary: String) -> void:
+	print("[LessonScreen] _on_ai_grade_detected triggered: Grade = ", grade, " | Summary = ", summary)
 	_set_thinking(false)
 	
 	var cid = chapter_data.get("id", "")
@@ -171,6 +172,13 @@ func _on_ai_grade_detected(grade: String, summary: String) -> void:
 	next_chapter_id = GameManager.get_next_chapter_id(cid)
 	if next_chapter_id != "":
 		next_chapter_button.visible = true
+		
+	# Display inline grade & feedback summary card in chat window
+	var grade_color = "#4ade80" if grade in ["A", "B"] else "#f87171"
+	var inline_text = "[b][color=" + grade_color + "]🎓 Grade Assigned: " + grade + "[/color][/b]"
+	if summary != "":
+		inline_text += "\n" + summary
+	_add_chat_bubble("assistant", inline_text)
 	
 	# Trigger Grade Popup
 	grade_popup.show_grade_result(grade, summary, grade_res)

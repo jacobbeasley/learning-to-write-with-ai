@@ -16,6 +16,9 @@ var is_streaming: bool = false
 
 var stream_buffer: String = ""
 var stream_full_text: String = ""
+var stream_tool_name: String = ""
+var stream_tool_args: String = ""
+var grade_emitted_for_request: bool = false
 var chat_history: Array = []
 
 func _ready() -> void:
@@ -26,10 +29,35 @@ func _ready() -> void:
 func reset_chat_session(system_prompt: String = "") -> void:
 	chat_history.clear()
 	if system_prompt != "":
+		var tool_directive = "\n\n[SYSTEM DIRECTIVE: Whenever you evaluate, grade, or re-grade the user's fiction writing exercise submission, you MUST execute the tool call function 'gradeActivity' with the letter grade (A, B, C, D, or F) and a concise feedback summary. You must also provide your full coaching critique and recommendations in your message.]"
 		chat_history.append({
 			"role": "system",
-			"content": system_prompt
+			"content": system_prompt + tool_directive
 		})
+
+func _get_tool_schema() -> Dictionary:
+	return {
+		"type": "function",
+		"function": {
+			"name": "gradeActivity",
+			"description": "REQUIRED TOOL: Call this tool every time you evaluate the student's submission to assign a letter grade (A, B, C, D, or F) and provide a feedback summary.",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"grade": {
+						"type": "string",
+						"enum": ["A", "B", "C", "D", "F"],
+						"description": "The letter grade awarded to the student's rewrite."
+					},
+					"feedback_summary": {
+						"type": "string",
+						"description": "A 1-sentence summary of why this grade was assigned."
+					}
+				},
+				"required": ["grade", "feedback_summary"]
+			}
+		}
+	}
 
 func _get_request_headers() -> PackedStringArray:
 	var headers: PackedStringArray = ["Content-Type: application/json"]
@@ -80,41 +108,20 @@ func send_message(user_text: String) -> void:
 		})
 		
 	is_busy = true
+	grade_emitted_for_request = false
 	
 	var api_url = SaveManager.settings.get("lm_studio_url", "http://127.0.0.1:1234/v1/chat/completions")
 	var model_name = SaveManager.settings.get("model_name", "local-model").strip_edges()
 	if model_name == "":
 		model_name = "local-model"
 		
-	var tool_schema = {
-		"type": "function",
-		"function": {
-			"name": "gradeActivity",
-			"description": "Call this tool to grade the student's fiction writing exercise submission with a letter grade (A, B, C, D, or F) and provide a concise feedback summary.",
-			"parameters": {
-				"type": "object",
-				"properties": {
-					"grade": {
-						"type": "string",
-						"enum": ["A", "B", "C", "D", "F"],
-						"description": "The letter grade awarded to the student's rewrite."
-					},
-					"feedback_summary": {
-						"type": "string",
-						"description": "A 1-sentence summary of why this grade was assigned."
-					}
-				},
-				"required": ["grade", "feedback_summary"]
-			}
-		}
-	}
-	
 	var payload = {
 		"model": model_name,
 		"messages": chat_history,
 		"temperature": 0.7,
 		"stream": true,
-		"tools": [tool_schema]
+		"tools": [_get_tool_schema()],
+		"tool_choice": "auto"
 	}
 	
 	var parsed = _parse_url(api_url)
@@ -132,6 +139,8 @@ func send_message(user_text: String) -> void:
 		
 	stream_buffer = ""
 	stream_full_text = ""
+	stream_tool_name = ""
+	stream_tool_args = ""
 	is_streaming = true
 	stream_started.emit()
 
@@ -152,35 +161,13 @@ func _process(_delta: float) -> void:
 		if model_name == "":
 			model_name = "local-model"
 			
-		var tool_schema = {
-			"type": "function",
-			"function": {
-				"name": "gradeActivity",
-				"description": "Call this tool to grade the student's fiction writing exercise submission with a letter grade (A, B, C, D, or F) and provide a concise feedback summary.",
-				"parameters": {
-					"type": "object",
-					"properties": {
-						"grade": {
-							"type": "string",
-							"enum": ["A", "B", "C", "D", "F"],
-							"description": "The letter grade awarded to the student's rewrite."
-						},
-						"feedback_summary": {
-							"type": "string",
-							"description": "A 1-sentence summary of why this grade was assigned."
-						}
-					},
-					"required": ["grade", "feedback_summary"]
-				}
-			}
-		}
-		
 		var payload = {
 			"model": model_name,
 			"messages": chat_history,
 			"temperature": 0.7,
 			"stream": true,
-			"tools": [tool_schema]
+			"tools": [_get_tool_schema()],
+			"tool_choice": "auto"
 		}
 		
 		var headers = _get_request_headers()
@@ -228,21 +215,15 @@ func _parse_stream_buffer() -> void:
 							stream_full_text += chunk_str
 							chunk_received.emit(chunk_str)
 							
-					# Parse tool calls from streaming delta
+					# Accumulate streaming tool call deltas across chunks
 					var tool_calls = delta.get("tool_calls", [])
 					for tc in tool_calls:
 						var fn = tc.get("function", {})
-						if fn.get("name") == "gradeActivity":
-							var args_raw = fn.get("arguments", "{}")
-							var args = args_raw
-							if args_raw is String:
-								args = JSON.parse_string(args_raw)
-							if args is Dictionary:
-								var grade = args.get("grade", "").to_upper()
-								var summary = args.get("feedback_summary", "")
-								if grade in ["A", "B", "C", "D", "F"]:
-									grade_detected.emit(grade, summary)
-									break
+						if fn.has("name") and str(fn["name"]) != "":
+							stream_tool_name = str(fn["name"])
+							print("[AIManager] Streaming tool call started: ", stream_tool_name)
+						if fn.has("arguments") and fn["arguments"] != null:
+							stream_tool_args += str(fn["arguments"])
 
 func _finish_stream() -> void:
 	if not is_streaming:
@@ -261,7 +242,22 @@ func _finish_stream() -> void:
 	response_received.emit(stream_full_text)
 	stream_completed.emit(stream_full_text)
 	
-	_fallback_regex_grade_check(stream_full_text)
+	print("[AIManager] Stream finished. Length: ", stream_full_text.length(), " chars.")
+	
+	# Process streaming tool call if received
+	if not grade_emitted_for_request and stream_tool_name == "gradeActivity" and stream_tool_args != "":
+		print("[AIManager] Parsing accumulated tool arguments: ", stream_tool_args)
+		var args = JSON.parse_string(stream_tool_args)
+		if args is Dictionary:
+			var grade = str(args.get("grade", "")).to_upper().strip_edges()
+			var summary = str(args.get("feedback_summary", "")).strip_edges()
+			if grade in ["A", "B", "C", "D", "F"]:
+				grade_emitted_for_request = true
+				print("[AIManager] Tool call grade detected! Emitting grade: ", grade, " | Summary: ", summary)
+				grade_detected.emit(grade, summary)
+				
+	if not grade_emitted_for_request:
+		_fallback_regex_grade_check(stream_full_text)
 
 func test_connection() -> void:
 	var api_url = SaveManager.settings.get("lm_studio_url", "http://127.0.0.1:1234/v1/chat/completions")
@@ -308,6 +304,7 @@ func fetch_available_models() -> void:
 
 func _on_request_completed(result: int, response_code: int, _headers: PackedStringArray, body: PackedByteArray) -> void:
 	is_busy = false
+	grade_emitted_for_request = false
 	
 	if result != HTTPRequest.RESULT_SUCCESS or response_code != 200:
 		var err_str = "AI server error (" + str(response_code) + "). Check your URL, Model Name, and API Key settings."
@@ -341,7 +338,6 @@ func _on_request_completed(result: int, response_code: int, _headers: PackedStri
 	response_received.emit(content_text)
 
 	var tool_calls = message.get("tool_calls", [])
-	var grade_found = false
 	
 	for tc in tool_calls:
 		var fn = tc.get("function", {})
@@ -351,21 +347,42 @@ func _on_request_completed(result: int, response_code: int, _headers: PackedStri
 			if args_raw is String:
 				args = JSON.parse_string(args_raw)
 			if args is Dictionary:
-				var grade = args.get("grade", "").to_upper()
-				var summary = args.get("feedback_summary", "")
+				var grade = str(args.get("grade", "")).to_upper().strip_edges()
+				var summary = str(args.get("feedback_summary", "")).strip_edges()
 				if grade in ["A", "B", "C", "D", "F"]:
+					grade_emitted_for_request = true
+					print("[AIManager] HTTP tool call grade detected! Emitting grade: ", grade, " | Summary: ", summary)
 					grade_detected.emit(grade, summary)
-					grade_found = true
 					break
 
-	if not grade_found and content_text != "":
+	if not grade_emitted_for_request and content_text != "":
 		_fallback_regex_grade_check(content_text)
 
 func _fallback_regex_grade_check(text: String) -> void:
+	if grade_emitted_for_request or text.strip_edges() == "":
+		return
+		
+	print("[AIManager] Running fallback regex grade check on response text...")
 	var regex = RegEx.new()
-	regex.compile("(?i)(?:grade(?:\\s+is|\\s+assigned|\\s*:|\\s+of)?\\s*[:\\[\\s]*)([A-DF])(?![a-z])")
+	regex.compile("(?i)\\bgrade\\b[^a-zA-Z0-9]*?(?:is|assigned|of)?\\s*[*_`\\[\\(:=]*\\s*([A-DF])\\b")
 	var result = regex.search(text)
 	if result:
 		var grade = result.get_string(1).to_upper()
 		if grade in ["A", "B", "C", "D", "F"]:
+			grade_emitted_for_request = true
+			print("[AIManager] Fallback Regex 1 matched grade: ", grade)
 			grade_detected.emit(grade, "Grade detected in evaluation feedback.")
+			return
+			
+	var regex2 = RegEx.new()
+	regex2.compile("(?i)\\bgrade\\s+([A-DF])\\b")
+	var res2 = regex2.search(text)
+	if res2:
+		var grade2 = res2.get_string(1).to_upper()
+		if grade2 in ["A", "B", "C", "D", "F"]:
+			grade_emitted_for_request = true
+			print("[AIManager] Fallback Regex 2 matched grade: ", grade2)
+			grade_detected.emit(grade2, "Grade detected in evaluation feedback.")
+			return
+			
+	print("[AIManager] No grade detected via tool call or regex fallback.")
