@@ -107,12 +107,15 @@ func _load_chapter() -> void:
 	else:
 		_add_chat_bubble("assistant", "Welcome to Chapter " + str(chapter_data.get("number", 1)) + "! Read the lesson materials on the left, then send your draft when ready.")
 
+func _audio() -> Node:
+	return get_node_or_null("/root/AudioManager")
+
 func _on_send_pressed() -> void:
 	var text = message_input.text.strip_edges()
 	if text == "" or AIManager.is_busy:
 		return
 		
-	AudioManager.play_submit()
+	if _audio(): _audio().play_submit()
 	_add_chat_bubble("user", text)
 	message_input.text = ""
 	_set_thinking(true)
@@ -130,8 +133,19 @@ func _add_chat_bubble(sender: String, text: String) -> MarginContainer:
 	var bubble = CHAT_BUBBLE.instantiate()
 	chat_container.add_child(bubble)
 	bubble.setup(sender, text)
-	chat_scroll.scroll_vertical = int(chat_scroll.get_v_scroll_bar().max_value)
+	_scroll_to_bottom(bubble)
 	return bubble
+
+func _scroll_to_bottom(target_bubble: Control = null) -> void:
+	# Wait 2 frames for RichTextLabel text wrap and container height recalculation
+	await get_tree().process_frame
+	await get_tree().process_frame
+	if chat_scroll:
+		if target_bubble and is_instance_valid(target_bubble):
+			chat_scroll.ensure_control_visible(target_bubble)
+		var v_bar = chat_scroll.get_v_scroll_bar()
+		if v_bar:
+			chat_scroll.scroll_vertical = int(v_bar.max_value)
 
 func _set_thinking(thinking: bool) -> void:
 	thinking_label.visible = thinking
@@ -140,34 +154,34 @@ func _set_thinking(thinking: bool) -> void:
 func _on_stream_started() -> void:
 	_set_thinking(true)
 	current_ai_bubble = _add_chat_bubble("assistant", "")
-	AudioManager.start_typing_loop()
+	if _audio(): _audio().start_typing_loop()
 
 func _on_chunk_received(chunk_text: String) -> void:
 	_set_thinking(false)
 	if current_ai_bubble != null:
 		current_ai_bubble.append_chunk(chunk_text)
-		chat_scroll.scroll_vertical = int(chat_scroll.get_v_scroll_bar().max_value)
+		_scroll_to_bottom(current_ai_bubble)
 
 func _on_stream_completed(_full_text: String) -> void:
 	_set_thinking(false)
-	AudioManager.stop_typing_loop()
+	if _audio(): _audio().stop_typing_loop()
 	if current_ai_bubble != null and is_instance_valid(current_ai_bubble):
 		if current_ai_bubble.message_label.text.strip_edges() == "":
 			current_ai_bubble.queue_free()
 	current_ai_bubble = null
-	AudioManager.play_ai_response()
+	if _audio(): _audio().play_ai_response()
 
 func _on_ai_response(text: String) -> void:
 	_set_thinking(false)
-	AudioManager.stop_typing_loop()
+	if _audio(): _audio().stop_typing_loop()
 	if current_ai_bubble == null and text != "":
 		_add_chat_bubble("assistant", text)
-		AudioManager.play_ai_response()
+		if _audio(): _audio().play_ai_response()
 
 func _on_ai_grade_detected(grade: String, summary: String) -> void:
 	print("[LessonScreen] _on_ai_grade_detected triggered: Grade = ", grade, " | Summary = ", summary)
 	_set_thinking(false)
-	AudioManager.stop_typing_loop()
+	if _audio(): _audio().stop_typing_loop()
 	
 	var cid = chapter_data.get("id", "")
 	var grade_res = SaveManager.record_chapter_grade(cid, grade)
@@ -187,13 +201,15 @@ func _on_ai_grade_detected(grade: String, summary: String) -> void:
 		inline_text += "\n" + summary
 		
 	if current_ai_bubble != null and is_instance_valid(current_ai_bubble):
-		var existing = current_ai_bubble.message_label.text.strip_edges()
+		var existing = current_ai_bubble.raw_text.strip_edges()
 		if existing != "":
-			current_ai_bubble.message_label.text = inline_text + "\n\n" + existing
+			current_ai_bubble.set_raw_text(inline_text + "\n\n" + existing)
 		else:
-			current_ai_bubble.message_label.text = inline_text
+			current_ai_bubble.set_raw_text(inline_text)
 	else:
 		_add_chat_bubble("assistant", inline_text)
+		
+	_scroll_to_bottom(current_ai_bubble)
 	
 	# Trigger Grade Popup
 	grade_popup.show_grade_result(grade, summary, grade_res)
@@ -204,7 +220,7 @@ func _on_next_chapter_pressed() -> void:
 
 func _on_ai_error(error_msg: String) -> void:
 	_set_thinking(false)
-	AudioManager.stop_typing_loop()
+	if _audio(): _audio().stop_typing_loop()
 	current_ai_bubble = null
 	error_label.text = error_msg
 	error_dialog.visible = true

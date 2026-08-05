@@ -4,6 +4,8 @@ extends MarginContainer
 @onready var sender_label: Label = %SenderLabel
 @onready var message_label: RichTextLabel = %MessageLabel
 
+var raw_text: String = ""
+
 func setup(sender: String, text: String) -> void:
 	size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	
@@ -40,8 +42,58 @@ func setup(sender: String, text: String) -> void:
 		style.content_margin_bottom = 10
 		panel.add_theme_stylebox_override("panel", style)
 		
-	message_label.text = text
+	raw_text = text
+	_update_text_display()
 
 func append_chunk(chunk_text: String) -> void:
+	raw_text += chunk_text
+	_update_text_display()
+
+func set_raw_text(new_text: String) -> void:
+	raw_text = new_text
+	_update_text_display()
+
+func _update_text_display() -> void:
 	if message_label:
-		message_label.text += chunk_text
+		message_label.bbcode_enabled = true
+		message_label.text = markdown_to_bbcode(raw_text)
+
+static func markdown_to_bbcode(md: String) -> String:
+	if md == "":
+		return ""
+		
+	var text = md
+
+	# 1. Convert Bullet lists (- item or * item at start of line)
+	var re_bullet = RegEx.new()
+	re_bullet.compile("(?m)^[ \\t]*[-*]\\s+")
+	text = re_bullet.sub(text, "• ", true)
+
+	# 2. Convert Bold (**text**)
+	var re_bold = RegEx.new()
+	re_bold.compile("\\*\\*(.*?)\\*\\*")
+	text = re_bold.sub(text, "[b]$1[/b]", true)
+
+	# 3. Convert Italics (*text* or word-bounded _text_)
+	var re_asterisk_italic = RegEx.new()
+	re_asterisk_italic.compile("(?<!\\*)\\*([^\\*\\n]+)\\*(?!\\*)")
+	text = re_asterisk_italic.sub(text, "[i]$1[/i]", true)
+
+	var re_underscore_italic = RegEx.new()
+	re_underscore_italic.compile("(?:^|\\s)_([^_\\n]+)_(?=\\s|[.,!\\?:]|$)")
+	text = re_underscore_italic.sub(text, " [i]$1[/i]", true)
+
+	# 4. Convert Headings (#, ##, ###) - executed LAST to preserve injected BBCode tags
+	var re_h3 = RegEx.new()
+	re_h3.compile("(?m)^###\\s+(.+)$")
+	text = re_h3.sub(text, "[font_size=15][b]$1[/b][/font_size]", true)
+
+	var re_h2 = RegEx.new()
+	re_h2.compile("(?m)^##\\s+(.+)$")
+	text = re_h2.sub(text, "[font_size=17][b][color=#e8a849]$1[/color][/b][/font_size]", true)
+
+	var re_h1 = RegEx.new()
+	re_h1.compile("(?m)^#\\s+(.+)$")
+	text = re_h1.sub(text, "[font_size=19][b][color=#d4a574]$1[/color][/b][/font_size]", true)
+
+	return text

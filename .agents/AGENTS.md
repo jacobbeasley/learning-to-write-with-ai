@@ -53,3 +53,18 @@ When working on the **Prose Quest** game (`game/prose-quest/`), enforce these Go
 
 6. **TextureRect Sizing in Container Layouts:**
    - When using `expand_mode = 1` (`EXPAND_IGNORE_SIZE`) and `stretch_mode = 5` (`STRETCH_KEEP_ASPECT_CENTERED`) inside containers, specify `custom_minimum_size` or set `size_flags_horizontal = SIZE_EXPAND_FILL` and `size_flags_vertical = SIZE_EXPAND_FILL` to prevent collapsing to zero height.
+
+7. **Autoload Class Names vs. Singleton Registry:**
+   - In Godot 4, scripts declared under `[autoload]` in `project.godot` automatically register as global singletons. Adding `class_name` to an autoload script causes a `Class "X" hides an autoload singleton` compile error. Do NOT include `class_name` at the top of autoload scripts.
+
+8. **Parse-Time Safe Autoload Access (`get_node_or_null("/root/AutoloadName")`):**
+   - Referencing autoload singletons by static identifier (e.g. `AudioManager.play_sound()`) can trigger `Compile Error: Identifier not found` if Godot's script parser cache hasn't re-indexed disk modifications. Use dynamic node lookup `var am = get_node_or_null("/root/AudioManager"); if am: am.play_sound()` in UI scripts for 100% parse-time safety.
+
+9. **Deferred Container Layout Scrolling (`call_deferred`):**
+   - Setting `scroll_vertical = max_value` immediately after adding a child node or updating text fails to scroll to the true bottom because container heights recalculate on the next frame. Use `call_deferred("_do_scroll")` so scrolling executes after the layout engine updates `max_value`.
+
+10. **Markdown-to-BBCode Regex Tag Order:**
+    - Process inline Markdown (Bold `**text**`, Italics `*text*`/`_text_`) BEFORE generating BBCode tags that contain underscores (e.g. `[font_size=17]`). Otherwise, single-underscore italic regexes match internal tag names (`font_size`) and corrupt the markup. Use boundary-anchored regexes `(?:^|\s)_([^_]+)_(?=\s|[.,!?:]|$)`.
+
+11. **Streaming OpenAI SSE Tool Call Delta Aggregation:**
+    - OpenAI / OpenRouter / LM Studio SSE streams send tool call arguments incrementally across partial deltas without repeating `name`. Accumulate `stream_tool_name` and `stream_tool_args` across all incoming stream deltas before executing `JSON.parse_string()`, rather than parsing per chunk.

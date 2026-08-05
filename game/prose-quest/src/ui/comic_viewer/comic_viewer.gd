@@ -16,7 +16,8 @@ func _ready() -> void:
 	)
 	
 	title_label.text = GameManager.comic_title
-	AudioManager.play_comic_reveal()
+	var am = get_node_or_null("/root/AudioManager")
+	if am: am.play_comic_reveal()
 	
 	var path = GameManager.comic_image_path
 	print("ComicViewer loading path: ", path)
