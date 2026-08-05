@@ -3,9 +3,29 @@ extends Control
 @onready var parts_container: VBoxContainer = %PartsContainer
 @onready var profile_name_label: Label = %ProfileNameLabel
 @onready var total_points_label: Label = %TotalPointsLabel
+@onready var avatar_icon: TextureRect = %AvatarIcon
 @onready var profile_button: Button = %ProfileButton
 @onready var settings_button: Button = %SettingsButton
 @onready var settings_panel: Control = %SettingsPanel
+
+const AVATAR_PATHS = [
+	"res://assets/images/avatars/avatar_01_novice_scribe.png",
+	"res://assets/images/avatars/avatar_02_cyberpunk_hacker.png",
+	"res://assets/images/avatars/avatar_03_wandering_bard.png",
+	"res://assets/images/avatars/avatar_04_clockwork_engineer.png",
+	"res://assets/images/avatars/avatar_05_high_elf_archivist.png",
+	"res://assets/images/avatars/avatar_06_desert_cartographer.png",
+	"res://assets/images/avatars/avatar_07_alchemist_researcher.png",
+	"res://assets/images/avatars/avatar_08_shadow_scriptor.png",
+	"res://assets/images/avatars/avatar_09_arcane_scholar.png",
+	"res://assets/images/avatars/avatar_10_royal_historian.png",
+	"res://assets/images/avatars/avatar_11_dragon_archivist.png",
+	"res://assets/images/avatars/avatar_12_imperial_laureate.png",
+	"res://assets/images/avatars/avatar_13_sea_captain_chronicler.png",
+	"res://assets/images/avatars/avatar_14_paladin_scriptor.png",
+	"res://assets/images/avatars/avatar_15_space_station_cryptographer.png",
+	"res://assets/images/avatars/avatar_16_dwarven_runesmith.png"
+]
 
 func _ready() -> void:
 	profile_button.pressed.connect(_on_profile_pressed)
@@ -14,13 +34,37 @@ func _ready() -> void:
 	_update_header()
 	_populate_parts()
 
+func _get_avatar_texture(idx: int) -> Texture2D:
+	idx = posmod(idx, AVATAR_PATHS.size())
+	var path = AVATAR_PATHS[idx]
+	if ResourceLoader.exists(path):
+		var res = load(path)
+		if res is Texture2D:
+			return res
+	var global_path = ProjectSettings.globalize_path(path)
+	if FileAccess.file_exists(path):
+		var img = Image.load_from_file(global_path)
+		if img and not img.is_empty():
+			return ImageTexture.create_from_image(img)
+	return null
+
 func _update_header() -> void:
 	if not SaveManager.current_profile.is_empty():
 		profile_name_label.text = SaveManager.current_profile.get("name", "Writer")
 		total_points_label.text = str(SaveManager.current_profile.get("total_points", 0)) + " XP"
+		
+		var av_idx = int(SaveManager.current_profile.get("avatar_id", 0))
+		var tex = _get_avatar_texture(av_idx)
+		if tex and avatar_icon:
+			avatar_icon.texture = tex
+			avatar_icon.visible = true
+		elif avatar_icon:
+			avatar_icon.visible = false
 	else:
 		profile_name_label.text = "No Profile"
 		total_points_label.text = "0 XP"
+		if avatar_icon:
+			avatar_icon.visible = false
 
 func _populate_parts() -> void:
 	for child in parts_container.get_children():

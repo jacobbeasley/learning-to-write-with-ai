@@ -12,6 +12,7 @@ extends Control
 @onready var edit_popup: Control = %EditPopup
 @onready var edit_name_input: LineEdit = %EditNameInput
 @onready var edit_avatar_grid: GridContainer = %EditAvatarGrid
+@onready var edit_avatar_preview: TextureRect = %EditAvatarPreview
 @onready var confirm_edit_button: Button = %ConfirmEditButton
 @onready var cancel_edit_button: Button = %CancelEditButton
 
@@ -27,6 +28,7 @@ var editing_profile: Dictionary = {}
 var pending_delete_filename: String = ""
 
 @onready var avatar_grid: GridContainer = %AvatarGrid
+@onready var avatar_preview: TextureRect = %AvatarPreview
 
 const AVATAR_PATHS = [
 	"res://assets/images/avatars/avatar_01_novice_scribe.png",
@@ -119,28 +121,52 @@ func _setup_avatar_grid() -> void:
 		child.queue_free()
 		
 	for i in range(AVATAR_PATHS.size()):
-		var btn = _create_avatar_button(i, Vector2(52, 52))
+		var btn = _create_avatar_button(i, Vector2(60, 60))
 		var idx = i
 		btn.pressed.connect(func():
 			selected_avatar_id = idx
 			_update_grid_selection(avatar_grid, selected_avatar_id)
+			_update_avatar_preview(avatar_preview, selected_avatar_id)
 		)
 		avatar_grid.add_child(btn)
 	_update_grid_selection(avatar_grid, selected_avatar_id)
+	_update_avatar_preview(avatar_preview, selected_avatar_id)
 
 func _setup_edit_avatar_grid() -> void:
 	for child in edit_avatar_grid.get_children():
 		child.queue_free()
 		
 	for i in range(AVATAR_PATHS.size()):
-		var btn = _create_avatar_button(i, Vector2(52, 52))
+		var btn = _create_avatar_button(i, Vector2(60, 60))
 		var idx = i
 		btn.pressed.connect(func():
 			editing_avatar_id = idx
 			_update_grid_selection(edit_avatar_grid, editing_avatar_id)
+			_update_avatar_preview(edit_avatar_preview, editing_avatar_id)
 		)
 		edit_avatar_grid.add_child(btn)
 	_update_grid_selection(edit_avatar_grid, editing_avatar_id)
+	_update_avatar_preview(edit_avatar_preview, editing_avatar_id)
+
+func _update_avatar_preview(preview: TextureRect, idx: int) -> void:
+	if not preview:
+		return
+	# Ensure a dark background is always visible on the preview panel
+	if not preview.has_theme_stylebox_override("panel"):
+		var bg = StyleBoxFlat.new()
+		bg.bg_color = Color(0.08, 0.08, 0.15, 1.0)
+		bg.set_corner_radius_all(8)
+		bg.border_width_left = 2
+		bg.border_width_right = 2
+		bg.border_width_top = 2
+		bg.border_width_bottom = 2
+		bg.border_color = Color(0.831373, 0.647059, 0.454902, 0.5)
+		preview.add_theme_stylebox_override("panel", bg)
+	var tex = _get_avatar_texture(idx)
+	if tex:
+		preview.texture = tex
+	else:
+		preview.texture = null
 
 func _update_grid_selection(grid: GridContainer, active_idx: int) -> void:
 	var children = grid.get_children()
@@ -191,7 +217,7 @@ func _create_profile_card(profile: Dictionary) -> PanelContainer:
 	
 	# Clickable Avatar Badge
 	var av_idx = int(profile.get("avatar_id", 0)) % AVATAR_PATHS.size()
-	var avatar_btn = _create_avatar_button(av_idx, Vector2(56, 56))
+	var avatar_btn = _create_avatar_button(av_idx, Vector2(160, 160))
 	avatar_btn.pressed.connect(func():
 		_select_and_play(fn)
 	)
@@ -200,6 +226,7 @@ func _create_profile_card(profile: Dictionary) -> PanelContainer:
 	# Info Box
 	var vbox = VBoxContainer.new()
 	vbox.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	vbox.alignment = BoxContainer.ALIGNMENT_CENTER
 	
 	# Clickable Name Button
 	var pname = profile.get("name", "Unknown Writer")
@@ -207,7 +234,7 @@ func _create_profile_card(profile: Dictionary) -> PanelContainer:
 	name_btn.text = pname
 	name_btn.flat = true
 	name_btn.alignment = HORIZONTAL_ALIGNMENT_LEFT
-	name_btn.add_theme_font_size_override("font_size", 20)
+	name_btn.add_theme_font_size_override("font_size", 26)
 	name_btn.add_theme_color_override("font_color", Color("#d4a574"))
 	name_btn.add_theme_color_override("font_hover_color", Color("#e8a849"))
 	name_btn.pressed.connect(func():
@@ -293,7 +320,7 @@ func _on_confirm_edit() -> void:
 	if not new_name.is_empty():
 		editing_profile["name"] = new_name
 	editing_profile["avatar_id"] = editing_avatar_id
-	SaveManager.save_profile(editing_profile)
+	SaveManager.save_profile_data(editing_profile)
 	edit_popup.visible = false
 	_refresh_profiles()
 

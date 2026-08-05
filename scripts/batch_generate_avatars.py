@@ -13,7 +13,7 @@ AVATAR_DESCRIPTIONS = {
     "avatar_05_high_elf_archivist.png": "an elegant and sleek high elf female with a high ponytail adorned with silver hair rings, wearing fitted silk robes and holding an ancient glowing scroll",
     "avatar_06_desert_cartographer.png": "an attractive and slender female cartographer with a stylish braided updo and silk headscarf, wearing fitted adventurer garb, leather map case, and compass",
     "avatar_07_alchemist_researcher.png": "an alluring and athletic female alchemist with high pigtails featuring purple highlights, wearing a dark fitted leather coat with brass straps, holding a bubbling flask",
-    "avatar_08_shadow_scriptor.png": "a sleek and striking female assassin with a high ponytail cascading from a dark hooded cowl, wearing fitted black leather armor with silver buckles and a quill dagger",
+    "avatar_08_shadow_scriptor.png": "a sleek and striking female assassin with long dark hair in a dramatic high ponytail, no hood, wearing fitted black leather armor with silver buckles, a thin decorative eye mask across her face, holding a quill dagger at her side",
 
     # Male Avatars (8)
     "avatar_09_arcane_scholar.png": "a slender and boyish young male scholar with long flowing silver hair tied in a high ponytail, wearing glowing spectacles and open collar scholar robes",

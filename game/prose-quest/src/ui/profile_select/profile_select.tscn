@@ -100,7 +100,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="CreatePopup/CenterContainer"]
-custom_minimum_size = Vector2(440, 280)
+custom_minimum_size = Vector2(780, 520)
 layout_mode = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="CreatePopup/CenterContainer/PanelContainer"]
@@ -134,14 +134,29 @@ custom_minimum_size = Vector2(0, 36)
 layout_mode = 2
 placeholder_text = "Enter your name..."
 
-[node name="AvatarBox" type="VBoxContainer" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="AvatarRow" type="HBoxContainer" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = 20
 
-[node name="AvatarLabel" type="Label" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarBox"]
+[node name="AvatarPreview" type="TextureRect" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
+size_flags_vertical = 4
+expand_mode = 1
+stretch_mode = 5
+texture_filter = 1
+
+[node name="AvatarPickerCol" type="VBoxContainer" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="AvatarLabel" type="Label" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarRow/AvatarPickerCol"]
 layout_mode = 2
 text = "Select Avatar:"
 
-[node name="AvatarGrid" type="GridContainer" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarBox"]
+[node name="AvatarGrid" type="GridContainer" parent="CreatePopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarRow/AvatarPickerCol"]
 unique_name_in_owner = true
 layout_mode = 2
 columns = 4
@@ -193,7 +208,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="EditPopup/CenterContainer"]
-custom_minimum_size = Vector2(440, 280)
+custom_minimum_size = Vector2(780, 520)
 layout_mode = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="EditPopup/CenterContainer/PanelContainer"]
@@ -227,14 +242,29 @@ custom_minimum_size = Vector2(0, 36)
 layout_mode = 2
 placeholder_text = "Enter your name..."
 
-[node name="AvatarBox" type="VBoxContainer" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="AvatarRow" type="HBoxContainer" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = 20
 
-[node name="AvatarLabel" type="Label" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarBox"]
+[node name="EditAvatarPreview" type="TextureRect" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
+size_flags_vertical = 4
+expand_mode = 1
+stretch_mode = 5
+texture_filter = 1
+
+[node name="EditAvatarPickerCol" type="VBoxContainer" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="EditAvatarLabel" type="Label" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarRow/EditAvatarPickerCol"]
 layout_mode = 2
 text = "Select Avatar:"
 
-[node name="EditAvatarGrid" type="GridContainer" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarBox"]
+[node name="EditAvatarGrid" type="GridContainer" parent="EditPopup/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/AvatarRow/EditAvatarPickerCol"]
 unique_name_in_owner = true
 layout_mode = 2
 columns = 4
