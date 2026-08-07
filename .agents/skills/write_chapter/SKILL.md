@@ -72,7 +72,7 @@ The key constant: **the student must always produce written work that the AI the
 - For prose chapters: generate a flawed passage with flaws matching the chapter's principles.
 - For non-prose chapters: present a scenario, incomplete framework, or challenge that requires the student to apply the chapter's concepts.
 - Specify scope (e.g., passage length, number of characters, framework type).
-- Include: "Do not provide any hints, analysis, or suggestions. Stop and wait for my reply."
+- Include: "Present the paragraph to me. Immediately below the paragraph, include a clear instruction telling me to rewrite/complete the passage applying the principles from Chapter X ([Chapter Title]), specifically [summary of key techniques]. Do not reveal the specific flaws in the text or provide hints on how to fix them. Stop after presenting the paragraph and task prompt, and wait for my reply."
 
 **Step 2** instructs the AI to grade the student's submission. Rules:
 - The grading criteria must map 1:1 to the chapter's principles. If the chapter teaches 2 principles, the prompt lists 2 matching criteria (plus 1 overall execution criterion).
