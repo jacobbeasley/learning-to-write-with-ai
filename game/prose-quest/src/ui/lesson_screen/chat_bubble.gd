@@ -2,16 +2,48 @@ extends MarginContainer
 
 @onready var panel: PanelContainer = $PanelContainer
 @onready var sender_label: Label = %SenderLabel
+@onready var timestamp_label: Label = %TimestampLabel
 @onready var message_label: RichTextLabel = %MessageLabel
+@onready var avatar_icon: TextureRect = %AvatarIcon
 
 var raw_text: String = ""
 
 func setup(sender: String, text: String) -> void:
 	size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	
+	# Set Timestamp
+	if timestamp_label:
+		var time_dict = Time.get_time_dict_from_system()
+		var hour = time_dict.get("hour", 0)
+		var minute = time_dict.get("minute", 0)
+		var am_pm = "AM"
+		if hour >= 12:
+			am_pm = "PM"
+		if hour == 0:
+			hour = 12
+		elif hour > 12:
+			hour -= 12
+		timestamp_label.text = "%d:%02d %s" % [hour, minute, am_pm]
+	
+	var sm = get_node_or_null("/root/SaveManager")
+	
 	if sender == "user":
-		sender_label.text = SaveManager.current_profile.get("name", "You")
+		var profile_name = "You"
+		var av_path = ""
+		if sm:
+			profile_name = sm.current_profile.get("name", "You")
+			var av_idx = int(sm.current_profile.get("avatar_id", 0))
+			av_path = sm.get_avatar_path(av_idx)
+		
+		sender_label.text = profile_name
 		sender_label.add_theme_color_override("font_color", Color("#53d769"))
+		
+		# Set User Avatar
+		if av_path != "" and ResourceLoader.exists(av_path):
+			avatar_icon.texture = load(av_path)
+			avatar_icon.visible = true
+		else:
+			avatar_icon.visible = false
 		
 		# Indent on the left so user bubbles align right & span full width minus margin
 		add_theme_constant_override("margin_left", 48)
@@ -28,6 +60,17 @@ func setup(sender: String, text: String) -> void:
 	else:
 		sender_label.text = "Prof. Jennifer (AI Coach)"
 		sender_label.add_theme_color_override("font_color", Color("#4a90e2"))
+		
+		# Set Professor Jennifer Avatar
+		var prof_av_path = "res://assets/images/avatars/prof_jennifer.png"
+		if sm and sm.get("PROF_JENNIFER_AVATAR"):
+			prof_av_path = sm.PROF_JENNIFER_AVATAR
+			
+		if ResourceLoader.exists(prof_av_path):
+			avatar_icon.texture = load(prof_av_path)
+			avatar_icon.visible = true
+		else:
+			avatar_icon.visible = false
 		
 		# Indent on the right so AI bubbles align left & span full width minus margin
 		add_theme_constant_override("margin_left", 0)

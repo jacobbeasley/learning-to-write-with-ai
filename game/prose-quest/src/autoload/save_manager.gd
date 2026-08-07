@@ -11,6 +11,32 @@ var settings: Dictionary = {
 	"lm_studio_url": "http://127.0.0.1:1234/v1/chat/completions"
 }
 
+const AVATAR_PATHS: Array[String] = [
+	"res://assets/images/avatars/avatar_01_novice_scribe.png",
+	"res://assets/images/avatars/avatar_02_cyberpunk_hacker.png",
+	"res://assets/images/avatars/avatar_03_wandering_bard.png",
+	"res://assets/images/avatars/avatar_04_clockwork_engineer.png",
+	"res://assets/images/avatars/avatar_05_high_elf_archivist.png",
+	"res://assets/images/avatars/avatar_06_desert_cartographer.png",
+	"res://assets/images/avatars/avatar_07_alchemist_researcher.png",
+	"res://assets/images/avatars/avatar_08_shadow_scriptor.png",
+	"res://assets/images/avatars/avatar_09_arcane_scholar.png",
+	"res://assets/images/avatars/avatar_10_royal_historian.png",
+	"res://assets/images/avatars/avatar_11_dragon_archivist.png",
+	"res://assets/images/avatars/avatar_12_imperial_laureate.png",
+	"res://assets/images/avatars/avatar_13_sea_captain_chronicler.png",
+	"res://assets/images/avatars/avatar_14_paladin_scriptor.png",
+	"res://assets/images/avatars/avatar_15_space_station_cryptographer.png",
+	"res://assets/images/avatars/avatar_16_dwarven_runesmith.png"
+]
+
+const PROF_JENNIFER_AVATAR: String = "res://assets/images/avatars/prof_jennifer.png"
+
+func get_avatar_path(idx: int) -> String:
+	if idx >= 0 and idx < AVATAR_PATHS.size():
+		return AVATAR_PATHS[idx]
+	return AVATAR_PATHS[0]
+
 func _ready() -> void:
 	_ensure_directories()
 	load_settings()
