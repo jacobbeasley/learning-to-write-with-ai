@@ -74,13 +74,14 @@ func _on_connection_status(is_online: bool) -> void:
 		status_label.add_theme_color_override("font_color", Color("#e94560"))
 
 func _on_models_fetched(model_ids: Array) -> void:
-	fetched_models = model_ids
+	fetched_models = model_ids.duplicate()
+	fetched_models.sort_custom(func(a, b): return str(a).to_lower() < str(b).to_lower())
 	model_option_button.clear()
 	
-	if not model_ids.is_empty():
-		status_label.text = "Connected (" + str(model_ids.size()) + " models found!)"
+	if not fetched_models.is_empty():
+		status_label.text = "Connected (" + str(fetched_models.size()) + " models found!)"
 		model_option_button.add_item("Select Fetched Model...")
-		for mid in model_ids:
+		for mid in fetched_models:
 			model_option_button.add_item(str(mid))
 			
 		model_option_button.visible = true

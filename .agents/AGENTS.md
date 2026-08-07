@@ -71,3 +71,7 @@ When working on the **Prose Quest** game (`game/prose-quest/`), enforce these Go
 
 12. **Safe Input Consumption in Control Nodes (`accept_event()`):**
     - Call `accept_event()` BEFORE executing scene changes or button callbacks in `_input(event)`. If a callback triggers a scene change (e.g. `GameManager.show_chapter_comic()`), calling `get_viewport().set_input_as_handled()` AFTER the callback will crash with `Cannot call method 'set_input_as_handled' on a null value` because the Control node has already been unparented from the viewport.
+
+13. **Godot Executable Path:**
+    - The Godot executable is located in the user's home directory at `~/godot.exe` or something similar. Use this path when running Godot CLI commands (e.g., `& "$HOME\godot.exe" --version` or `& "$HOME\godot.exe" --headless`).
+

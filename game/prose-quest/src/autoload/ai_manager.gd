@@ -17,10 +17,15 @@ var is_streaming: bool = false
 var stream_buffer: String = ""
 var stream_full_text: String = ""
 var stream_tool_name: String = ""
+var stream_tool_args: String = ""
+var raw_stream_response_body: String = ""
+var stream_response_code: int = -1
+var has_checked_response_code: bool = false
+var has_sent_request: bool = false
+
 const MAX_SESSION_TURNS = 40
 const MAX_CHAT_HISTORY_SIZE = 24
 
-var stream_tool_args: String = ""
 var grade_emitted_for_request: bool = false
 var chat_history: Array = []
 var session_request_count: int = 0
@@ -44,6 +49,7 @@ func reset_chat_session(system_prompt: String = "") -> void:
 		})
 
 func cancel_active_request() -> void:
+	var was_active = is_streaming or is_busy
 	if is_streaming and active_client != null:
 		active_client.close()
 		active_client = null
@@ -57,7 +63,13 @@ func cancel_active_request() -> void:
 	stream_full_text = ""
 	stream_tool_name = ""
 	stream_tool_args = ""
-	print("[AIManager] Active AI request cancelled and reset.")
+	raw_stream_response_body = ""
+	stream_response_code = -1
+	has_checked_response_code = false
+	has_sent_request = false
+	
+	if was_active:
+		print("[AIManager] Active AI request cancelled and reset.")
 
 func _trim_chat_history() -> void:
 	if chat_history.size() > MAX_CHAT_HISTORY_SIZE:
@@ -98,8 +110,9 @@ func _get_tool_schema() -> Dictionary:
 		}
 	}
 
-func _get_request_headers() -> PackedStringArray:
+func _get_request_headers(_host: String = "") -> PackedStringArray:
 	var headers: PackedStringArray = ["Content-Type: application/json"]
+	headers.append("User-Agent: ProseQuest/1.0")
 	var api_key = SaveManager.settings.get("api_key", "").strip_edges()
 	if api_key != "":
 		headers.append("Authorization: Bearer " + api_key)
@@ -134,6 +147,22 @@ func _parse_url(url: String) -> Dictionary:
 		"path": path,
 		"use_ssl": use_ssl
 	}
+
+func _extract_error_message(raw_body: String) -> String:
+	var trimmed = raw_body.strip_edges()
+	if trimmed == "":
+		return ""
+	var json = JSON.parse_string(trimmed)
+	if json is Dictionary:
+		if json.has("error"):
+			var err_obj = json.get("error")
+			if err_obj is Dictionary and err_obj.has("message"):
+				return str(err_obj.get("message"))
+			elif err_obj is String:
+				return err_obj
+		elif json.has("message"):
+			return str(json.get("message"))
+	return trimmed
 
 func send_message(user_text: String) -> void:
 	if is_busy:
@@ -179,13 +208,13 @@ func send_message(user_text: String) -> void:
 	
 	var parsed = _parse_url(api_url)
 	active_client = HTTPClient.new()
-	var tls_opts: TLSOptions = TLSOptions.client_unsafe() if parsed["use_ssl"] else null
+	var tls_opts: TLSOptions = TLSOptions.client(null, parsed["host"]) if parsed["use_ssl"] else null
 	var err = active_client.connect_to_host(parsed["host"], parsed["port"], tls_opts)
 	
 	if err != OK:
+		print("[AIManager] Failed to connect to host: ", parsed["host"], " Error code: ", err)
 		# Fallback to standard HTTPRequest if client connection fails
 		active_client = null
-		payload["stream"] = false
 		var headers = _get_request_headers()
 		http_request.request(api_url, headers, HTTPClient.METHOD_POST, JSON.stringify(payload))
 		return
@@ -194,6 +223,10 @@ func send_message(user_text: String) -> void:
 	stream_full_text = ""
 	stream_tool_name = ""
 	stream_tool_args = ""
+	raw_stream_response_body = ""
+	stream_response_code = -1
+	has_checked_response_code = false
+	has_sent_request = false
 	is_streaming = true
 	stream_started.emit()
 
@@ -208,26 +241,38 @@ func _process(_delta: float) -> void:
 		return
 		
 	if status == HTTPClient.STATUS_CONNECTED:
-		var api_url = SaveManager.settings.get("lm_studio_url", "http://127.0.0.1:1234/v1/chat/completions")
-		var parsed = _parse_url(api_url)
-		var model_name = SaveManager.settings.get("model_name", "local-model").strip_edges()
-		if model_name == "":
-			model_name = "local-model"
+		if not has_sent_request:
+			has_sent_request = true
+			var api_url = SaveManager.settings.get("lm_studio_url", "http://127.0.0.1:1234/v1/chat/completions")
+			var parsed = _parse_url(api_url)
+			var model_name = SaveManager.settings.get("model_name", "local-model").strip_edges()
+			if model_name == "":
+				model_name = "local-model"
+				
+			var payload = {
+				"model": model_name,
+				"messages": chat_history,
+				"temperature": 0.7,
+				"stream": true,
+				"tools": [_get_tool_schema()],
+				"tool_choice": "auto"
+			}
 			
-		var payload = {
-			"model": model_name,
-			"messages": chat_history,
-			"temperature": 0.7,
-			"stream": true,
-			"tools": [_get_tool_schema()],
-			"tool_choice": "auto"
-		}
-		
-		var headers = _get_request_headers()
-		active_client.request(HTTPClient.METHOD_POST, parsed["path"], headers, JSON.stringify(payload))
+			var headers = _get_request_headers()
+			print("[AIManager] Client connected to ", parsed["host"], ". Sending HTTP POST request...")
+			var req_err = active_client.request(HTTPClient.METHOD_POST, parsed["path"], headers, JSON.stringify(payload))
+			if req_err != OK:
+				print("[AIManager] HTTPClient.request returned error code: ", req_err)
 		return
 		
 	if status == HTTPClient.STATUS_BODY:
+		if not has_checked_response_code:
+			has_checked_response_code = true
+			stream_response_code = active_client.get_response_code()
+			var headers_dict = active_client.get_response_headers_as_dictionary()
+			print("[AIManager] === HTTP Response Status Code: ", stream_response_code, " ===")
+			print("[AIManager] HTTP Response Headers: ", headers_dict)
+			
 		while active_client != null and is_streaming and active_client.get_status() == HTTPClient.STATUS_BODY:
 			active_client.poll()
 			if active_client == null or not is_streaming:
@@ -235,8 +280,12 @@ func _process(_delta: float) -> void:
 			var chunk = active_client.read_response_body_chunk()
 			if chunk.size() == 0:
 				break
-			stream_buffer += chunk.get_string_from_utf8()
-			_parse_stream_buffer()
+			var chunk_str = chunk.get_string_from_utf8()
+			raw_stream_response_body += chunk_str
+			
+			if stream_response_code == 200:
+				stream_buffer += chunk_str
+				_parse_stream_buffer()
 			
 	if active_client != null and status in [HTTPClient.STATUS_DISCONNECTED, HTTPClient.STATUS_CONNECTION_ERROR, HTTPClient.STATUS_CANT_CONNECT, HTTPClient.STATUS_CANT_RESOLVE, HTTPClient.STATUS_TLS_HANDSHAKE_ERROR]:
 		if is_streaming:
@@ -252,31 +301,42 @@ func _parse_stream_buffer() -> void:
 		
 	for line in lines:
 		var l = line.strip_edges()
+		if l == "":
+			continue
 		if l.begins_with("data:"):
 			var data_str = l.substr(5).strip_edges()
 			if data_str == "[DONE]":
 				_finish_stream()
 				return
 			var json_data = JSON.parse_string(data_str)
-			if json_data is Dictionary and json_data.has("choices"):
-				var choices = json_data.get("choices", [])
-				if choices is Array and not choices.is_empty():
-					var delta = choices[0].get("delta", {})
-					if delta is Dictionary and delta.has("content"):
-						var chunk_str = str(delta.get("content", ""))
-						if chunk_str != "" and chunk_str != "null":
-							stream_full_text += chunk_str
-							chunk_received.emit(chunk_str)
-							
-					# Accumulate streaming tool call deltas across chunks
-					var tool_calls = delta.get("tool_calls", [])
-					for tc in tool_calls:
-						var fn = tc.get("function", {})
-						if fn.has("name") and str(fn["name"]) != "":
-							stream_tool_name = str(fn["name"])
-							print("[AIManager] Streaming tool call started: ", stream_tool_name)
-						if fn.has("arguments") and fn["arguments"] != null:
-							stream_tool_args += str(fn["arguments"])
+			if json_data is Dictionary:
+				if json_data.has("error"):
+					print("[AIManager] Stream JSON error payload received: ", data_str)
+					var err_msg = _extract_error_message(data_str)
+					request_failed.emit("AI Stream Error: " + err_msg)
+					_finish_stream()
+					return
+				if json_data.has("choices"):
+					var choices = json_data.get("choices", [])
+					if choices is Array and not choices.is_empty():
+						var delta = choices[0].get("delta", {})
+						if delta is Dictionary and delta.has("content"):
+							var chunk_str = str(delta.get("content", ""))
+							if chunk_str != "" and chunk_str != "null":
+								stream_full_text += chunk_str
+								chunk_received.emit(chunk_str)
+								
+						# Accumulate streaming tool call deltas across chunks
+						var tool_calls = delta.get("tool_calls", [])
+						for tc in tool_calls:
+							var fn = tc.get("function", {})
+							if fn.has("name") and str(fn["name"]) != "":
+								stream_tool_name = str(fn["name"])
+								print("[AIManager] Streaming tool call started: ", stream_tool_name)
+							if fn.has("arguments") and fn["arguments"] != null:
+								stream_tool_args += str(fn["arguments"])
+		else:
+			print("[AIManager] Received non-SSE line in stream buffer: ", l)
 
 func _finish_stream() -> void:
 	if not is_streaming:
@@ -287,6 +347,44 @@ func _finish_stream() -> void:
 		active_client.close()
 		active_client = null
 		
+	print("[AIManager] Stream finished. Status Code: ", stream_response_code, " | Received Length: ", stream_full_text.length(), " chars.")
+	
+	if stream_response_code == -1:
+		print("[AIManager] ERROR: Connection closed before receiving HTTP headers.")
+		request_failed.emit("AI Connection Failed: TLS/HTTPS connection closed by server before response headers were received. Check API URL and key.")
+		return
+		
+	if stream_response_code != 200:
+		print("[AIManager] ERROR: HTTP request failed with status code ", stream_response_code)
+		print("[AIManager] Raw response payload:\n", raw_stream_response_body)
+		
+		var err_detail = _extract_error_message(raw_stream_response_body)
+		var err_msg = "AI Server Error (HTTP " + str(stream_response_code) + "): "
+		if err_detail != "":
+			err_msg += err_detail
+		else:
+			err_msg += "Check URL, Model Name, and API Key settings."
+			
+		var detail_lower = err_detail.to_lower()
+		if stream_response_code == 404 or "model" in detail_lower or stream_response_code == 400:
+			err_msg += "\n\n💡 Recommendation: The selected model may not be supported by this server. Please open Settings and select a valid text model (such as 'gpt-4o-mini')."
+		elif stream_response_code == 401:
+			err_msg += "\n\n💡 Recommendation: Please open Settings and verify your API Key for this provider."
+			
+		request_failed.emit(err_msg)
+		return
+		
+	if stream_full_text.is_empty() and stream_tool_name == "":
+		print("[AIManager] ERROR: Stream finished with 0 chars and no tool calls.")
+		print("[AIManager] Raw accumulated response body:\n", raw_stream_response_body)
+		
+		var err_detail = _extract_error_message(raw_stream_response_body)
+		if err_detail != "":
+			request_failed.emit("AI Response Error: " + err_detail)
+		else:
+			request_failed.emit("AI stream returned empty response (0 chars). Check your Model Name and API Key settings.")
+		return
+		
 	chat_history.append({
 		"role": "assistant",
 		"content": stream_full_text
@@ -294,8 +392,6 @@ func _finish_stream() -> void:
 	
 	response_received.emit(stream_full_text)
 	stream_completed.emit(stream_full_text)
-	
-	print("[AIManager] Stream finished. Length: ", stream_full_text.length(), " chars.")
 	
 	# Process streaming tool call if received
 	if not grade_emitted_for_request and stream_tool_name == "gradeActivity" and stream_tool_args != "":
@@ -321,7 +417,11 @@ func test_connection() -> void:
 	var test_http = HTTPRequest.new()
 	add_child(test_http)
 	
-	test_http.request_completed.connect(func(result, code, _headers, _body):
+	test_http.request_completed.connect(func(result, code, _headers, body):
+		var raw_str = body.get_string_from_utf8() if body.size() > 0 else ""
+		print("[AIManager] test_connection completed. Result: ", result, " | Status Code: ", code)
+		if raw_str != "":
+			print("[AIManager] test_connection response body:\n", raw_str)
 		var is_ok = (result == HTTPRequest.RESULT_SUCCESS and (code == 200 or code == 400 or code == 405 or code == 401))
 		connection_status_checked.emit(is_ok)
 		test_http.queue_free()
@@ -330,6 +430,29 @@ func test_connection() -> void:
 	var headers = _get_request_headers()
 	var body = JSON.stringify({"model": model_name, "messages": [{"role": "user", "content": "ping"}]})
 	test_http.request(api_url, headers, HTTPClient.METHOD_POST, body)
+
+func _is_chat_text_model(model_id: String, item: Dictionary = {}) -> bool:
+	var id_lower = model_id.to_lower().strip_edges()
+	if id_lower == "":
+		return false
+		
+	# Exclude known non-text/non-chat model families (embeddings, audio, speech, image generation, moderation, rerankers)
+	var excluded_keywords = [
+		"embedding", "embed", "bge-", "tts-", "-tts", "whisper",
+		"dall-e", "dalle", "moderation", "realtime", "-audio",
+		"rerank", "stable-diffusion", "flux", "imagen"
+	]
+	for kw in excluded_keywords:
+		if kw in id_lower:
+			return false
+			
+	# If provider includes explicit modalities metadata (e.g. OpenRouter / LM Studio / vLLM)
+	if item.has("modalities") and item["modalities"] is Array:
+		var mods = item["modalities"]
+		if not ("text" in mods):
+			return false
+			
+	return true
 
 func fetch_available_models() -> void:
 	var api_url = SaveManager.settings.get("lm_studio_url", "http://127.0.0.1:1234/v1/chat/completions")
@@ -340,14 +463,21 @@ func fetch_available_models() -> void:
 	
 	fetch_http.request_completed.connect(func(result, code, _headers, body):
 		var model_ids: Array = []
+		var raw_str = body.get_string_from_utf8() if body.size() > 0 else ""
+		print("[AIManager] fetch_available_models completed. Result: ", result, " | Status Code: ", code)
+		if raw_str != "":
+			print("[AIManager] fetch_available_models response body:\n", raw_str)
+			
 		if result == HTTPRequest.RESULT_SUCCESS and code == 200:
-			var json_data = JSON.parse_string(body.get_string_from_utf8())
+			var json_data = JSON.parse_string(raw_str)
 			if json_data is Dictionary and json_data.has("data"):
 				var data_list = json_data.get("data", [])
 				if data_list is Array:
 					for item in data_list:
 						if item is Dictionary and item.has("id"):
-							model_ids.append(item["id"])
+							var mid = str(item["id"]).strip_edges()
+							if _is_chat_text_model(mid, item):
+								model_ids.append(mid)
 		models_fetched.emit(model_ids)
 		fetch_http.queue_free()
 	)
@@ -359,18 +489,32 @@ func _on_request_completed(result: int, response_code: int, _headers: PackedStri
 	is_busy = false
 	grade_emitted_for_request = false
 	
+	var raw_str = body.get_string_from_utf8() if body.size() > 0 else ""
+	print("[AIManager] HTTPRequest completed. Result: ", result, " | Status Code: ", response_code)
+	if raw_str != "":
+		print("[AIManager] HTTPRequest Raw response body:\n", raw_str)
+		
 	if result != HTTPRequest.RESULT_SUCCESS or response_code != 200:
-		var err_str = "AI server error (" + str(response_code) + "). Check your URL, Model Name, and API Key settings."
-		if body.size() > 0:
-			err_str += "\n" + body.get_string_from_utf8()
+		var err_detail = _extract_error_message(raw_str)
+		var err_str = "AI server error (" + str(response_code) + ")."
+		if err_detail != "":
+			err_str += " " + err_detail
+		else:
+			err_str += " Check your URL, Model Name, and API Key settings."
+			
+		var detail_lower = err_detail.to_lower()
+		if response_code == 404 or "model" in detail_lower or response_code == 400:
+			err_str += "\n\n💡 Recommendation: The selected model may not be supported by this server. Please open Settings and select a valid text model (such as 'gpt-4o-mini')."
+		elif response_code == 401:
+			err_str += "\n\n💡 Recommendation: Please open Settings and verify your API Key for this provider."
+			
 		request_failed.emit(err_str)
 		return
 
-	var raw_str = body.get_string_from_utf8()
 	var json_data = JSON.parse_string(raw_str)
 	
 	if not (json_data is Dictionary) or not json_data.has("choices"):
-		request_failed.emit("Invalid JSON response received from AI server.")
+		request_failed.emit("Invalid JSON response received from AI server:\n" + raw_str)
 		return
 
 	var choices = json_data.get("choices", [])
