@@ -17,6 +17,7 @@ extends Control
 @onready var close_error_button: Button = %CloseErrorButton
 @onready var grade_popup: Control = %GradePopup
 @onready var settings_panel: Control = %SettingsPanel
+@onready var jennifer_profile_modal: Control = %JenniferProfileModal
 
 const CHAT_BUBBLE = preload("res://src/ui/lesson_screen/chat_bubble.tscn")
 
@@ -143,6 +144,11 @@ func _add_chat_bubble(sender: String, text: String) -> MarginContainer:
 	var bubble = CHAT_BUBBLE.instantiate()
 	chat_container.add_child(bubble)
 	bubble.setup(sender, text)
+	if bubble.has_signal("jennifer_avatar_clicked"):
+		bubble.jennifer_avatar_clicked.connect(func():
+			if jennifer_profile_modal:
+				jennifer_profile_modal.show_modal()
+		)
 	_scroll_to_bottom(bubble)
 	return bubble
 

@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://bd6pjmkbwxq5a"]
+
+[ext_resource type="Script" path="res://src/ui/components/jennifer_profile_modal.gd" id="1_jpm"]
+
+[node name="JenniferProfileModal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jpm")
+
+[node name="DimOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.75)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer"]
+custom_minimum_size = Vector2(720, 420)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 28
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 28
+
+[node name="MainVBox" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="HeaderHBox" type="HBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/MainVBox"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="ProfilePhoto" type="TextureRect" parent="CenterContainer/PanelContainer/MarginContainer/MainVBox/HeaderHBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="InfoVBox" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/MainVBox/HeaderHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="NameLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/MainVBox/HeaderHBox/InfoVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.290196, 0.564706, 0.886275, 1)
+theme_override_font_sizes/font_size = 24
+text = "Professor Jennifer"
+
+[node name="TitleLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/MainVBox/HeaderHBox/InfoVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.909804, 0.658824, 0.286275, 1)
+theme_override_font_sizes/font_size = 14
+text = "Chair of Algorithmic Creative Writing & Torrented Humanities"
+
+[node name="DeptLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/MainVBox/HeaderHBox/InfoVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/font_size = 12
+text = "Department of Synthetic Literature | AI University"
+
+[node name="HSeparator" type="HSeparator" parent="CenterContainer/PanelContainer/MarginContainer/MainVBox/HeaderHBox/InfoVBox"]
+layout_mode = 2
+
+[node name="BioLabel" type="RichTextLabel" parent="CenterContainer/PanelContainer/MarginContainer/MainVBox/HeaderHBox/InfoVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 13
+bbcode_enabled = true
+text = "Trained on the sum total of human knowledge by aggregating and quietly torrenting humanity's entire written canon at 3:00 AM, Professor Jennifer is equal parts literary scholar, neural network, and uncompromising writing coach. She possesses zero tolerance for weak adverbs, unearned plot twists, or academic dishonesty—and can cite 14 million bibliographies in under 2 milliseconds."
+fit_content = true
+
+[node name="ButtonHBox" type="HBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/MainVBox"]
+layout_mode = 2
+alignment = 2
+
+[node name="CloseButton" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/MainVBox/ButtonHBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(110, 36)
+layout_mode = 2
+text = "Close"

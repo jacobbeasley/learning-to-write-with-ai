@@ -6,7 +6,10 @@ extends MarginContainer
 @onready var message_label: RichTextLabel = %MessageLabel
 @onready var avatar_icon: TextureRect = %AvatarIcon
 
+signal jennifer_avatar_clicked
+
 var raw_text: String = ""
+var is_assistant: bool = false
 
 func setup(sender: String, text: String) -> void:
 	size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -28,6 +31,10 @@ func setup(sender: String, text: String) -> void:
 	var sm = get_node_or_null("/root/SaveManager")
 	
 	if sender == "user":
+		is_assistant = false
+		avatar_icon.mouse_default_cursor_shape = Control.CURSOR_ARROW
+		sender_label.mouse_default_cursor_shape = Control.CURSOR_ARROW
+		sender_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		var profile_name = "You"
 		var av_path = ""
 		if sm:
@@ -58,6 +65,16 @@ func setup(sender: String, text: String) -> void:
 		style.content_margin_bottom = 10
 		panel.add_theme_stylebox_override("panel", style)
 	else:
+		is_assistant = true
+		avatar_icon.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+		if not avatar_icon.gui_input.is_connected(_on_avatar_gui_input):
+			avatar_icon.gui_input.connect(_on_avatar_gui_input)
+		
+		sender_label.mouse_filter = Control.MOUSE_FILTER_STOP
+		sender_label.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+		if not sender_label.gui_input.is_connected(_on_avatar_gui_input):
+			sender_label.gui_input.connect(_on_avatar_gui_input)
+		
 		sender_label.text = "Prof. Jennifer (AI Coach)"
 		sender_label.add_theme_color_override("font_color", Color("#4a90e2"))
 		
@@ -87,6 +104,11 @@ func setup(sender: String, text: String) -> void:
 		
 	raw_text = text
 	_update_text_display()
+
+func _on_avatar_gui_input(event: InputEvent) -> void:
+	if is_assistant and event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		accept_event()
+		jennifer_avatar_clicked.emit()
 
 func append_chunk(chunk_text: String) -> void:
 	raw_text += chunk_text

@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" path="res://src/ui/components/grade_badge.tscn" id="2_gb"]
 [ext_resource type="PackedScene" path="res://src/ui/grade_popup/grade_popup.tscn" id="3_gp"]
 [ext_resource type="PackedScene" path="res://src/ui/settings/settings_panel.tscn" id="4_sp"]
+[ext_resource type="PackedScene" path="res://src/ui/components/jennifer_profile_modal.tscn" id="5_jpm"]
 
 [node name="LessonScreen" type="Control"]
 layout_mode = 3
@@ -284,6 +285,11 @@ visible = false
 layout_mode = 1
 
 [node name="SettingsPanel" parent="." instance=ExtResource("4_sp")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+
+[node name="JenniferProfileModal" parent="." instance=ExtResource("5_jpm")]
 unique_name_in_owner = true
 visible = false
 layout_mode = 1
