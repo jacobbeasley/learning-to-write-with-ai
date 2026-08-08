@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o31xqm6l7qdv"
-valid=false
+uid="uid://ccdoufdo4fqt3"
+path="res://.godot/imported/chapter36_screenplays_scriptwriting_comic.png-58a860fe28dbe85b689f6ad8913e0359.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter36_screenplays_scriptwriting_comic.png"
+dest_files=["res://.godot/imported/chapter36_screenplays_scriptwriting_comic.png-58a860fe28dbe85b689f6ad8913e0359.ctex"]
 
 [params]
 

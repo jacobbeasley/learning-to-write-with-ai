@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brdke5vnaej8r"
-valid=false
+uid="uid://dt5h8su66v01r"
+path="res://.godot/imported/chapter37_interactive_game_writing_comic.png-a86d137272b8a6261ceee28ff63264e8.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter37_interactive_game_writing_comic.png"
+dest_files=["res://.godot/imported/chapter37_interactive_game_writing_comic.png-a86d137272b8a6261ceee28ff63264e8.ctex"]
 
 [params]
 

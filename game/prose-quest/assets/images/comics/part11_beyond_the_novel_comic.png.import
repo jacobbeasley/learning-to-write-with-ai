@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bomtx5uhhclql"
-valid=false
+uid="uid://b33n1hf7mhh8w"
+path="res://.godot/imported/part11_beyond_the_novel_comic.png-acd36e6190003858753400d74afcc236.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/part11_beyond_the_novel_comic.png"
+dest_files=["res://.godot/imported/part11_beyond_the_novel_comic.png-acd36e6190003858753400d74afcc236.ctex"]
 
 [params]
 

@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsw26xkgiou5y"
-valid=false
+uid="uid://b7a4cjve8fk01"
+path="res://.godot/imported/chapter38_flash_fiction_comic.png-1b81067fa0bf6c89e03c68abe8630a58.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter38_flash_fiction_comic.png"
+dest_files=["res://.godot/imported/chapter38_flash_fiction_comic.png-1b81067fa0bf6c89e03c68abe8630a58.ctex"]
 
 [params]
 

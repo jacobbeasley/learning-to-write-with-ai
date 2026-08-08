@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq65yjoycn2k5"
-valid=false
+uid="uid://c6cn1d3g5gthj"
+path="res://.godot/imported/chapter41_audio_dramas_comic.png-fcadda748d13846f343a62140d3eefba.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter41_audio_dramas_comic.png"
+dest_files=["res://.godot/imported/chapter41_audio_dramas_comic.png-fcadda748d13846f343a62140d3eefba.ctex"]
 
 [params]
 

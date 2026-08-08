@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgjsnj108w36w"
-valid=false
+uid="uid://bp26rq2n3ndh5"
+path="res://.godot/imported/chapter40_memoir_creative_nonfiction_comic.png-d3811950cfab6fb8fb2ea594d11d5947.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter40_memoir_creative_nonfiction_comic.png"
+dest_files=["res://.godot/imported/chapter40_memoir_creative_nonfiction_comic.png-d3811950cfab6fb8fb2ea594d11d5947.ctex"]
 
 [params]
 

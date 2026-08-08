@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bw6a4srhrw6fy"
-valid=false
+uid="uid://cmsjco5g54f24"
+path="res://.godot/imported/chapter35_conclusion_comic.png-e3f1ef61d1e4aeedc0af77d6bdabf014.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter35_conclusion_comic.png"
+dest_files=["res://.godot/imported/chapter35_conclusion_comic.png-e3f1ef61d1e4aeedc0af77d6bdabf014.ctex"]
 
 [params]
 

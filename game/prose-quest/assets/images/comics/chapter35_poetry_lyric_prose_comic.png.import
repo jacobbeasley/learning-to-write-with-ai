@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cl2ijvh3d17nm"
-valid=false
+uid="uid://caqnq8ugf8jt3"
+path="res://.godot/imported/chapter35_poetry_lyric_prose_comic.png-352155b6364dfed4764bbcfc3998667a.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/images/comics/chapter35_poetry_lyric_prose_comic.png"
+dest_files=["res://.godot/imported/chapter35_poetry_lyric_prose_comic.png-352155b6364dfed4764bbcfc3998667a.ctex"]
 
 [params]
 
