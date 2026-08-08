@@ -8,7 +8,16 @@ var profiles_dir: String = "user://profiles/"
 var settings_file: String = "user://settings.json"
 
 var settings: Dictionary = {
-	"lm_studio_url": "http://127.0.0.1:1234/v1/chat/completions"
+	"lm_studio_url": "http://127.0.0.1:1234/v1/chat/completions",
+	"sfx_volume": 1.0,
+	"audio_click": "res://assets/audio/clicks/click_clean_sharp.wav",
+	"audio_submit": "res://assets/audio/clicks/click_smooth_select.wav",
+	"audio_ai_response": "res://assets/audio/ai_response/ai_warm_notification.wav",
+	"audio_comic_reveal": "res://assets/audio/comic_display/comic_mystery_reveal.wav",
+	"audio_grade_a": "res://assets/audio/comic_display/comic_retro_victory.wav",
+	"audio_grade_b": "res://assets/audio/comic_display/comic_dramatic_entrance.wav",
+	"audio_grade_cd": "res://assets/audio/comic_display/comic_sparkle_chime.wav",
+	"audio_grade_f": "res://assets/audio/comic_display/comic_synth_swell.wav"
 }
 
 const AVATAR_PATHS: Array[String] = [
