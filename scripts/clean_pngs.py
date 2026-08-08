@@ -1,13 +1,14 @@
 import glob, os, re
 from PIL import Image
 
-TARGET_PATTERN = re.compile(r'^(part11_|chapter35_|chapter36_|chapter37_|chapter38_|chapter39_|chapter40_|chapter41_|chapter42_|ch_35_|ch_36_|ch_37_|ch_38_|ch_39_|ch_40_|ch_41_|ch_42_)')
+# Target Parts 1-10 and Chapters 1-34 icons
+TARGET_PATTERN = re.compile(r'^(part_0[1-9]|part_10|ch_0[1-9]|ch_[12][0-9]|ch_3[0-4])')
 
 search_dirs = [
     r"c:\Users\jacob\Projects\novel-writing-with-ai\game\prose-quest\assets\images\map_icons\*.png",
-    r"c:\Users\jacob\Projects\novel-writing-with-ai\game\prose-quest\assets\images\comics\*.png"
 ]
 
+cleaned_count = 0
 for s_dir in search_dirs:
     for path in glob.glob(s_dir):
         fname = os.path.basename(path)
@@ -18,7 +19,8 @@ for s_dir in search_dirs:
             with Image.open(path) as img:
                 img = img.convert("RGBA")
                 img.save(path, "PNG", optimize=True)
-                print(f"Cleaned PNG: {path}")
+                cleaned_count += 1
+                print(f"Cleaned PNG: {fname}")
                 
             import_file = path + ".import"
             if os.path.exists(import_file):
@@ -26,4 +28,4 @@ for s_dir in search_dirs:
         except Exception as e:
             print(f"Error processing {path}: {e}")
 
-print("PNG cleaning complete for Part 11 and Chapters 35-42!")
+print(f"\nPNG cleaning complete! Cleaned {cleaned_count} icons for Parts 1-10 & Chapters 1-34.")
