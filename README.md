@@ -8,13 +8,13 @@ An interactive workbook that teaches fiction writing craft from the ground up—
 
 ![Book Cover: Learning to Write Novels with AI](images/Gemini_Generated_Image_s3r1los3r1los3r1.png)
 
-[Read Book MarkDown](book.md) [Read Book HTML](book.html) [Download DOCX](book.docx) [Download EPUB](book.epub)
+[Read Book MarkDown](book.md) | [Read Book HTML](book.html) | [Download DOCX](book.docx) | [Download EPUB](book.epub)
 
 ## What Is This Book?
 
 Learning to write well is hard. It always has been. But for the first time in history, writers have access to a patient, tireless coach who can read their work at any hour, give honest feedback, and generate endless practice material tailored to exactly the skill they need to develop.
 
-This book is a hands-on creative writing course that takes you from crafting your first strong sentence all the way through outlining, drafting, and publishing a full-length novel. Each chapter teaches a core fiction craft principle and then puts you to work immediately with an AI-powered exercise that grades your writing in real time. 
+This book is a hands-on creative writing course that takes you from crafting your first strong sentence all the way through outlining, drafting, publishing, and adapting cross-medium stories. Each chapter teaches a core fiction craft principle and then puts you to work immediately with an AI-powered exercise that grades your writing in real time. 
 
 **AI does not have your voice.** It cannot feel what you feel or tell the story only you can tell. But it can teach you the craft, help you find your strengths, organize your novel, and coach you through revision. AI is the tool. You are the author.
 
@@ -59,6 +59,7 @@ The core learning engine of the book:
 | **VIII** | Narrative Structures | Three-Act, Hero's Journey, Save the Cat!, Story Circle |
 | **IX** | Mastering AI Collaboration | Prompt Engineering, Brainstorming, Story Bible Assistant, Workspaces, Ethics |
 | **X** | Publishing | Feedback Loops, Publishing Paths, Self-Publishing |
+| **XI** | Beyond the Novel | Poetry & Lyric Prose, Screenplays, Interactive Fiction, Flash Fiction, Graphic Novels, Memoir, Audio Dramas, Conclusion |
 
 ## AI Tools You'll Need
 
@@ -70,18 +71,19 @@ You'll need access to at least one AI chatbot to complete the exercises:
 
 All three work. Pick whichever you prefer. Free tiers are sufficient for every exercise in the book.
 
-## Project Structure
+## Project Structure & Companion Game
 
 ```
-book.md              — The full book manuscript
+book.md              — The full 42-chapter book manuscript
 book.docx            — Exported Microsoft Word manuscript
+book.epub            — Exported EPUB e-book manuscript
 book.html            — Exported HTML web page
-README.md            — This file
+images/              — Full-color comic strip illustrations for each part and chapter
+scripts/             — Python & PowerShell tools for parsing, asset processing, and comic generation
+game/prose-quest/    — Godot 4 gamified learning companion app ("Prose Quest")
 .agents/
   AGENTS.md          — Persona and structural rules for AI-assisted drafting
-  skills/
-    write_chapter/
-      SKILL.md       — Skill template for drafting new chapters
+  skills/            — Custom AI pair-writing skills (write_chapter, generate_chapter_image)
 ```
 
 ## Exporting the Manuscript
