@@ -20,12 +20,40 @@ func _ready() -> void:
 	if am: am.play_comic_reveal()
 	
 	var path = GameManager.comic_image_path
-	if path != "" and ResourceLoader.exists(path):
-		var tex = load(path)
-		if tex is Texture2D:
-			comic_rect.texture = tex
-		else:
-			title_label.text += "\n[Image not found: " + path + "]"
+	var tex = _load_texture(path)
+	if tex != null:
+		comic_rect.texture = tex
+	else:
+		title_label.text += "\n[Image not found: " + path + "]"
+
+func _load_texture(path: String) -> Texture2D:
+	if path == "":
+		return null
+		
+	# 1. Standard load() if Godot imported it
+	if ResourceLoader.exists(path):
+		var res = load(path)
+		if res is Texture2D:
+			return res
+		elif res is Image:
+			return ImageTexture.create_from_image(res)
+			
+	# 2. Raw disk file buffer fallback (for freshly generated PNGs before Godot editor re-indexes)
+	var global_path = ProjectSettings.globalize_path(path)
+	var f = FileAccess.open(global_path, FileAccess.READ)
+	if f == null:
+		f = FileAccess.open(path, FileAccess.READ)
+		
+	if f != null:
+		var bytes = f.get_buffer(f.get_length())
+		f.close()
+		if bytes.size() > 0:
+			var img = Image.new()
+			var err = img.load_png_from_buffer(bytes)
+			if err == OK and not img.is_empty():
+				return ImageTexture.create_from_image(img)
+				
+	return null
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed:

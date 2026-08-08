@@ -20,7 +20,8 @@ RAW_DESCRIPTIONS = {
     "part_07_grand_library_town.png": "a walled town featuring a tall grand library sanctuary spire",
     "part_08_walled_city.png": "a magnificent walled city with double stone walls and tall spires",
     "part_09_crystal_citadel.png": "a magical crystal citadel with glowing blue obsidian spires",
-    "part_10_imperial_metropolis.png": "a sprawling futuristic metropolis in the clouds with glowing obsidion-roofed palaces and a triumph archway. ",
+    "part_10_imperial_metropolis.png": "a sprawling futuristic metropolis in the clouds with glowing obsidian-roofed palaces and a triumph archway",
+    "part_11_beyond_the_novel.png": "a cosmic starry realm with glowing holographic film reels, audio soundwaves, and game controllers",
 
     # Chapters
     "ch_04_timber_axe.png": "a heavy woodcutter axe stuck into a tree stump",
@@ -55,6 +56,13 @@ RAW_DESCRIPTIONS = {
     "ch_33_typeblock_press.png": "metal printing press movable type blocks",
     "ch_34_imperial_crown.png": "a jeweled golden imperial crown on a velvet cushion",
     "ch_35_triumph_arch.png": "a golden triumph archway entering the metropolis",
+    "ch_36_screenplay_slate.png": "a film director clapperboard slate and film reel",
+    "ch_37_game_arcade_joystick.png": "a retro arcade joystick and glowing choice buttons",
+    "ch_38_flash_fiction_hourglass.png": "a small brass hourglass with glowing sand",
+    "ch_39_comic_panel_grid.png": "a comic book page layout frame with speech bubble icons",
+    "ch_40_memoir_quill_journal.png": "an open vintage leather memoir journal with a silver quill",
+    "ch_41_audio_headphones.png": "studio sound headphones over a soundwave audio visualizer",
+    "ch_42_journey_compass.png": "a golden explorer compass pointing toward a glowing horizon door",
 }
 
 ICONS_TO_GENERATE = {

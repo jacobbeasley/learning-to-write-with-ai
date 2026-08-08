@@ -1,6 +1,10 @@
 Add-Type -AssemblyName System.Drawing
 
-$files = Get-ChildItem -Path "game/prose-quest/assets/images" -Recurse -Filter "*.png"
+# Targets only Part 11 and Chapters 35-42 comics & map icons
+$targetPattern = "^(part11_|chapter35_|chapter36_|chapter37_|chapter38_|chapter39_|chapter40_|chapter41_|chapter42_|ch_35_|ch_36_|ch_37_|ch_38_|ch_39_|ch_40_|ch_41_|ch_42_)"
+
+$files = Get-ChildItem -Path "game/prose-quest/assets/images" -Recurse -Filter "*.png" | Where-Object { $_.Name -match $targetPattern }
+
 foreach ($f in $files) {
     $tempPath = $f.FullName + ".tmp.png"
     try {
@@ -12,14 +16,17 @@ foreach ($f in $files) {
         
         Remove-Item -Path $f.FullName -Force
         Move-Item -Path $tempPath -Destination $f.FullName -Force
+        
+        # Remove corresponding .import file so Godot re-imports only this file
+        $importFile = $f.FullName + ".import"
+        if (Test-Path $importFile) {
+            Remove-Item -Path $importFile -Force
+        }
+        
         Write-Host "Cleaned PNG metadata for: $($f.Name)"
     } catch {
         Write-Host "[ERROR] Failed cleaning $($f.Name): $_"
     }
 }
 
-# Delete all .import files so Godot re-imports every image freshly
-Get-ChildItem -Path "game/prose-quest/assets/images" -Recurse -Filter "*.import" -ErrorAction SilentlyContinue | Remove-Item -Force
-Get-ChildItem -Path "game/prose-quest/.godot/imported" -Recurse -ErrorAction SilentlyContinue | Remove-Item -Force -Recurse
-
-Write-Host "Clean PNG re-encoding complete for all asset images!"
+Write-Host "Clean PNG re-encoding complete for Part 11 & Chapters 35-42!"

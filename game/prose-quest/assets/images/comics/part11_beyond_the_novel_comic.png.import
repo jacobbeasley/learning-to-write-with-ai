@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bo0ypv51ll3sq"
-path="res://.godot/imported/ch_35_triumph_arch.png-aa6b322a3d510d511f4d2fdbf23a8ddd.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://bomtx5uhhclql"
+valid=false
 
 [deps]
 
-source_file="res://assets/images/map_icons/ch_35_triumph_arch.png"
-dest_files=["res://.godot/imported/ch_35_triumph_arch.png-aa6b322a3d510d511f4d2fdbf23a8ddd.ctex"]
+source_file="res://assets/images/comics/part11_beyond_the_novel_comic.png"
 
 [params]
 

@@ -16,6 +16,7 @@ PART_ICON_MAP = {
     8: "res://assets/images/map_icons/part_08_walled_city.png",
     9: "res://assets/images/map_icons/part_09_crystal_citadel.png",
     10: "res://assets/images/map_icons/part_10_imperial_metropolis.png",
+    11: "res://assets/images/map_icons/part_11_beyond_the_novel.png",
 }
 
 CHAP_ICON_MAP = {
@@ -54,6 +55,13 @@ CHAP_ICON_MAP = {
     33: "res://assets/images/map_icons/ch_33_typeblock_press.png",
     34: "res://assets/images/map_icons/ch_34_imperial_crown.png",
     35: "res://assets/images/map_icons/ch_35_triumph_arch.png",
+    36: "res://assets/images/map_icons/ch_36_screenplay_slate.png",
+    37: "res://assets/images/map_icons/ch_37_game_arcade_joystick.png",
+    38: "res://assets/images/map_icons/ch_38_flash_fiction_hourglass.png",
+    39: "res://assets/images/map_icons/ch_39_comic_panel_grid.png",
+    40: "res://assets/images/map_icons/ch_40_memoir_quill_journal.png",
+    41: "res://assets/images/map_icons/ch_41_audio_headphones.png",
+    42: "res://assets/images/map_icons/ch_42_journey_compass.png",
 }
 
 def markdown_to_bbcode(text):
@@ -132,7 +140,11 @@ def parse_book():
         part_desc = ""
         desc_m = re.search(r'^# Part [IVXLCDM]+:.*?\n(.*?)(?=\n!\[|\n## Chapter)', part_section, re.DOTALL)
         if desc_m:
-            part_desc = desc_m.group(1).strip()
+            raw_desc = desc_m.group(1).strip()
+            # Clean openxml and html markup
+            raw_desc = re.sub(r'```\{=openxml\}.*?```', '', raw_desc, flags=re.DOTALL)
+            raw_desc = re.sub(r'```\{=html\}.*?```', '', raw_desc, flags=re.DOTALL)
+            part_desc = raw_desc.strip()
 
         # Find all Chapter headers inside this part: ## Chapter X: Title
         chap_matches = list(re.finditer(r'^## Chapter (\d+):\s*(.*?)$', part_section, re.MULTILINE))
@@ -180,7 +192,7 @@ def parse_book():
                 "title": chap_title,
                 "part_id": part_id,
                 "comic": chap_comic,
-                "map_icon": CHAP_ICON_MAP.get(chap_num, ""),
+                "map_icon": CHAP_ICON_MAP.get(chap_num, CHAP_ICON_MAP.get(35, "")),
                 "principles_bbcode": markdown_to_bbcode(principles_text),
                 "activity_bbcode": markdown_to_bbcode(activity_text),
                 "sample_prompt": sample_prompt
@@ -192,7 +204,7 @@ def parse_book():
             "title": part_title,
             "description": part_desc,
             "comic": part_comic,
-            "map_icon": PART_ICON_MAP.get(i + 1, ""),
+            "map_icon": PART_ICON_MAP.get(i + 1, PART_ICON_MAP.get(10, "")),
             "chapter_ids": chapter_ids
         })
 
